@@ -1,0 +1,135 @@
+[
+    {
+        "id": 2,
+        "name": "默认",
+        "tips": "",
+        "setting": {
+            "textureName": "",
+            "textureCount": 1,
+            "maxPartices": 120,
+            "duration": 1.42,
+            "ageAddScale": 7.58,
+            "emitterVelocitySensitivity": 1,
+            "minStartSize": 14.23,
+            "maxStartSize": 37.13,
+            "minEndSize": 0,
+            "maxEndSize": 6.81,
+            "minHorizontalVelocity": 20,
+            "maxHorizontalVelocity": 15,
+            "minVerticalVelocity": 20,
+            "maxVerticalVelocity": 50,
+            "endVelocity": 2,
+            "minRotateSpeed": 6.28,
+            "maxRotateSpeed": 2,
+            "minStartRadius": 0,
+            "maxStartRadius": 0,
+            "minEndRadius": 218.75,
+            "maxEndRadius": 84.82,
+            "minHorizontalStartRadian": 0,
+            "maxHorizontalStartRadian": 0,
+            "minVerticalStartRadian": 0,
+            "maxVerticalStartRadian": 0,
+            "useEndRadian": true,
+            "minHorizontalEndRadian": 0,
+            "maxHorizontalEndRadian": 0,
+            "minVerticalEndRadian": 0,
+            "maxVerticalEndRadian": 0,
+            "colorComponentInter": true,
+            "disableColor": false,
+            "blendState": 1,
+            "emitterType": "null",
+            "emissionRate": 0,
+            "sphereEmitterRadius": 1,
+            "sphereEmitterVelocity": 0,
+            "sphereEmitterVelocityAddVariance": 0,
+            "ringEmitterRadius": 30,
+            "ringEmitterVelocity": 0,
+            "ringEmitterVelocityAddVariance": 0,
+            "ringEmitterUp": 2,
+            "gravity": {
+                "0": 0,
+                "1": 10,
+                "2": 0
+            },
+            "minStartColor": {
+                "0": 0.96,
+                "1": 0.44,
+                "2": 0,
+                "3": 1
+            },
+            "maxStartColor": {
+                "0": 1,
+                "1": 0.8,
+                "2": 0.49,
+                "3": 1
+            },
+            "minEndColor": {
+                "0": 1,
+                "1": 0.7,
+                "2": 0.23,
+                "3": 1
+            },
+            "maxEndColor": {
+                "0": 1,
+                "1": 0.53,
+                "2": 0.1,
+                "3": 1
+            },
+            "pointEmitterPosition": {
+                "0": 0,
+                "1": 0,
+                "2": 0
+            },
+            "pointEmitterPositionVariance": {
+                "0": 0,
+                "1": 0,
+                "2": 0
+            },
+            "pointEmitterVelocity": {
+                "0": 0,
+                "1": 0,
+                "2": 0
+            },
+            "pointEmitterVelocityAddVariance": {
+                "0": 0,
+                "1": 0,
+                "2": 0
+            },
+            "boxEmitterCenterPosition": {
+                "0": 0,
+                "1": 0,
+                "2": 0
+            },
+            "boxEmitterSize": {
+                "0": 0,
+                "1": 0,
+                "2": 0
+            },
+            "boxEmitterVelocity": {
+                "0": 0,
+                "1": 0,
+                "2": 0
+            },
+            "boxEmitterVelocityAddVariance": {
+                "0": 0,
+                "1": 0,
+                "2": 0
+            },
+            "sphereEmitterCenterPosition": {
+                "0": 0,
+                "1": 0,
+                "2": 0
+            },
+            "ringEmitterCenterPosition": {
+                "0": 0,
+                "1": 0,
+                "2": 0
+            },
+            "positionVariance": {
+                "0": 0,
+                "1": 0,
+                "2": 0
+            }
+        }
+    }
+]

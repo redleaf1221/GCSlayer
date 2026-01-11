@@ -1,0 +1,145 @@
+[
+    {
+        "label": "for循环",
+        "children": [],
+        "execute": "insertCode",
+        "shortcutKey": "F",
+        "menuHotKey": "F",
+        "code": "for (var i = 0; i < 10; i++) {\n        \n        }"
+    },
+    {
+        "label": "界面绑定类",
+        "children": [],
+        "execute": "insertCode",
+        "shortcutKey": "U",
+        "menuHotKey": "U",
+        "code": "class 请输入界面绑定类名 extends GUI_1 {\n    /**\n     * 构造函数\n     */\n    constructor() {\n        super();\n    }\n}"
+    },
+    {
+        "label": "场景绑定类",
+        "children": [
+            {
+                "label": "客户端场景",
+                "execute": "insertCode",
+                "code": "class 请输入场景子类名 extends ClientScene {\n    /**\n     * 构造函数\n     */\n    constructor() {\n        super();\n    }\n}"
+            },
+            {
+                "label": "服务端场景",
+                "execute": "insertCode",
+                "code": "class 请输入场景子类名称 extends ServerScene {\n    /**\n     * 构造函数\n     */\n    constructor() {\n        super();\n    }\n}"
+            }
+        ],
+        "code": "class 请输入界面绑定类名 extends GUI_1 {\n    /**\n     * 构造函数\n     */\n    constructor() {\n        super();\n    }\n}"
+    },
+    {
+        "label": "场景对象绑定类",
+        "children": [
+            {
+                "label": "客户端场景对象子类",
+                "execute": "insertCode",
+                "code": "class 请输入场景对象模型子类 extends SceneObjectCommon {\n    /**\n     * 构造函数\n     * @param soData [可选] 默认值=null 场景对象数据\n     * @param scene [可选] 默认值=null 所属场景\n     */\n    constructor(soData: SceneObject = null, scene: ClientScene = null) {\n        super(soData, scene);\n    }\n}"
+            },
+            {
+                "label": "服务端场景对象子类",
+                "execute": "insertCode",
+                "code": "class 请输入服务端场景对象模型子类 extends SceneObjectCommon {\n    /**\n     * 构造函数\n     * @param soData [可选] 默认值=null 场景对象基本数据\n     * @param presetCustomAttrs 预设配置的自定义属性\n     * @param player [可选] 默认值=null 对应的玩家\n     */\n    constructor(soData: SceneObject = null, presetCustomAttrs: { [varName: string]: { varType: number, value: any, copy: boolean } } = null, player: GameServerPlayer = null) {\n        super(soData, presetCustomAttrs, player);\n    }\n}"
+            }
+        ]
+    },
+    {
+        "label": "场景对象模块的绑定类",
+        "execute": "insertCode",
+        "code": "class 场景对象模块子类 extends SceneObjectModule_1 {\n    /**\n     * 构造函数\n     * @param installCB 用于安装模块的属性值\n     */\n    constructor(installCB: Callback) {\n        super(installCB);\n\n    }\n    /**\n     * 当移除模块时执行的函数\n     */\n    onRemoved():void {\n        \n    }\n    /**\n     * 刷新：通常在改变了属性需要调用此函数统一刷新效果\n     */\n    refresh():void {\n        \n    }\n}"
+    },
+    {
+        "label": "自定义系统",
+        "splitLine": false,
+        "children": [
+            {
+                "label": "自定义行为",
+                "children": [],
+                "execute": "insertCode",
+                "code": "module CustomSceneObjectBehavior {\n    /**\n     * 自定义行为（p1、p2、p3是参数，需要修改为实际的自定义行为对应的参数和类型，按照行为编辑器中预设的顺序排列）\n     * @param soBehavior 行为执行器 \n     */\n    export function f52(soBehavior: SceneObjectBehaviors,p1:number,p2:number,p3:string): void {\n       \n    }\n}"
+            },
+            {
+                "label": "自定义命令",
+                "children": [],
+                "execute": "insertCode",
+                "code": "module CommandExecute {\n    /**\n     * 自定义命令执行 1表示对应1号命令\n     * @param commandPage 事件页\n     * @param cmd 当前的事件命令\n     * @param trigger 触发器\n     * @param triggerPlayer 触发器对应的玩家\n     * @param playerInput 玩家输入值，用于暂停执行该触发器事件并等待玩家输入后获得的值，执行完该函数后会被清空\n     * @param p 自定义命令参数 1表示对应1号命令的参数\n     */\n    export function customCommand_1(commandPage: CommandPage, cmd: Command, trigger: CommandTrigger, triggerPlayer: ClientPlayer, playerInput: any[], p: CustomCommandParams_1): void {\n        \n    }\n    /**\n     * 自定义命令-预编译（如果无需预编译则删除此函数） 1表示对应1号命令\n     * 预编译可将预先计算的结果储存到cmd.paramsCompiled中，以便在命令执行时直接使用，减少计算量以提升执行性能\n     * @param commandPage 事件页\n     * @param cmd 当前的事件命令\n     * @param index 当前的事件命令所在的行\n     * @param p 自定义命令参数 1表示对应1号命令的参数\n     */\n    export function customCommandPrecompile_1(commandPage: CommandPage, cmd: Command, index: number, p: CustomCommandParams_1): void {\n        \n    }\n}"
+            },
+            {
+                "label": "自定义条件",
+                "children": [],
+                "execute": "insertCode",
+                "code": "module CustomCondition {\n    /**\n     * 自定义条件：1表示对应ID=1的自定义条件\n     * @param trigger 事件触发器\n     * @param p 自定义参数\n     * @return [boolean] \n     */\n    export function f1(trigger: CommandTrigger, p: CustomConditionParams_1): boolean {\n        return true;\n    }\n}"
+            },
+            {
+                "label": "自定义数值",
+                "children": [],
+                "execute": "insertCode",
+                "code": "module CustomGameNumber {\n    /**\n     * 自定义游戏数值\n     * @param trigger 触发器，可能为空\n     * @param p 自定义数值参数 \n     */\n    export function f1(trigger: CommandTrigger, p: CustomGameNumberParams_1): number {\n        return 0;\n    }\n}"
+            }
+        ]
+    },
+    {
+        "label": "插件变量规范",
+        "splitLine": false,
+        "children": [
+            {
+                "label": "行走图ID",
+                "execute": "insertCode",
+                "code": "PLUGIN_AVATAR_自定义命名:number = 1;"
+            },
+            {
+                "label": "立绘ID",
+                "execute": "insertCode",
+                "code": "PLUGIN_STAND_AVATAR_自定义命名:number = 1;"
+            },
+            {
+                "label": "动画ID",
+                "execute": "insertCode",
+                "code": "PLUGIN_ANIMATION_自定义命名:number = 1;"
+            },
+            {
+                "label": "对话框样式ID",
+                "execute": "insertCode",
+                "code": "PLUGIN_DIALOG_自定义命名:number = 1;"
+            },
+            {
+                "label": "图块ID",
+                "execute": "insertCode",
+                "code": "PLUGIN_TILE_自定义命名:number = 1;"
+            },
+            {
+                "label": "自动元件ID",
+                "execute": "insertCode",
+                "code": "PLUGIN_AUTOTILE_自定义命名:number = 1;"
+            },
+            {
+                "label": "界面ID",
+                "execute": "insertCode",
+                "code": "PLUGIN_GUI_自定义命名:number = 1;"
+            },
+            {
+                "label": "场景ID",
+                "execute": "insertCode",
+                "code": "PLUGIN_SCENE_自定义命名:number = 1;"
+            },
+            {
+                "label": "场景对象模块ID",
+                "execute": "insertCode",
+                "code": "PLUGIN_SCENEOBJECT_MODULE_自定义命名:number = 1;"
+            },
+            {
+                "label": "模块类别ID",
+                "execute": "insertCode",
+                "code": "PLUGIN_MODULE_TYPE_自定义命名:number = 1;"
+            },
+            {
+                "label": "材质ID",
+                "execute": "insertCode",
+                "code": "PLUGIN_MATERIAL_自定义命名:number = 1;"
+            }
+        ]
+    }
+]

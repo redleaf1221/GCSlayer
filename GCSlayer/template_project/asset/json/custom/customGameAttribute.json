@@ -1,0 +1,30 @@
+{
+    "worldAttributeSetting": {
+        "blockList": [
+            {
+                "name": "世界属性",
+                "blockAttrs": [],
+                "blockCondition": [],
+                "blockHeight": 94,
+                "autoOrder": true
+            }
+        ]
+    },
+    "playerAttributeSetting": {
+        "blockList": [
+            {
+                "name": "玩家属性",
+                "blockAttrs": [],
+                "blockCondition": [],
+                "blockHeight": 234,
+                "autoOrder": true
+            }
+        ]
+    },
+    "worldAttributeConfig": {
+        "attrs": {}
+    },
+    "playerAttributeConfig": {
+        "attrs": {}
+    }
+}

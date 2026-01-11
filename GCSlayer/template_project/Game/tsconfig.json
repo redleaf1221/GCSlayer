@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "declaration": true,
+        "declarationMap": false,
+        "sourceMap": true,
+        "skipLibCheck": true,
+        "composite": true,
+        "allowJs": true,
+        "lib": [
+            "DOM",
+            "ES2015"
+        ],
+        "outFile": "../out/Game.js"
+    },
+    "gamecreatorTSConfig": {
+        "filesAutoManage": true,
+        "referencesAutoManage": false
+    },
+    "files": [
+        "system/CustomCommandParams.ts",
+        "system/CustomConditionParams.ts",
+        "system/CustomGameNumberParams.ts",
+        "system/CustomModuleRuntime.ts",
+        "system/GameAttributeRuntime.ts",
+        "system/MaterialRuntime.ts",
+        "GCMain.ts",
+        "system/SceneObjectModels.ts",
+        "system/SceneObjectModules.ts",
+        "system/UIRuntime.ts"
+    ],
+    "include": [
+        "../GameCreatorLib/**/*.d.ts"
+    ],
+    "references": []
+}
