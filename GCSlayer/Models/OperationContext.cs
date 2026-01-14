@@ -3,7 +3,7 @@
 public record OperationContext {
     public required string GamePath { get; init; }
     public required string OutputPath { get; init; }
-    public string? LocalSource { get; init; }
+    public string? LocalSourcePath { get; init; }
     public string? MissingListPath { get; init; }
 
     public string ProjectPath => Path.GetFullPath(OutputPath);

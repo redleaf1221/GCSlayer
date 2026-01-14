@@ -7,6 +7,7 @@ using GCSlayer.Services;
 using Spectre.Console;
 
 await new CliApplicationBuilder()
+    .SetExecutableName("GCSlayer")
     .AddCommand<RecoverCommand>()
     .Build()
     .RunAsync();
@@ -17,10 +18,10 @@ namespace GCSlayer {
         [CommandParameter(0, Name = "game_path", Description = "Path to game install.")]
         public required string GamePath { get; init; }
     
-        [CommandOption("local_source", 's', Description = "Local source of missing assets.")]
-        public string? LocalSource { get; init; }
+        [CommandOption("local_source", Description = "Path for local source of missing assets.")]
+        public string? LocalSourcePath { get; init; }
     
-        [CommandOption("gen_missing_list", Description = "Path for generating list of missing file.")]
+        [CommandOption("missing_list", Description = "Path for generating list of missing file.")]
         public string? MissingListPath { get; init; }
     
         [CommandOption("output", 'o', Description = "Output path.")]
@@ -31,7 +32,7 @@ namespace GCSlayer {
                 var context = new OperationContext {
                     GamePath = Path.GetFullPath(GamePath),
                     OutputPath = OutputPath ?? Path.GetFileName(GamePath),
-                    LocalSource = LocalSource != null ? Path.GetFullPath(LocalSource) : null,
+                    LocalSourcePath = LocalSourcePath != null ? Path.GetFullPath(LocalSourcePath) : null,
                     MissingListPath = MissingListPath != null ? Path.GetFullPath(MissingListPath) : null
                 };
                 await new RecoverOrchestrator(context).ExecuteAsync();

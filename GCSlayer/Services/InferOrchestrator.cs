@@ -26,12 +26,13 @@ public class InferOrchestrator(OperationContext context) {
 
         await AnsiConsole.Progress().StartAsync(async ctx => {
             ProgressTask task = ctx.AddTask("Copy from repo", maxValue: 1D);
+            var repoPath = context.LocalSourcePath ?? Path.Combine(OperationContext.FileRepoPath, configJson.GameProjectName);
             await Parallel.ForEachAsync(missingAssets, 
                 new ParallelOptions{ MaxDegreeOfParallelism = Environment.ProcessorCount / 2}, 
                 (missingFile, ct) => {
                     Directory.CreateDirectory(Path.GetDirectoryName(Path.Combine(context.ProjectPath, missingFile))!);
-                    if (File.Exists(Path.Combine(OperationContext.FileRepoPath, configJson.GameProjectName, missingFile))) {
-                        File.Copy(Path.Combine(OperationContext.FileRepoPath, configJson.GameProjectName, missingFile),
+                    if (File.Exists(Path.Combine(repoPath, missingFile))) {
+                        File.Copy(Path.Combine(repoPath, missingFile),
                             Path.Combine(context.ProjectPath, missingFile));
                     } else if (File.Exists(Path.Combine(OperationContext.TemplatePath, missingFile))) {
                         File.Copy(Path.Combine(OperationContext.TemplatePath, missingFile),
