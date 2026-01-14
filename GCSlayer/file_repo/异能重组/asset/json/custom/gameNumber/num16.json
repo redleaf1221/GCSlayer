@@ -1,0 +1,13 @@
+{
+    "compAutoOrderLimitHeight": 0,
+    "id": 16,
+    "blockList": [
+        {
+            "name": "未命名块",
+            "blockAttrs": [],
+            "blockCondition": [],
+            "blockHeight": 300,
+            "autoOrder": true
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "compAutoOrderLimitHeight": 0,
+    "id": 21,
+    "blockList": [
+        {
+            "name": "脸朝右下",
+            "blockAttrs": [],
+            "blockCondition": [],
+            "blockHeight": 35,
+            "autoOrder": true,
+            "hideBlockTitle": false
+        }
+    ],
+    "isCustomPhraseDesc": false
+}

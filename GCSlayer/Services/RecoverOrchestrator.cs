@@ -81,5 +81,6 @@ public class RecoverOrchestrator(OperationContext context) {
             Path.Combine(context.ProjectPath, $"{configJson.GameProjectName}.gamecreator"));
         
         AnsiConsole.MarkupLine("[green]Major recovery finished.[/]");
+        AnsiConsole.WriteLine();
     }
 }

@@ -7,20 +7,56 @@ namespace GCSlayer.Services;
 
 public class InferOrchestrator(OperationContext context) {
     public async Task ExecuteAsync() {
-        AnsiConsole.MarkupLine("[yellow]Infer missing assets...[/]");
         List<string> missingAssets = await GetMissingAssetsList(context);
+        if (missingAssets.Count == 0) {
+            AnsiConsole.MarkupLine("[green]What? No missing assets![/]");
+            return;
+        }
+        AnsiConsole.MarkupLine($"Found {missingAssets.Count} missing assets.");
         if (context.MissingListPath != null) {
             var jsonText = JsonSerializer.Serialize(missingAssets, SourceGenJsonContext.Default.ListString);
             await File.WriteAllTextAsync(context.MissingListPath, jsonText);
-            AnsiConsole.Markup($"[dim]Missing assets list wrote to {context.MissingListPath}.[/]");
+            AnsiConsole.MarkupLine($"[dim]Missing assets list wrote to {context.MissingListPath}.[/]");
         }
-        if (missingAssets.Count == 0) {
-            AnsiConsole.Markup("[green]What? No missing assets![/]");
-            return;
-        }
-        AnsiConsole.Markup($"Found {missingAssets.Count} missing assets.");
+        AnsiConsole.WriteLine();
         
-        AnsiConsole.Markup("[red bold]Work In Progress[/]");
+        AnsiConsole.MarkupLine("[yellow]Infer missing assets...[/]");
+        
+        ConfigJson configJson = await ConfigJson.FromFileAsync(Path.Combine(context.ProjectPath, "asset", "json", "config.json"));
+
+        await AnsiConsole.Progress().StartAsync(async ctx => {
+            ProgressTask task = ctx.AddTask("Copy from repo", maxValue: 1D);
+            await Parallel.ForEachAsync(missingAssets, 
+                new ParallelOptions{ MaxDegreeOfParallelism = Environment.ProcessorCount / 2}, 
+                (missingFile, ct) => {
+                    Directory.CreateDirectory(Path.GetDirectoryName(Path.Combine(context.ProjectPath, missingFile))!);
+                    if (File.Exists(Path.Combine(OperationContext.FileRepoPath, configJson.GameProjectName, missingFile))) {
+                        File.Copy(Path.Combine(OperationContext.FileRepoPath, configJson.GameProjectName, missingFile),
+                            Path.Combine(context.ProjectPath, missingFile));
+                    } else if (File.Exists(Path.Combine(OperationContext.TemplatePath, missingFile))) {
+                        File.Copy(Path.Combine(OperationContext.TemplatePath, missingFile),
+                            Path.Combine(context.ProjectPath, missingFile));
+                    }
+                    task.Increment(1D / missingFile.Length);
+                    return ValueTask.CompletedTask;
+                });
+            task.Increment(1D);
+        });
+        
+        await AnsiConsole.Progress().StartAsync(async ctx => {
+            ProgressTask task = ctx.AddTask("Decrypt meaningless files", maxValue: 1D);
+            List<string> jsonArr = ["custom/customBehaviorType.json", "avatar/avatarActList.json",
+                "standAvatar/expressionList.json", "animation/animationSignalList.json"];
+            foreach (var asset in jsonArr) {
+                var rawText = await File.ReadAllTextAsync(Path.Combine(context.ProjectPath, "asset", "json", asset));
+                var decryptedText = TemplateJsonEncryption.Decrypt(rawText);
+                await File.WriteAllTextAsync(Path.Combine(context.ProjectPath, "asset", "json", asset), decryptedText);
+                task.Increment(1D / missingAssets.Count);
+            }
+            task.Increment(1D);
+        });
+        
+        AnsiConsole.MarkupLine("[red bold]Deeper inference is work In Progress.[/]");
     }
 
     private static async Task<List<string>> GetMissingAssetsList(OperationContext context) {

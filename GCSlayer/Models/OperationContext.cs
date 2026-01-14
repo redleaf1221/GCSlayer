@@ -10,4 +10,6 @@ public record OperationContext {
     public static string TemplatePath => Path.Combine(AppContext.BaseDirectory, "template_project");
     public string AssetsPath => Path.Combine(ProjectPath, "asset");
     public static string GcJsDecryptPath => Path.Combine(AppContext.BaseDirectory, "GCJSDecrypt");
+    
+    public static string FileRepoPath =>  Path.Combine(AppContext.BaseDirectory, "file_repo");
 }

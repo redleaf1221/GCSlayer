@@ -4,6 +4,7 @@ using CliFx.Infrastructure;
 using GCSlayer;
 using GCSlayer.Models;
 using GCSlayer.Services;
+using Spectre.Console;
 
 await new CliApplicationBuilder()
     .AddCommand<RecoverCommand>()
@@ -36,7 +37,7 @@ namespace GCSlayer {
                 await new RecoverOrchestrator(context).ExecuteAsync();
                 await new InferOrchestrator(context).ExecuteAsync();
             } catch (Exception ex) {
-                await console.Error.WriteLineAsync(ex.Message);
+                await console.Error.WriteLineAsync(ex.ToString());
             }
         }
     }

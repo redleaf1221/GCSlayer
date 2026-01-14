@@ -1,0 +1,15 @@
+{
+    "compAutoOrderLimitHeight": 0,
+    "id": 1,
+    "blockList": [
+        {
+            "name": "向下移动一步",
+            "blockAttrs": [],
+            "blockCondition": [],
+            "blockHeight": 35,
+            "autoOrder": true,
+            "hideBlockTitle": false
+        }
+    ],
+    "isCustomPhraseDesc": false
+}
