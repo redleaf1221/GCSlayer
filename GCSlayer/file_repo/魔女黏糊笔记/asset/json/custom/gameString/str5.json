@@ -1,0 +1,61 @@
+{
+    "compAutoOrderLimitHeight": 0,
+    "id": 5,
+    "blockList": [
+        {
+            "name": "模块数据的字符串属性",
+            "blockAttrs": [
+                {
+                    "attr": {
+                        "id": "103265718161_0.22629876249601244",
+                        "varName": "modelData",
+                        "varType": 5,
+                        "compData": {
+                            "compType": 54,
+                            "compParam": {
+                                "numType": false,
+                                "strType": true,
+                                "boolType": false,
+                                "getSetType": 0
+                            }
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "模块指定数据的字符串属性",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable": true
+                    },
+                    "attrConditions": [],
+                    "y": 25,
+                    "x": 23,
+                    "width": 650,
+                    "height": 32
+                }
+            ],
+            "blockCondition": [],
+            "blockHeight": 275,
+            "autoOrder": true,
+            "hideBlockTitle": false
+        }
+    ],
+    "isCustomPhraseDesc": true,
+    "customPhraseDescTS": "// 根据属性名称值编写自定义短语描述，如：\"我的短语是\"+attrs.xxx\n// 使用下拉框组件的变量attrs.xxx有对应的attrs.xxxItems的属性以便获得标签名集合\n// 获取自定义模块的数据名称的函数：getModuleDataName(moduleID:number,dataID:number):string;\n// 获取各种列表内数据名称的函数：getTypeDataListName(typeID: number, dataID: number):string;\n// -- typeID ：0-全局变量 1-全局开关 2-全局字符串 3-玩家变量 4-玩家开关 5-玩家字符串\n//           ：6-场景列表 7-场景对象模型列表 8-图块列表 9-行走图列表 10-行走图动作列表 11-立绘列表 12-立绘表情列表\n//           ：13-公共事件 14-对话框列表 15-动画列表 16-动画信号列表 17-界面列表 18-数据结构列表 19-自定义模块列表\n//           ：20-自定义命令列表 21-自定义行为列表 22-自动元件列表 23-行走图部件列表 24-立绘部件列表\nlet moduleID = attrs.modelData.moduleID;\nlet moduleName = getTypeDataListName(19, moduleID);\nlet dataName = attrs.modelData.dataIsUseVar ? `[@v${attrs.modelData.dataVarID}-${getTypeDataListName(3, attrs.modelData.dataVarID)}]` : `[${attrs.modelData.dataID}-${getModuleDataName(moduleID, attrs.modelData.dataID)}]`;\n\nlet mapping = { 0: 3, 1: 5, 2: 4 };\nif (attrs.modelData.selectMode == 1) {\n    let mode = attrs.modelData.inputModeInfo.mode;\n    let constName = attrs.modelData.inputModeInfo.constName;\n    let varNameIndex = attrs.modelData.inputModeInfo.varNameIndex;\n    let varName = mode == 0 ? constName : `[@${varNameIndex}-${getTypeDataListName(mapping[varNameIndex], varNameIndex)}]`;\n    `${moduleID}-${moduleName}-${dataName}:${varName}`\n}\nelse {\n    `${moduleID}-${moduleName}-${dataName}:${attrs.modelData.varName}`\n}",
+    "customPhraseDescJS": "var moduleID = attrs.modelData.moduleID;\nvar moduleName = getTypeDataListName(19, moduleID);\nvar dataName = attrs.modelData.dataIsUseVar ? \"[@v\" + attrs.modelData.dataVarID + \"-\" + getTypeDataListName(3, attrs.modelData.dataVarID) + \"]\" : \"[\" + attrs.modelData.dataID + \"-\" + getModuleDataName(moduleID, attrs.modelData.dataID) + \"]\";\nvar mapping = { 0: 3, 1: 5, 2: 4 };\nif (attrs.modelData.selectMode == 1) {\n    var mode = attrs.modelData.inputModeInfo.mode;\n    var constName = attrs.modelData.inputModeInfo.constName;\n    var varNameIndex = attrs.modelData.inputModeInfo.varNameIndex;\n    var varName = mode == 0 ? constName : \"[@\" + varNameIndex + \"-\" + getTypeDataListName(mapping[varNameIndex], varNameIndex) + \"]\";\n    moduleID + \"-\" + moduleName + \"-\" + dataName + \":\" + varName;\n}\nelse {\n    moduleID + \"-\" + moduleName + \"-\" + dataName + \":\" + attrs.modelData.varName;\n}\n"
+}

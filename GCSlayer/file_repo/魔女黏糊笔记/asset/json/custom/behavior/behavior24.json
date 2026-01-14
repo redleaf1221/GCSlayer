@@ -1,0 +1,17 @@
+{
+    "compAutoOrderLimitHeight": 0,
+    "id": 24,
+    "blockList": [
+        {
+            "name": "随机朝向一次",
+            "blockAttrs": [],
+            "blockCondition": [],
+            "blockHeight": 35,
+            "autoOrder": true,
+            "hideBlockTitle": false
+        }
+    ],
+    "isCustomPhraseDesc": false,
+    "customPhraseDescTS": "// 根据属性名称值编写自定义短语描述，如：\"我的短语是\"+attrs.xxx\n// 使用下拉框组件的变量attrs.xxx有对应的attrs.xxxItems的属性以便获得标签名集合\n// 获取自定义模块的数据名称的函数：getModuleDataName(moduleID:number,dataID:number):string;\n(attrs.dir4?\"：四方向随机\":\"：八方向随机\")",
+    "customPhraseDescJS": "(attrs.dir4 ? \"：四方向随机\" : \"：八方向随机\");\n"
+}

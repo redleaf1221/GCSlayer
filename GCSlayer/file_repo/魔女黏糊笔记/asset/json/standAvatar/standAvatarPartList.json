@@ -1,0 +1,19 @@
+{
+    "list": [
+        null,
+        "医师面部"
+    ],
+    "typeTreeNode": {
+        "isDirectory": true,
+        "children": [
+            {
+                "id": 1,
+                "name": "医师面部",
+                "children": []
+            }
+        ],
+        "isOpen": true,
+        "name": "目录"
+    },
+    "dataShowMode": 1
+}

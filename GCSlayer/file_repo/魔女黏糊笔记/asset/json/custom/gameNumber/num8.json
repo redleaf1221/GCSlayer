@@ -1,0 +1,167 @@
+{
+    "compAutoOrderLimitHeight": 0,
+    "id": 8,
+    "blockList": [
+        {
+            "name": "世界",
+            "blockAttrs": [
+                {
+                    "attr": {
+                        "id": "103266395548_0.6623830759727427",
+                        "varName": "worldData",
+                        "varType": 5,
+                        "compData": {
+                            "compType": 55,
+                            "compParam": {
+                                "numType": true,
+                                "strType": false,
+                                "boolType": false,
+                                "getSetType": 0
+                            }
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "世界设定的数值属性",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable": true,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": "103545816107_0.9736085982129372",
+                            "value": 1,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 73,
+                    "x": 20,
+                    "width": 650,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "103545816107_0.9736085982129372",
+                        "varName": "type",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 2,
+                            "compParam": {
+                                "items": "预设,世界自定义属性",
+                                "showIndex": false
+                            }
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "类型",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 50,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable": true,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [],
+                    "y": 25,
+                    "x": 20,
+                    "width": 225,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "103545936033_0.14943044194860367",
+                        "varName": "presetType",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 2,
+                            "compParam": {
+                                "items": "全局 BGM 音量,全局 BGS 音量,全局 SE 音量,全局语音音量",
+                                "showIndex": false
+                            }
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "类型",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 0,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable": true,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": "103545816107_0.9736085982129372",
+                            "value": 0,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 25,
+                    "x": 254,
+                    "width": 300,
+                    "height": 32
+                }
+            ],
+            "blockCondition": [],
+            "blockHeight": 275,
+            "autoOrder": true,
+            "hideBlockTitle": false
+        }
+    ],
+    "isCustomPhraseDesc": true,
+    "customPhraseDescTS": "// 根据属性名称值编写自定义短语描述，如：\"我的短语是\"+attrs.xxx\n// 使用下拉框组件的变量attrs.xxx有对应的attrs.xxxItems的属性以便获得标签名集合\n// 获取自定义模块的数据名称的函数：getModuleDataName(moduleID:number,dataID:number):string;\n// 获取各种列表内数据名称的函数：getTypeDataListName(typeID: number, dataID: number):string;\n// -- typeID ：0-全局变量 1-全局开关 2-全局字符串 3-玩家变量 4-玩家开关 5-玩家字符串\n//           ：6-场景列表 7-场景对象模型列表 8-图块列表 9-行走图列表 10-行走图动作列表 11-立绘列表 12-立绘表情列表\n//           ：13-公共事件 14-对话框列表 15-动画列表 16-动画信号列表 17-界面列表 18-数据结构列表 19-自定义模块列表\n//           ：20-自定义命令列表 21-自定义行为列表 22-自动元件列表 23-行走图部件列表 24-立绘部件列表\nvar str = \"\";\nif (attrs.type == 0) {\n    str += \"「\" + attrs.presetTypeItems[attrs.presetType] + \"」\";\n}\nelse {\n    let mapping = { 0: 3, 1: 5, 2: 4 };\n    if (attrs.worldData.selectMode == 1) {\n        let mode = attrs.worldData.inputModeInfo.mode;\n        let constName = attrs.worldData.inputModeInfo.constName;\n        let varNameIndex = attrs.worldData.inputModeInfo.varNameIndex;\n        let varName = mode == 0 ? constName : `[@${varNameIndex}-${getTypeDataListName(mapping[varNameIndex], varNameIndex)}]`;\n         str = varName;\n    }\n    else {\n        str = attrs.worldData.varName;\n    }\n}\nstr;\n",
+    "customPhraseDescJS": "var str = \"\";\nif (attrs.type == 0) {\n    str += \"「\" + attrs.presetTypeItems[attrs.presetType] + \"」\";\n}\nelse {\n    var mapping = { 0: 3, 1: 5, 2: 4 };\n    if (attrs.worldData.selectMode == 1) {\n        var mode = attrs.worldData.inputModeInfo.mode;\n        var constName = attrs.worldData.inputModeInfo.constName;\n        var varNameIndex = attrs.worldData.inputModeInfo.varNameIndex;\n        var varName = mode == 0 ? constName : \"[@\" + varNameIndex + \"-\" + getTypeDataListName(mapping[varNameIndex], varNameIndex) + \"]\";\n        str = varName;\n    }\n    else {\n        str = attrs.worldData.varName;\n    }\n}\nstr;\n"
+}

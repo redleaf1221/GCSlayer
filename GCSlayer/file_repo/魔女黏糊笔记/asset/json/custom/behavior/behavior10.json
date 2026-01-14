@@ -1,0 +1,231 @@
+{
+    "compAutoOrderLimitHeight": 0,
+    "id": 10,
+    "blockList": [
+        {
+            "name": "靠近场景对象一步",
+            "blockAttrs": [
+                {
+                    "attr": {
+                        "id": "42486764503_0.24756140231515467",
+                        "varName": "type",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 2,
+                            "compParam": {
+                                "items": "玩家的场景对象,触发事件者,执行事件者,指定对象编号",
+                                "showIndex": false
+                            }
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "指定靠近至",
+                        "alias": "靠近",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 70,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [],
+                    "y": 10,
+                    "x": 15,
+                    "width": 265,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "42486912187_0.9908786873656521",
+                        "varName": "useVar",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 2,
+                            "compParam": {
+                                "items": "常量,变量",
+                                "showIndex": false
+                            }
+                        },
+                        "defaultValue": "0",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "使用变量指定",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 0,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": "42486764503_0.24756140231515467",
+                            "value": 3,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 45,
+                    "x": 283,
+                    "width": 107,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "42486955461_0.4445394142364849",
+                        "varName": "varID",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 6,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "编号",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 70,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": "42486912187_0.9908786873656521",
+                            "value": 1,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        },
+                        {
+                            "attrID": "42486764503_0.24756140231515467",
+                            "value": 3,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 45,
+                    "x": 15,
+                    "width": 265,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "42486999918_0.8538122088984084",
+                        "varName": "soIndex",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 0,
+                            "compParam": {
+                                "lowerLimit": 0,
+                                "upperLimit": 10000,
+                                "stepValue": 1,
+                                "limitInteger": true,
+                                "lockTextLimit": true,
+                                "xDragEnabled": true,
+                                "yDragEnabled": true
+                            }
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "编号",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 70,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": "42486912187_0.9908786873656521",
+                            "value": 0,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        },
+                        {
+                            "attrID": "42486764503_0.24756140231515467",
+                            "value": 3,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 45,
+                    "x": 15,
+                    "width": 265,
+                    "height": 32
+                }
+            ],
+            "blockCondition": [],
+            "blockHeight": 85,
+            "autoOrder": true,
+            "hideBlockTitle": true
+        }
+    ],
+    "isCustomPhraseDesc": true,
+    "customPhraseDescTS": "// 根据属性名称值编写自定义短语描述，如：\"我的短语是\"+attrs.xxx\n// 使用下拉框组件的变量attrs.xxx有对应的attrs.xxxItems的属性以便获得标签名集合\n// 获取自定义模块的数据名称的函数：getModuleDataName(moduleID:number,dataID:number):string;\n// 获取各种列表内数据名称的函数：getTypeDataListName(typeID: number, dataID: number):string;\n// -- typeID ：0-全局变量 1-全局开关 2-全局字符串 3-玩家变量 4-玩家开关 5-玩家字符串\n//           ：6-场景列表 7-场景对象模型列表 8-图块列表 9-行走图列表 10-行走图动作列表 11-立绘列表 12-立绘表情列表\n//           ：13-公共事件 14-对话框列表 15-动画列表 16-动画信号列表 17-界面列表 18-数据结构列表 19-自定义模块列表\n//           ：20-自定义命令列表 21-自定义行为列表 22-自动元件列表 23-行走图部件列表 24-立绘部件列表\ngetMessage();\nfunction getMessage() {\n    if (attrs.type <= 2) {\n        return attrs.typeItems[attrs.type];\n    }\n    else{\n        if(attrs.useVar==1){\n            return `对象编号：[${attrs.varID}-${getTypeDataListName(3,attrs.varID)}]`\n        }\n        else{\n            return \"对象编号：\" + attrs.soIndex + \"号\";\n        }\n    }\n}",
+    "customPhraseDescJS": "getMessage();\nfunction getMessage() {\n    if (attrs.type <= 2) {\n        return attrs.typeItems[attrs.type];\n    }\n    else {\n        if (attrs.useVar == 1) {\n            return \"\\u5BF9\\u8C61\\u7F16\\u53F7\\uFF1A[\" + attrs.varID + \"-\" + getTypeDataListName(3, attrs.varID) + \"]\";\n        }\n        else {\n            return \"对象编号：\" + attrs.soIndex + \"号\";\n        }\n    }\n}\n"
+}

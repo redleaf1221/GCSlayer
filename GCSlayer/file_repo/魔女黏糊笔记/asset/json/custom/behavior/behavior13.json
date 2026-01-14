@@ -1,0 +1,420 @@
+{
+    "compAutoOrderLimitHeight": 0,
+    "id": 13,
+    "blockList": [
+        {
+            "name": "跳跃至",
+            "blockAttrs": [
+                {
+                    "attr": {
+                        "id": "42487318080_0.48706757605503204",
+                        "varName": "useVar",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 2,
+                            "compParam": {
+                                "items": "常量,变量",
+                                "showIndex": false
+                            }
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "使用变量指定坐标",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 0,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [],
+                    "y": 10,
+                    "x": 403,
+                    "width": 120,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "42487351907_0.13488107713692665",
+                        "varName": "x",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 0,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 30,
+                        "eyeShow": true,
+                        "lockBlock": false
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": "42487318080_0.48706757605503204",
+                            "value": 0,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 10,
+                    "x": 15,
+                    "width": 175,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "42487356980_0.6232442853675195",
+                        "varName": "y",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 0,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 30,
+                        "eyeShow": true,
+                        "lockBlock": false
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": "42487318080_0.48706757605503204",
+                            "value": 0,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 10,
+                    "x": 225,
+                    "width": 175,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "42487540898_0.9440353567730013",
+                        "varName": "x2",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 6,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "x",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 30,
+                        "eyeShow": true,
+                        "lockBlock": false
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": "42487318080_0.48706757605503204",
+                            "value": 1,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 10,
+                    "x": 15,
+                    "width": 175,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "42487551057_0.3992269892664366",
+                        "varName": "y2",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 6,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "y",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 30,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": "42487318080_0.48706757605503204",
+                            "value": 1,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 10,
+                    "x": 225,
+                    "width": 175,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "42488370349_0.0018824620836948025",
+                        "varName": "useGrid",
+                        "varType": 2,
+                        "compData": {
+                            "compType": 15,
+                            "compParam": {}
+                        },
+                        "defaultValue": "1",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "勾选此项后将使用格子坐标，否则使用像素坐标",
+                        "alias": "格子坐标",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false
+                    },
+                    "attrConditions": [],
+                    "y": 50,
+                    "x": 15,
+                    "width": 97,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "42515867312_0.3402562874015018",
+                        "varName": "relative",
+                        "varType": 2,
+                        "compData": {
+                            "compType": 15,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "勾选此项将相对于当前坐标进行跳跃",
+                        "alias": "相对坐标",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [],
+                    "y": 50,
+                    "x": 155,
+                    "width": 96,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "42921566117_0.8705651118980764",
+                        "varName": "ifObstacleHandleMode",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 2,
+                            "compParam": {
+                                "items": "等待,强行跳跃,忽略该行为",
+                                "showIndex": false
+                            }
+                        },
+                        "defaultValue": "0",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "当目的地是障碍时",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": true,
+                        "titleWidth": 120,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [],
+                    "y": 85,
+                    "x": 15,
+                    "width": 450,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "43735054425_0.6929011390663149",
+                        "varName": "moveToGridCenter",
+                        "varType": 2,
+                        "compData": {
+                            "compType": 15,
+                            "compParam": {}
+                        },
+                        "defaultValue": "1",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "勾选此项将会移动至目的地所属格子的中心点",
+                        "alias": "格子中心点",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": "42488370349_0.0018824620836948025",
+                            "value": true,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        },
+                        {
+                            "attrID": "42515867312_0.3402562874015018",
+                            "value": true,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 50,
+                    "x": 305,
+                    "width": 91,
+                    "height": 32
+                }
+            ],
+            "blockCondition": [],
+            "blockHeight": 125,
+            "autoOrder": true,
+            "hideBlockTitle": true
+        }
+    ],
+    "isCustomPhraseDesc": true,
+    "customPhraseDescTS": "// 根据属性名称值编写自定义短语描述，如：\"我的短语是\"+attrs.xxx\n// 使用下拉框组件的变量attrs.xxx有对应的attrs.xxxItems的属性以便获得标签名集合\n// 获取自定义模块的数据名称的函数：getModuleDataName(moduleID:number,dataID:number):string;\ngetMessage();\nfunction getMessage() {\n    var str = attrs.useGrid ? \"格子坐标：\" : \"像素坐标：\";\n    if (attrs.useVar) {\n        var symbolStr = attrs.relative ? \"+\" : \"\";\n        str += `${symbolStr}[${attrs.x2}-${getTypeDataListName(3, attrs.x2)}],${symbolStr}[${attrs.y2}-${getTypeDataListName(3, attrs.y2)}]`;\n    }\n    else {\n        var symbolX = attrs.relative ? (attrs.x >= 0 ? \"+\" : \"\") : \"\";\n        var symbolY = attrs.relative ? (attrs.y >= 0 ? \"+\" : \"\") : \"\";\n        str += `${symbolX}${attrs.x},${symbolY}${attrs.y}`;\n    }\n    str += ` 障碍时${attrs.ifObstacleHandleModeItems[attrs.ifObstacleHandleMode]}`;\n    return str;\n}",
+    "customPhraseDescJS": "getMessage();\nfunction getMessage() {\n    var str = attrs.useGrid ? \"格子坐标：\" : \"像素坐标：\";\n    if (attrs.useVar) {\n        var symbolStr = attrs.relative ? \"+\" : \"\";\n        str += symbolStr + \"[\" + attrs.x2 + \"-\" + getTypeDataListName(3, attrs.x2) + \"],\" + symbolStr + \"[\" + attrs.y2 + \"-\" + getTypeDataListName(3, attrs.y2) + \"]\";\n    }\n    else {\n        var symbolX = attrs.relative ? (attrs.x >= 0 ? \"+\" : \"\") : \"\";\n        var symbolY = attrs.relative ? (attrs.y >= 0 ? \"+\" : \"\") : \"\";\n        str += \"\" + symbolX + attrs.x + \",\" + symbolY + attrs.y;\n    }\n    str += \" \\u969C\\u788D\\u65F6\" + attrs.ifObstacleHandleModeItems[attrs.ifObstacleHandleMode];\n    return str;\n}\n"
+}

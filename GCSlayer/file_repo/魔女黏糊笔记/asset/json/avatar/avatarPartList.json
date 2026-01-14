@@ -1,0 +1,27 @@
+{
+    "list": [
+        null,
+        "头部",
+        "身体",
+        "",
+        "",
+        ""
+    ],
+    "typeTreeNode": {
+        "isDirectory": true,
+        "children": [
+            {
+                "id": 1,
+                "name": "头部",
+                "children": []
+            },
+            {
+                "id": 2,
+                "name": "身体",
+                "children": []
+            }
+        ],
+        "isOpen": true,
+        "name": "目录"
+    }
+}

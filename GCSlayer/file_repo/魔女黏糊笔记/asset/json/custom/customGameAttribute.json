@@ -1,0 +1,2540 @@
+{
+    "worldAttributeSetting": {
+        "blockList": [
+            {
+                "name": "通用设定",
+                "blockAttrs": [
+                    {
+                        "attr": {
+                            "id": "43467097620_0.8850257529395984",
+                            "varName": "游戏音乐过渡",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 33,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "",
+                            "alias": "游戏音乐过渡",
+                            "onlyConfig": false,
+                            "preview": false,
+                            "autoTitleWidth": true,
+                            "titleWidth": 100,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 10,
+                        "x": 15,
+                        "width": 240,
+                        "height": 85
+                    },
+                    {
+                        "attr": {
+                            "id": "43467523038_0.6356849720715989",
+                            "varName": "游戏角色运动规则",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 33,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "",
+                            "alias": "游戏角色运动规则",
+                            "onlyConfig": false,
+                            "preview": false,
+                            "autoTitleWidth": true,
+                            "titleWidth": 100,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 110,
+                        "x": 15,
+                        "width": 745,
+                        "height": 155
+                    },
+                    {
+                        "attr": {
+                            "id": "43468967650_0.8573215731379158",
+                            "varName": "游戏交互效果",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 33,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "",
+                            "alias": "游戏交互效果",
+                            "onlyConfig": false,
+                            "preview": false,
+                            "autoTitleWidth": true,
+                            "titleWidth": 100,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 10,
+                        "x": 265,
+                        "width": 360,
+                        "height": 85
+                    },
+                    {
+                        "attr": {
+                            "id": "43469219861_0.5741734966605827",
+                            "varName": "其他",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 33,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "",
+                            "alias": "其他",
+                            "onlyConfig": false,
+                            "preview": false,
+                            "autoTitleWidth": true,
+                            "titleWidth": 100,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 10,
+                        "x": 635,
+                        "width": 391,
+                        "height": 85
+                    },
+                    {
+                        "attr": {
+                            "id": "42012254950_0.12783834033791752",
+                            "varName": "screenMode",
+                            "varType": 0,
+                            "compData": {
+                                "compType": 2,
+                                "compParam": {
+                                    "items": "自动横屏,自动竖屏",
+                                    "showIndex": true
+                                }
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "",
+                            "alias": "移动端屏幕布局模式",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 125,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 60,
+                        "x": 645,
+                        "width": 230,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "42295332665_0.23861541319988344",
+                            "varName": "sceneBGMGradientTime",
+                            "varType": 0,
+                            "compData": {
+                                "compType": 0,
+                                "compParam": {
+                                    "lowerLimit": 0,
+                                    "upperLimit": 5,
+                                    "stepValue": 1,
+                                    "limitInteger": false,
+                                    "lockTextLimit": false,
+                                    "xDragEnabled": true,
+                                    "yDragEnabled": true
+                                }
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "进入场景时背景音乐过渡时间，单位：秒",
+                            "alias": "BGM过渡时间",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 25,
+                        "x": 25,
+                        "width": 225,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "42295337448_0.22959102591444758",
+                            "varName": "sceneBGSGradientTime",
+                            "varType": 0,
+                            "compData": {
+                                "compType": 0,
+                                "compParam": {
+                                    "lowerLimit": 0,
+                                    "upperLimit": 5,
+                                    "stepValue": 1,
+                                    "limitInteger": false,
+                                    "lockTextLimit": false,
+                                    "xDragEnabled": true,
+                                    "yDragEnabled": true
+                                }
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "进入场景时环境音效过渡时间，单位：秒",
+                            "alias": "BGS过渡时间",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 60,
+                        "x": 25,
+                        "width": 225,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "42306493942_0.07598812420095702",
+                            "varName": "moveToGridCenter",
+                            "varType": 2,
+                            "compData": {
+                                "compType": 15,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "",
+                            "alias": "移动至格子中心点",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": true,
+                            "titleWidth": 100,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 125,
+                        "x": 25,
+                        "width": 120,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "42306592374_0.08166411306379073",
+                            "varName": "moveDir4",
+                            "varType": 2,
+                            "compData": {
+                                "compType": 15,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "",
+                            "alias": "四方向移动",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": true,
+                            "titleWidth": 100,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 125,
+                        "x": 170,
+                        "width": 90,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "42306608643_0.2645382250028996",
+                            "varName": "jumpTimeCost",
+                            "varType": 0,
+                            "compData": {
+                                "compType": 0,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "场景对象执行跳跃行为所需要的时间，单位：秒",
+                            "alias": "跳跃花费的时间",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 195,
+                        "x": 25,
+                        "width": 225,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "42306618321_0.4149823779793982",
+                            "varName": "jumpHeight",
+                            "varType": 0,
+                            "compData": {
+                                "compType": 0,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "场景对象执行跳跃行为的高度",
+                            "alias": "跳跃高度",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 230,
+                        "x": 25,
+                        "width": 225,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "42308036741_0.7318661032991658",
+                            "varName": "menuEnabled",
+                            "varType": 2,
+                            "compData": {
+                                "compType": 15,
+                                "compParam": {}
+                            },
+                            "defaultValue": "1",
+                            "hideMode": true,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "",
+                            "alias": "",
+                            "onlyConfig": false,
+                            "preview": false,
+                            "autoTitleWidth": true,
+                            "titleWidth": 100,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 68,
+                        "x": 696,
+                        "width": 200,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "42453029948_0.20566758887922587",
+                            "varName": "sceneObjectCollisionSize",
+                            "varType": 0,
+                            "compData": {
+                                "compType": 0,
+                                "compParam": {
+                                    "lowerLimit": 25,
+                                    "upperLimit": 48,
+                                    "stepValue": 1,
+                                    "limitInteger": true,
+                                    "lockTextLimit": true,
+                                    "xDragEnabled": true,
+                                    "yDragEnabled": true
+                                }
+                            },
+                            "defaultValue": "32",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "以该数值作为场景对象的碰撞范围（单位：像素）。",
+                            "alias": "场景对象碰撞范围",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [
+                            {
+                                "attrID": "42306493942_0.07598812420095702",
+                                "value": false,
+                                "isExpression": false,
+                                "jsCode": null,
+                                "tsCode": null,
+                                "codeName": null
+                            }
+                        ],
+                        "y": 230,
+                        "x": 410,
+                        "width": 225,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "42457660500_0.5190649446397526",
+                            "varName": "sceneObjectMoveStartAct",
+                            "varType": 0,
+                            "compData": {
+                                "compType": 21,
+                                "compParam": {}
+                            },
+                            "defaultValue": "2",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "",
+                            "alias": "行走动作",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 160,
+                        "x": 25,
+                        "width": 350,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "42457835534_0.06904535042789939",
+                            "varName": "useSceneObjectMoveStartAct2",
+                            "varType": 2,
+                            "compData": {
+                                "compType": 15,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "",
+                            "alias": "开启奔跑动作",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": true,
+                            "titleWidth": 100,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 125,
+                        "x": 275,
+                        "width": 100,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "42457942296_0.4966058463518801",
+                            "varName": "sceneObjectMoveStartAct2Speed",
+                            "varType": 0,
+                            "compData": {
+                                "compType": 0,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "",
+                            "alias": "奔跑需要的速度",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [
+                            {
+                                "attrID": "42457835534_0.06904535042789939",
+                                "value": true,
+                                "isExpression": false,
+                                "jsCode": null,
+                                "tsCode": null,
+                                "codeName": null
+                            }
+                        ],
+                        "y": 195,
+                        "x": 410,
+                        "width": 225,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "42458036642_0.6938980647673045",
+                            "varName": "sceneObjectMoveStartAct2",
+                            "varType": 0,
+                            "compData": {
+                                "compType": 21,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "",
+                            "alias": "奔跑动作",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [
+                            {
+                                "attrID": "42457835534_0.06904535042789939",
+                                "value": true,
+                                "isExpression": false,
+                                "jsCode": null,
+                                "tsCode": null,
+                                "codeName": null
+                            }
+                        ],
+                        "y": 160,
+                        "x": 410,
+                        "width": 350,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "42480737354_0.2970739604921382",
+                            "varName": "selectSceneObjectEffect",
+                            "varType": 0,
+                            "compData": {
+                                "compType": 4,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "鼠标悬停在场景对象上时的动画显示效果",
+                            "alias": "场景对象悬停动画",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 25,
+                        "x": 275,
+                        "width": 350,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "42591509153_0.2124204663084246",
+                            "varName": "saveFileMax",
+                            "varType": 0,
+                            "compData": {
+                                "compType": 0,
+                                "compParam": {}
+                            },
+                            "defaultValue": "10",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "",
+                            "alias": "存档总数",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 25,
+                        "x": 645,
+                        "width": 225,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "42671774735_0.05250984151178795",
+                            "varName": "playCtrlEnabled",
+                            "varType": 2,
+                            "compData": {
+                                "compType": 15,
+                                "compParam": {}
+                            },
+                            "defaultValue": "1",
+                            "hideMode": true,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "",
+                            "alias": "",
+                            "onlyConfig": false,
+                            "preview": false,
+                            "autoTitleWidth": true,
+                            "titleWidth": 100,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 29,
+                        "x": 701,
+                        "width": 200,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "43123430144_0.4710125406478951",
+                            "varName": "uiCompFocusAnimation",
+                            "varType": 0,
+                            "compData": {
+                                "compType": 4,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "列表组件以及事件命名中设定的按钮焦点皮肤的动画",
+                            "alias": "界面组件焦点动画",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 60,
+                        "x": 275,
+                        "width": 350,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "43757826903_0.16418229438322918",
+                            "varName": "DEBUG",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 33,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "",
+                            "alias": "Debug",
+                            "onlyConfig": false,
+                            "preview": false,
+                            "autoTitleWidth": true,
+                            "titleWidth": 100,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 110,
+                        "x": 770,
+                        "width": 163,
+                        "height": 155
+                    },
+                    {
+                        "attr": {
+                            "id": "43757901986_0.15748459164131945",
+                            "varName": "gridObsDebug",
+                            "varType": 2,
+                            "compData": {
+                                "compType": 15,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "仅供编辑器中调试时显示",
+                            "alias": "显示地图格子障碍",
+                            "onlyConfig": false,
+                            "preview": false,
+                            "autoTitleWidth": true,
+                            "titleWidth": 100,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 130,
+                        "x": 785,
+                        "width": 123,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "43757926184_0.027412570775940726",
+                            "varName": "rectObsDebug",
+                            "varType": 2,
+                            "compData": {
+                                "compType": 15,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "仅供编辑器中调试时显示",
+                            "alias": "显示对象碰撞盒",
+                            "onlyConfig": false,
+                            "preview": false,
+                            "autoTitleWidth": true,
+                            "titleWidth": 100,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 164,
+                        "x": 785,
+                        "width": 123,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "43779634459_0.14344514733340885",
+                            "varName": "dragSceneObjectDebug",
+                            "varType": 2,
+                            "compData": {
+                                "compType": 15,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "仅供编辑器中调试时显示",
+                            "alias": "鼠标左键拖拽对象",
+                            "onlyConfig": false,
+                            "preview": false,
+                            "autoTitleWidth": true,
+                            "titleWidth": 100,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 198,
+                        "x": 785,
+                        "width": 123,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "43780991241_0.0032134715017371196",
+                            "varName": "zoomCameraDebug",
+                            "varType": 2,
+                            "compData": {
+                                "compType": 15,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "仅供编辑器中调试时显示",
+                            "alias": "滚轮缩放镜头",
+                            "onlyConfig": false,
+                            "preview": false,
+                            "autoTitleWidth": true,
+                            "titleWidth": 100,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 232,
+                        "x": 785,
+                        "width": 123,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "52245558957_0.8939484245129932",
+                            "varName": "focusEnabled",
+                            "varType": 2,
+                            "compData": {
+                                "compType": 15,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "勾选此项后按钮焦点指令才允许生效（用于显示按钮焦点效果以及键盘操作）",
+                            "alias": "使用按钮焦点",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": true,
+                            "titleWidth": 100,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 24,
+                        "x": 886,
+                        "width": 113,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "52245618319_0.5666175600726446",
+                            "varName": "hotKeyListEnabled",
+                            "varType": 2,
+                            "compData": {
+                                "compType": 15,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "",
+                            "alias": "允许按键操作列表",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": true,
+                            "titleWidth": 100,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 58,
+                        "x": 885,
+                        "width": 123,
+                        "height": 32
+                    }
+                ],
+                "blockCondition": [],
+                "blockHeight": 280,
+                "autoOrder": true
+            },
+            {
+                "name": "音效设定",
+                "blockAttrs": [
+                    {
+                        "attr": {
+                            "id": "43469533074_0.042261359523647846",
+                            "varName": "对应音效",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 33,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "",
+                            "alias": "对应音效",
+                            "onlyConfig": false,
+                            "preview": false,
+                            "autoTitleWidth": true,
+                            "titleWidth": 100
+                        },
+                        "attrConditions": [],
+                        "y": 10,
+                        "x": 15,
+                        "width": 745,
+                        "height": 120
+                    },
+                    {
+                        "attr": {
+                            "id": "42269439078_0.8769198508884288",
+                            "varName": "selectSE",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 20,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "",
+                            "alias": "光标",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150
+                        },
+                        "attrConditions": [],
+                        "y": 25,
+                        "x": 25,
+                        "width": 350,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "42269466785_0.17930978171737388",
+                            "varName": "sureSE",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 20,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "",
+                            "alias": "确定",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150
+                        },
+                        "attrConditions": [],
+                        "y": 60,
+                        "x": 25,
+                        "width": 350,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "42269533587_0.38339613826987806",
+                            "varName": "cancelSE",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 20,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "",
+                            "alias": "取消",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150
+                        },
+                        "attrConditions": [],
+                        "y": 60,
+                        "x": 410,
+                        "width": 350,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "42269540678_0.4336018167733524",
+                            "varName": "disalbeSE",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 20,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "",
+                            "alias": "禁用",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150
+                        },
+                        "attrConditions": [],
+                        "y": 25,
+                        "x": 410,
+                        "width": 350,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "42271758530_0.7431981579975797",
+                            "varName": "dialogSE",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 20,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "",
+                            "alias": "对话音效",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150
+                        },
+                        "attrConditions": [],
+                        "y": 95,
+                        "x": 25,
+                        "width": 350,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "43777896575_0.8335875074897949",
+                            "varName": "dialogSEEnabled",
+                            "varType": 2,
+                            "compData": {
+                                "compType": 0,
+                                "compParam": {}
+                            },
+                            "defaultValue": "1",
+                            "hideMode": true,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "",
+                            "alias": "",
+                            "onlyConfig": false,
+                            "preview": false,
+                            "autoTitleWidth": true,
+                            "titleWidth": 100
+                        },
+                        "attrConditions": [],
+                        "y": 56,
+                        "x": 779,
+                        "width": 200,
+                        "height": 32
+                    }
+                ],
+                "blockCondition": [],
+                "blockHeight": 145,
+                "autoOrder": true
+            },
+            {
+                "name": "启动事件",
+                "blockAttrs": [
+                    {
+                        "attr": {
+                            "id": "43471118825_0.8257683108020604",
+                            "varName": "游戏启动事件处理",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 33,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "",
+                            "alias": "游戏启动事件处理",
+                            "onlyConfig": false,
+                            "preview": false,
+                            "autoTitleWidth": true,
+                            "titleWidth": 100,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 10,
+                        "x": 15,
+                        "width": 745,
+                        "height": 85
+                    },
+                    {
+                        "attr": {
+                            "id": "42273816712_0.5335197803713911",
+                            "varName": "startupEvent",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 35,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "游戏程序最初启动时的事件处理，此时还未开启新游戏或读取存档。",
+                            "alias": "游戏启动时处理",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 25,
+                        "x": 25,
+                        "width": 350,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "42294721943_0.7793788818197915",
+                            "varName": "newGameStartEvent",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 35,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "当进入新游戏时执行的事件处理",
+                            "alias": "新游戏开始时处理",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 60,
+                        "x": 25,
+                        "width": 350,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "42294785252_0.8665173312450589",
+                            "varName": "newGameEndEvent",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 35,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "当进入新游戏完成后执行的事件处理",
+                            "alias": "新游戏完成时处理",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 60,
+                        "x": 410,
+                        "width": 350,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "52368602837_0.6886167186246284",
+                            "varName": "gameInitEvent",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 35,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "首次登入游戏场景后执行的一次性事件（无论通过新游戏或读取存档时都会调用）",
+                            "alias": "游戏初始化处理",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 22,
+                        "x": 410,
+                        "width": 350,
+                        "height": 32
+                    }
+                ],
+                "blockCondition": [],
+                "blockHeight": 110,
+                "autoOrder": true
+            },
+            {
+                "name": "档案事件",
+                "blockAttrs": [
+                    {
+                        "attr": {
+                            "id": "43471568343_0.6411536056913818",
+                            "varName": "存取档相关事件处理",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 33,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "",
+                            "alias": "存取档相关事件处理",
+                            "onlyConfig": false,
+                            "preview": false,
+                            "autoTitleWidth": true,
+                            "titleWidth": 100,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 10,
+                        "x": 15,
+                        "width": 1130,
+                        "height": 85
+                    },
+                    {
+                        "attr": {
+                            "id": "42608300477_0.44219910124695283",
+                            "varName": "loadGameStartEvent",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 35,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "当读取存档时的事件处理",
+                            "alias": "读取存档开始时处理",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 25,
+                        "x": 25,
+                        "width": 350,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "42608300477_0.24748764008895652",
+                            "varName": "loadGameEndEvent",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 35,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "当载入档案完成时的事件处理",
+                            "alias": "读取存档完成时处理",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 25,
+                        "x": 410,
+                        "width": 350,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "42608300477_0.525465105158978",
+                            "varName": "loadGameFailEvent",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 35,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "当读取存档失败时的事件处理",
+                            "alias": "读档失败时处理",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 25,
+                        "x": 795,
+                        "width": 350,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "42608300477_0.8571043474163673",
+                            "varName": "saveSuccessEvent",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 35,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "当存档成功后的事件处理",
+                            "alias": "存档成功时处理",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 60,
+                        "x": 25,
+                        "width": 350,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "42608300477_0.3544656072367445",
+                            "varName": "saveFailEvent",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 35,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "当存档失败时的事件处理",
+                            "alias": "存档失败时处理",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 59,
+                        "x": 410,
+                        "width": 350,
+                        "height": 32
+                    }
+                ],
+                "blockCondition": [],
+                "blockHeight": 110,
+                "autoOrder": true
+            },
+            {
+                "name": "切换场景事件",
+                "blockAttrs": [
+                    {
+                        "attr": {
+                            "id": "43472519134_0.4767217239664532",
+                            "varName": "场景事件处理",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 33,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "",
+                            "alias": "场景事件处理",
+                            "onlyConfig": false,
+                            "preview": false,
+                            "autoTitleWidth": true,
+                            "titleWidth": 100,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 10,
+                        "x": 15,
+                        "width": 745,
+                        "height": 50
+                    },
+                    {
+                        "attr": {
+                            "id": "42298874977_0.7432011625177233",
+                            "varName": "inSceneLoadCompleteEvent",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 35,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "当更换场景时进入到新场景后的事件处理",
+                            "alias": "进入场景时事件",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 25,
+                        "x": 25,
+                        "width": 350,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "42298874977_0.7049999063885009",
+                            "varName": "leaveSceneEvent",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 35,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "当更换场景时即将进入新场景前的事件处理",
+                            "alias": "离开场景时事件",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 25,
+                        "x": 410,
+                        "width": 350,
+                        "height": 32
+                    }
+                ],
+                "blockCondition": [],
+                "blockHeight": 75,
+                "autoOrder": true
+            },
+            {
+                "name": "其他事件",
+                "blockAttrs": [
+                    {
+                        "attr": {
+                            "id": "52368212177_0.609691693030707",
+                            "varName": "执行事件前通用处理",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 33,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "",
+                            "alias": "执行场景对象事件前通用处理",
+                            "onlyConfig": false,
+                            "preview": false,
+                            "autoTitleWidth": true,
+                            "titleWidth": 100,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 12,
+                        "x": 12,
+                        "width": 760,
+                        "height": 119
+                    },
+                    {
+                        "attr": {
+                            "id": "52368212178_0.2006219751282352",
+                            "varName": "beforeSceneObjectClickHandle",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 35,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "当调用任意场景对象的「点击事件」前会优先执行该事件\\n触发者：玩家  执行者：被点击的场景对象",
+                            "alias": "调用「点击事件」前的处理",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 37,
+                        "x": 22,
+                        "width": 350,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "52368472985_0.08854729762958469",
+                            "varName": "beforeSceneObjectTouchHandle",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 35,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "当调用任意场景对象的「触碰事件」前会优先执行该事件\\n触发者：碰触者  执行者：被碰触者",
+                            "alias": "调用「碰触事件」前的处理",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 37,
+                        "x": 400,
+                        "width": 350,
+                        "height": 32
+                    },
+                    {
+                        "attr": {
+                            "id": "52370636763_0.8212973799858032",
+                            "varName": "beforePlaySceneObjectBehaviorHandle1",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 35,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "当调用任意场景对象的「点击事件」前会优先执行该事件",
+                            "alias": "设置玩家对象行为前的处理",
+                            "onlyConfig": true,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150,
+                            "eyeShow": true,
+                            "lockBlock": false
+                        },
+                        "attrConditions": [],
+                        "y": 82,
+                        "x": 22,
+                        "width": 350,
+                        "height": 32
+                    }
+                ],
+                "blockCondition": [],
+                "blockHeight": 160,
+                "autoOrder": true
+            }
+        ],
+        "compAutoOrderLimitHeight": 0
+    },
+    "playerAttributeSetting": {
+        "blockList": [
+            {
+                "name": "玩家属性",
+                "blockAttrs": [
+                    {
+                        "attr": {
+                            "id": "43472888485_0.8106072766546661",
+                            "varName": "未命名变量",
+                            "varType": 1,
+                            "compData": {
+                                "compType": 33,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "",
+                            "alias": "玩家初始携带",
+                            "onlyConfig": false,
+                            "preview": false,
+                            "autoTitleWidth": true,
+                            "titleWidth": 100
+                        },
+                        "attrConditions": [],
+                        "y": 10,
+                        "x": 15,
+                        "width": 700,
+                        "height": 335
+                    },
+                    {
+                        "attr": {
+                            "id": "42007684431_0.6822505733666104",
+                            "varName": "package",
+                            "varType": 3,
+                            "compData": {
+                                "compType": 1003,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": true,
+                            "moduleID": 1,
+                            "dataStructureID": 2,
+                            "arrayMode": true,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "更改此项会影响游戏初始时玩家拥有的道具",
+                            "alias": "背包",
+                            "onlyConfig": false,
+                            "preview": false,
+                            "autoTitleWidth": true,
+                            "titleWidth": 100
+                        },
+                        "attrConditions": [],
+                        "y": 60,
+                        "x": 25,
+                        "width": 680,
+                        "height": 278
+                    },
+                    {
+                        "attr": {
+                            "id": "42608707062_0.6402298747689728",
+                            "varName": "gold",
+                            "varType": 0,
+                            "compData": {
+                                "compType": 0,
+                                "compParam": {}
+                            },
+                            "defaultValue": "",
+                            "hideMode": false,
+                            "useCommand": false,
+                            "onlyPointTo": false,
+                            "moduleID": 1,
+                            "dataStructureID": 1,
+                            "arrayMode": false,
+                            "arrayLength": 100,
+                            "arrayAllowDelete": false,
+                            "arrayAllowSwap": false,
+                            "arrayAllowUpdate": false,
+                            "accessMode": 1,
+                            "syncMode": 0,
+                            "attrTips": "更改此项会影响游戏初始时玩家拥有的金币",
+                            "alias": "金币",
+                            "onlyConfig": false,
+                            "preview": false,
+                            "autoTitleWidth": false,
+                            "titleWidth": 150
+                        },
+                        "attrConditions": [],
+                        "y": 25,
+                        "x": 25,
+                        "width": 225,
+                        "height": 32
+                    }
+                ],
+                "blockCondition": [],
+                "blockHeight": 360,
+                "autoOrder": true
+            }
+        ]
+    },
+    "worldAttributeConfig": {
+        "attrs": {
+            "screenMode": {
+                "varType": 0,
+                "value": 0,
+                "copy": false
+            },
+            "selectSE": {
+                "varType": 1,
+                "value": "asset/audio/se/menu/Down.mp3,1,1",
+                "copy": false,
+                "volume": "1",
+                "pitch": "1"
+            },
+            "sureSE": {
+                "varType": 1,
+                "value": "asset/audio/se/menu/Confirm_Whether.mp3,1,1.2",
+                "copy": false,
+                "volume": "1",
+                "pitch": "1.2"
+            },
+            "cancelSE": {
+                "varType": 1,
+                "value": "asset/audio/se/menu/Return_Left.mp3,1,1",
+                "copy": false,
+                "volume": "1",
+                "pitch": "1"
+            },
+            "disalbeSE": {
+                "varType": 1,
+                "value": "asset/audio/se/menu/Disable_1.mp3,1,1.5",
+                "copy": false,
+                "volume": "1",
+                "pitch": "1.5"
+            },
+            "dialogSE": {
+                "varType": 1,
+                "value": "asset/audio/se/menu/Up.mp3,1,1.5",
+                "copy": false,
+                "volume": "1",
+                "pitch": "1.5"
+            },
+            "startupEvent": {
+                "varType": 1,
+                "value": "进入标题界面\u000576369102292_0.08072245778970433\u0005[[10001,{\"42010122135_0.24848401267879283\":[{\"assetType\":5,\"asset0\":\"\",\"asset1\":\"\",\"asset2\":0,\"asset3\":0,\"asset4\":0,\"asset5\":1,\"asset6\":0,\"assetTypeItems\":[\"图片\",\"音频\",\"行走图\",\"立绘\",\"动画\",\"界面\",\"对话框样式\",\"预设字体\"]},{\"assetType\":5,\"asset0\":\"\",\"asset1\":\"\",\"asset2\":0,\"asset3\":0,\"asset4\":0,\"asset5\":2,\"asset6\":0,\"assetTypeItems\":[\"图片\",\"音频\",\"行走图\",\"立绘\",\"动画\",\"界面\",\"对话框样式\",\"预设字体\"]}],\"42275874449_0.28161324216600425\":true,\"42275552693_0.09151993166059103\":\"loadingComp\",\"42275565858_0.9925963744814135\":\"value\",\"42275863488_0.8715139966044176\":2001},\"51698039731_0.852635235487206\"],[40010,{\"49809728719_0.046619702255007\":0,\"24538808102_0.9970934946254328\":1,\"49612012650_0.7509974095572418\":1,\"24538808435_0.6230939565765392\":1,\"49518385245_0.9308839798952664\":1,\"50689082740_0.526404642451832\":false,\"49141521249_0.2965750598394892\":0,\"49519573910_0.08853124862540018\":1,\"49141521416_0.0884961804795068\":0,\"49519590084_0.3058131165318816\":1,\"49150249927_0.6881795527970145\":100,\"49519636189_0.2521948025226537\":1,\"49232462793_0.7622411974016037\":1,\"49520636693_0.8404154506260593\":1,\"49232464582_0.12430969584603324\":1,\"49520744730_0.6026838995761481\":1,\"49232999716_0.2133484967243402\":0,\"49520812848_0.5734967173507821\":1,\"49234813142_0.3142568229981375\":1,\"49520873912_0.5927053372462527\":1,\"49599648354_0.3738368266485066\":false,\"49518248081_0.4367396293869368\":false,\"49599660535_0.0823572381286597\":1,\"49518318443_0.5988810162565685\":false,\"49519399740_0.07229930251623617\":false,\"49519436070_0.9418611019894294\":false,\"49519475735_0.9428268094401824\":false,\"49519529748_0.519982170810438\":false,\"49520771123_0.27311479097864666\":false,\"49611947752_0.41521729946538755\":false},\"51698050502_0.2454929751118553\"],[10006,{\"43116786368_0.23178410671608396\":1,\"43117015271_0.2081558338356242\":0,\"43116889650_0.018569816468136047\":0,\"43117085030_0.4123983693617099\":true,\"43117219727_0.38599060748568337\":false,\"43117233536_0.8263175172410291\":false,\"43117582494_0.7141452782530264\":[],\"43117822585_0.22839272131408905\":[],\"43122778565_0.23059761478282237\":1008,\"43123033690_0.3095368621419785\":true,\"43180391950_0.9875223532686348\":false,\"57603068825_0.9125473096569985\":false,\"57603068825_0.5581866770833697\":\"\"},\"51698039731_0.31700714081838255\"],[60001,{\"74577032484_0.13493609495640202\":\"asset/audio/bgm/Outskirts.mp3,0.5,1\",\"74578579319_0.15291120828407134\":1,\"74577096874_0.3591907761287778\":0,\"74578604912_0.9929207213758935\":1,\"74578368784_0.14741385337394952\":false,\"74578437868_0.8072901569041822\":false,\"74578505525_0.42967771881669203\":false},\"75291341266_0.20000300458502096\"],[18,\"//------------------------------------------------------------------------------------------------------\\n// 开始界面快捷键和右键支持\\n//------------------------------------------------------------------------------------------------------\",{\"___cmdID\":\"51698039731_0.8041055825945063\"}],[10003,{\"42612293498_0.480752728811654\":0,\"43114340537_0.8908961983320582\":2,\"51692867073_0.6443640385999863\":false,\"43114858493_0.09543223886965402\":27,\"57883028646_0.2982354273966177\":5,\"43114858493_0.3171744305791697\":0,\"43114873548_0.23450080376522942\":0,\"43114653398_0.8881147052471978\":[],\"57883649884_0.7324924597224358\":[],\"43116389200_0.5571849278665717\":false,\"43116402659_0.5042655137768752\":false,\"43116419156_0.632745028317159\":false,\"42612627174_0.578758902506004\":\"标题界面中关闭读档界面\\u000576369090625_0.9716740319607733\\u0005[[0,6,0,[0,1,1,0],0,0,[0,1,1,0],0,[1,1,[0,0]],0,0,[1,1],\\\"\\\",\\\"\\\",false,null,[6,{\\\"type\\\":3},[{\\\"42662223132_0.13407162179315324\\\":3}]],{\\\"___cmdID\\\":\\\"57933905910_0.2720534938054031\\\"}],[14,{\\\"___cmdID\\\":\\\"57933905910_0.9856853845320355\\\"}],[2,{\\\"___cmdID\\\":\\\"57933905910_0.36405085248884217\\\"}],[0,5,0,[0,1,1,0],0,0,[0,1,1,0],0,[1,1,[0,0]],0,0,[1,1],\\\"\\\",\\\"\\\",false,null,[5,{\\\"checkType\\\":0,\\\"uiIDVarID\\\":0,\\\"uiID\\\":1,\\\"useVarID\\\":0,\\\"type\\\":2,\\\"uiComp\\\":{}},[{\\\"57871204508_0.904356098854173\\\":0,\\\"42668749327_0.5044332572445289\\\":0,\\\"42662223132_0.13407162179315324\\\":1,\\\"42668749764_0.405507816846465\\\":0,\\\"42668805260_0.7826262589690147\\\":2,\\\"57871484099_0.3561053140619097\\\":{}}]],null,null,null,null,0,0,[0,{},\\\"\\\"],[0,{},\\\"\\\"],{\\\"___cmdID\\\":\\\"57933905910_0.682298310007851\\\"}],[0,5,0,[0,1,1,0],0,0,[0,1,1,0],0,[1,1,[0,0]],0,0,[1,1],\\\"\\\",\\\"\\\",false,null,[5,{\\\"checkType\\\":0,\\\"uiIDVarID\\\":0,\\\"uiID\\\":2,\\\"useVarID\\\":0,\\\"type\\\":2,\\\"uiComp\\\":{}},[{\\\"57871204508_0.904356098854173\\\":0,\\\"42668749327_0.5044332572445289\\\":0,\\\"42662223132_0.13407162179315324\\\":2,\\\"42668749764_0.405507816846465\\\":0,\\\"42668805260_0.7826262589690147\\\":2,\\\"57871484099_0.3561053140619097\\\":{}}]],null,null,null,null,0,0,[0,{},\\\"\\\"],[0,{},\\\"\\\"],{\\\"___cmdID\\\":\\\"57933905910_0.3107028883299938\\\"}],[60005,{\\\"74577032484_0.13493609495640202\\\":\\\"asset/audio/se/menu/Up.mp3,1,0.75\\\",\\\"74578579319_0.15291120828407134\\\":1,\\\"74587606222_0.5579985331498136\\\":false,\\\"74587987674_0.5977703161602927\\\":false},\\\"76369084878_0.8390774926396067\\\"],[73,2,{\\\"___cmdID\\\":\\\"57933905910_0.14771463005722896\\\"}],[10006,{\\\"43116786368_0.23178410671608396\\\":1,\\\"43117015271_0.2081558338356242\\\":0,\\\"43116889650_0.018569816468136047\\\":0,\\\"43117085030_0.4123983693617099\\\":true,\\\"43117219727_0.38599060748568337\\\":false,\\\"43117233536_0.8263175172410291\\\":false,\\\"43117582494_0.7141452782530264\\\":[],\\\"43117822585_0.22839272131408905\\\":[],\\\"43122778565_0.23059761478282237\\\":1008,\\\"43123033690_0.3095368621419785\\\":true,\\\"57900429419_0.2996340688410737\\\":false,\\\"57900444568_0.6265545155866081\\\":0,\\\"43180391950_0.9875223532686348\\\":false,\\\"57603068825_0.9125473096569985\\\":false,\\\"57603068825_0.5581866770833697\\\":\\\"\\\"},\\\"57933905910_0.6293442016630666\\\"],[2,{\\\"___cmdID\\\":\\\"57933905910_0.9596727422345839\\\"}],[2,{\\\"___cmdID\\\":\\\"57933905910_0.2673199255342611\\\"}]]\",\"51693260347_0.8762158613518642\":1},\"51698039731_0.7556443315514207\"],[10004,{\"42616483455_0.4639772550758601\":0,\"42616489134_0.7730466615484748\":4,\"42616655343_0.8231014458198378\":\"标题界面中关闭读档界面\\u000576369097858_0.3093553555395194\\u0005[[0,6,0,[0,1,1,0],0,0,[0,1,1,0],0,[1,1,[0,0]],0,0,[1,1],\\\"\\\",\\\"\\\",false,null,[6,{\\\"type\\\":3},[{\\\"42662223132_0.13407162179315324\\\":3}]],{\\\"___cmdID\\\":\\\"57933912639_0.3711328452304137\\\"}],[14,{\\\"___cmdID\\\":\\\"57933912639_0.0712560446274606\\\"}],[2,{\\\"___cmdID\\\":\\\"57933912639_0.22070258355331562\\\"}],[0,5,0,[0,1,1,0],0,0,[0,1,1,0],0,[1,1,[0,0]],0,0,[1,1],\\\"\\\",\\\"\\\",false,null,[5,{\\\"checkType\\\":0,\\\"uiIDVarID\\\":0,\\\"uiID\\\":1,\\\"useVarID\\\":0,\\\"type\\\":2,\\\"uiComp\\\":{}},[{\\\"57871204508_0.904356098854173\\\":0,\\\"42668749327_0.5044332572445289\\\":0,\\\"42662223132_0.13407162179315324\\\":1,\\\"42668749764_0.405507816846465\\\":0,\\\"42668805260_0.7826262589690147\\\":2,\\\"57871484099_0.3561053140619097\\\":{}}]],null,null,null,null,0,0,[0,{},\\\"\\\"],[0,{},\\\"\\\"],{\\\"___cmdID\\\":\\\"57933912639_0.5472361623935633\\\"}],[0,5,0,[0,1,1,0],0,0,[0,1,1,0],0,[1,1,[0,0]],0,0,[1,1],\\\"\\\",\\\"\\\",false,null,[5,{\\\"checkType\\\":0,\\\"uiIDVarID\\\":0,\\\"uiID\\\":2,\\\"useVarID\\\":0,\\\"type\\\":2,\\\"uiComp\\\":{}},[{\\\"57871204508_0.904356098854173\\\":0,\\\"42668749327_0.5044332572445289\\\":0,\\\"42662223132_0.13407162179315324\\\":2,\\\"42668749764_0.405507816846465\\\":0,\\\"42668805260_0.7826262589690147\\\":2,\\\"57871484099_0.3561053140619097\\\":{}}]],null,null,null,null,0,0,[0,{},\\\"\\\"],[0,{},\\\"\\\"],{\\\"___cmdID\\\":\\\"57933912639_0.45956859076669465\\\"}],[73,2,{\\\"___cmdID\\\":\\\"57933912639_0.4277537559116462\\\"}],[60005,{\\\"74577032484_0.13493609495640202\\\":\\\"asset/audio/se/menu/Up.mp3,1,0.75\\\",\\\"74578579319_0.15291120828407134\\\":1,\\\"74587606222_0.5579985331498136\\\":false,\\\"74587987674_0.5977703161602927\\\":false},\\\"76369095802_0.33488328204941453\\\"],[10006,{\\\"43116786368_0.23178410671608396\\\":1,\\\"43117015271_0.2081558338356242\\\":0,\\\"43116889650_0.018569816468136047\\\":0,\\\"43117085030_0.4123983693617099\\\":true,\\\"43117219727_0.38599060748568337\\\":false,\\\"43117233536_0.8263175172410291\\\":false,\\\"43117582494_0.7141452782530264\\\":[],\\\"43117822585_0.22839272131408905\\\":[],\\\"43122778565_0.23059761478282237\\\":1008,\\\"43123033690_0.3095368621419785\\\":true,\\\"57900429419_0.2996340688410737\\\":false,\\\"57900444568_0.6265545155866081\\\":0,\\\"43180391950_0.9875223532686348\\\":false,\\\"57603068825_0.9125473096569985\\\":false,\\\"57603068825_0.5581866770833697\\\":\\\"\\\"},\\\"57933912639_0.8434847941484858\\\"],[2,{\\\"___cmdID\\\":\\\"57933912639_0.08195366884810573\\\"}],[2,{\\\"___cmdID\\\":\\\"57933912639_0.35732109492062336\\\"}]]\",\"42875522865_0.10960228539938566\":false,\"51693487585_0.29766152907542853\":false,\"51693539518_0.7462589003893905\":1},\"51698039731_0.13582374827350274\"]]",
+                "copy": false
+            },
+            "newGameStartEvent": {
+                "varType": 1,
+                "value": "游戏开始载入效果\u000557962834114_0.3484395542580596\u0005[[40011,{\"49816072304_0.03131954665076897\":0,\"24538808102_0.9970934946254328\":1,\"49612329479_0.7433565589142674\":1,\"49819012242_0.02527395671440269\":1,\"49819012242_0.4964322333365434\":1,\"49541474395_0.999063634948089\":1,\"49541474395_0.4302897217422976\":10,\"49541474396_0.5364167299087121\":\"{\\\"transType\\\":0,\\\"loopType\\\":0,\\\"timeType\\\":0,\\\"timeUnit\\\":1,\\\"totalTime\\\":2,\\\"tweenType\\\":11,\\\"tweenTypeName\\\":\\\"strongOut\\\",\\\"curveData\\\":[[0,0,0,99,1,1,1,3],[0,100,100]],\\\"refreshInterval\\\":16}\",\"49141521249_0.2965750598394892\":0,\"49519573910_0.08853124862540018\":1,\"49141521416_0.0884961804795068\":0,\"49519590084_0.3058131165318816\":1,\"49150249927_0.6881795527970145\":100,\"49519636189_0.2521948025226537\":1,\"49232462793_0.7622411974016037\":1,\"49520636693_0.8404154506260593\":1,\"49232464582_0.12430969584603324\":1,\"49520744730_0.6026838995761481\":1,\"49232999716_0.2133484967243402\":0,\"49520812848_0.5734967173507821\":1,\"49234813142_0.3142568229981375\":0,\"49520873912_0.5927053372462527\":1,\"49594771755_0.963684096315716\":false,\"49518248081_0.4367396293869368\":false,\"49595153167_0.8002073773406164\":0,\"49519399740_0.07229930251623617\":false,\"49519436070_0.9418611019894294\":false,\"49519475735_0.9428268094401824\":false,\"49519529748_0.519982170810438\":false,\"49520771123_0.27311479097864666\":false,\"49612315725_0.0667574286485002\":false,\"49819116159_0.3898830536514881\":false},\"51698211076_0.10795013559384659\"],[17,10,0,false,{\"___cmdID\":\"51698234836_0.3535704248314895\"}],[40012,{\"49821564836_0.18023666032094843\":0,\"49821564836_0.05613902618903355\":1000001,\"49821564836_0.6578043100778947\":1,\"49821564836_0.7286666716958285\":1,\"49821564836_0.40792780858788147\":1,\"49821586470_0.8966191069628267\":false,\"49821586470_0.5086891336665356\":false},\"51698269447_0.21892624985061815\"],[40010,{\"49809728719_0.046619702255007\":0,\"24538808102_0.9970934946254328\":1,\"49612012650_0.7509974095572418\":1,\"24538808435_0.6230939565765392\":2002,\"49518385245_0.9308839798952664\":1,\"50689082740_0.526404642451832\":true,\"49141521249_0.2965750598394892\":0,\"49519573910_0.08853124862540018\":1,\"49141521416_0.0884961804795068\":0,\"49519590084_0.3058131165318816\":1,\"49150249927_0.6881795527970145\":100,\"49519636189_0.2521948025226537\":1,\"49232462793_0.7622411974016037\":1,\"49520636693_0.8404154506260593\":1,\"49232464582_0.12430969584603324\":1,\"49520744730_0.6026838995761481\":1,\"49232999716_0.2133484967243402\":0,\"49520812848_0.5734967173507821\":1,\"49234813142_0.3142568229981375\":0,\"49520873912_0.5927053372462527\":1,\"49599648354_0.3738368266485066\":false,\"49518248081_0.4367396293869368\":false,\"49599660535_0.0823572381286597\":1,\"49518318443_0.5988810162565685\":false,\"49519399740_0.07229930251623617\":false,\"49519436070_0.9418611019894294\":false,\"49519475735_0.9428268094401824\":false,\"49519529748_0.519982170810438\":false,\"49520771123_0.27311479097864666\":false,\"49611947752_0.41521729946538755\":false},\"51698444243_0.5818481179904431\"],[40011,{\"49816072304_0.03131954665076897\":0,\"24538808102_0.9970934946254328\":1,\"49612329479_0.7433565589142674\":1,\"49819012242_0.02527395671440269\":2002,\"49819012242_0.4964322333365434\":1,\"49541474395_0.999063634948089\":1,\"49541474395_0.4302897217422976\":10,\"49541474396_0.5364167299087121\":\"\",\"49141521249_0.2965750598394892\":0,\"49519573910_0.08853124862540018\":1,\"49141521416_0.0884961804795068\":0,\"49519590084_0.3058131165318816\":1,\"49150249927_0.6881795527970145\":100,\"49519636189_0.2521948025226537\":1,\"49232462793_0.7622411974016037\":1,\"49520636693_0.8404154506260593\":1,\"49232464582_0.12430969584603324\":1,\"49520744730_0.6026838995761481\":1,\"49232999716_0.2133484967243402\":0,\"49520812848_0.5734967173507821\":1,\"49234813142_0.3142568229981375\":1,\"49520873912_0.5927053372462527\":1,\"49594771755_0.963684096315716\":false,\"49518248081_0.4367396293869368\":false,\"49595153167_0.8002073773406164\":0,\"49519399740_0.07229930251623617\":false,\"49519436070_0.9418611019894294\":false,\"49519475735_0.9428268094401824\":false,\"49519529748_0.519982170810438\":false,\"49520771123_0.27311479097864666\":false,\"49612315725_0.0667574286485002\":false,\"49819116159_0.3898830536514881\":false},\"51698397092_0.022400045666211454\"],[17,10,0,false,{\"___cmdID\":\"51698453284_0.5128948570755503\"}]]",
+                "copy": false
+            },
+            "newGameEndEvent": {
+                "varType": 1,
+                "value": "新游戏载入完成事件\u000557962842468_0.7474995876936688\u0005[[40011,{\"49816072304_0.03131954665076897\":0,\"24538808102_0.9970934946254328\":1,\"49612329479_0.7433565589142674\":1,\"49819012242_0.02527395671440269\":2002,\"49819012242_0.4964322333365434\":1,\"49541474395_0.999063634948089\":1,\"49541474395_0.4302897217422976\":10,\"49541474396_0.5364167299087121\":\"\",\"49141521249_0.2965750598394892\":0,\"49519573910_0.08853124862540018\":1,\"49141521416_0.0884961804795068\":0,\"49519590084_0.3058131165318816\":1,\"49150249927_0.6881795527970145\":100,\"49519636189_0.2521948025226537\":1,\"49232462793_0.7622411974016037\":1,\"49520636693_0.8404154506260593\":1,\"49232464582_0.12430969584603324\":1,\"49520744730_0.6026838995761481\":1,\"49232999716_0.2133484967243402\":0,\"49520812848_0.5734967173507821\":1,\"49234813142_0.3142568229981375\":0,\"49520873912_0.5927053372462527\":1,\"49594771755_0.963684096315716\":false,\"49518248081_0.4367396293869368\":false,\"49595153167_0.8002073773406164\":0,\"49519399740_0.07229930251623617\":false,\"49519436070_0.9418611019894294\":false,\"49519475735_0.9428268094401824\":false,\"49519529748_0.519982170810438\":false,\"49520771123_0.27311479097864666\":false,\"49612315725_0.0667574286485002\":false,\"49819116159_0.3898830536514881\":false},\"51698478688_0.9609336236908401\"],[15,\"关闭新游戏载入界面\",true,[[17,10,0,false,{\"___cmdID\":\"57512118724_0.24215836334136864\"}],[40012,{\"49821564836_0.18023666032094843\":0,\"49821564836_0.05613902618903355\":1002002,\"49821564836_0.6578043100778947\":1,\"49821564836_0.7286666716958285\":2002,\"49821564836_0.40792780858788147\":1,\"49821586470_0.8966191069628267\":false,\"49821586470_0.5086891336665356\":false},\"57512118724_0.09084585335272855\"]],\"57512113585_0.9527506642064267\",{\"___cmdID\":\"57512113585_0.6349808309815608\"}]]",
+                "copy": false
+            },
+            "loadGameStartEvent": {
+                "varType": 1,
+                "value": "读档开始载入效果\u000557962853951_0.8443398707820655\u0005[[40011,{\"49816072304_0.03131954665076897\":0,\"24538808102_0.9970934946254328\":1,\"49612329479_0.7433565589142674\":1,\"49819012242_0.02527395671440269\":2,\"49819012242_0.4964322333365434\":1,\"49541474395_0.999063634948089\":1,\"49541474395_0.4302897217422976\":30,\"49541474396_0.5364167299087121\":\"{\\\"transType\\\":1,\\\"loopType\\\":0,\\\"timeType\\\":0,\\\"timeUnit\\\":1,\\\"totalTime\\\":2,\\\"tweenType\\\":11,\\\"tweenTypeName\\\":\\\"strongOut\\\",\\\"curveData\\\":[[0,0,0,99,1,1,1,3],[0,100,100]],\\\"refreshInterval\\\":16}\",\"49141521249_0.2965750598394892\":0,\"49519573910_0.08853124862540018\":1,\"49141521416_0.0884961804795068\":-720,\"49519590084_0.3058131165318816\":1,\"49150249927_0.6881795527970145\":100,\"49519636189_0.2521948025226537\":1,\"49232462793_0.7622411974016037\":1,\"49520636693_0.8404154506260593\":1,\"49232464582_0.12430969584603324\":1,\"49520744730_0.6026838995761481\":1,\"49232999716_0.2133484967243402\":0,\"49520812848_0.5734967173507821\":1,\"49234813142_0.3142568229981375\":1,\"49520873912_0.5927053372462527\":1,\"49594771755_0.963684096315716\":false,\"49518248081_0.4367396293869368\":false,\"49595153167_0.8002073773406164\":0,\"49519399740_0.07229930251623617\":false,\"49519436070_0.9418611019894294\":false,\"49519475735_0.9428268094401824\":false,\"49519529748_0.519982170810438\":false,\"49520771123_0.27311479097864666\":false,\"49612315725_0.0667574286485002\":false,\"49819116159_0.3898830536514881\":false},\"51698777785_0.2918108284756542\"],[17,15,0,false,{\"___cmdID\":\"51698794116_0.7302771470883813\"}],[40011,{\"49816072304_0.03131954665076897\":0,\"24538808102_0.9970934946254328\":1,\"49612329479_0.7433565589142674\":1,\"49819012242_0.02527395671440269\":1,\"49819012242_0.4964322333365434\":1,\"49541474395_0.999063634948089\":1,\"49541474395_0.4302897217422976\":30,\"49541474396_0.5364167299087121\":\"\",\"49141521249_0.2965750598394892\":0,\"49519573910_0.08853124862540018\":1,\"49141521416_0.0884961804795068\":0,\"49519590084_0.3058131165318816\":1,\"49150249927_0.6881795527970145\":100,\"49519636189_0.2521948025226537\":1,\"49232462793_0.7622411974016037\":1,\"49520636693_0.8404154506260593\":1,\"49232464582_0.12430969584603324\":1,\"49520744730_0.6026838995761481\":1,\"49232999716_0.2133484967243402\":0,\"49520812848_0.5734967173507821\":1,\"49234813142_0.3142568229981375\":0,\"49520873912_0.5927053372462527\":1,\"49594771755_0.963684096315716\":false,\"49518248081_0.4367396293869368\":false,\"49595153167_0.8002073773406164\":0,\"49519399740_0.07229930251623617\":false,\"49519436070_0.9418611019894294\":false,\"49519475735_0.9428268094401824\":false,\"49519529748_0.519982170810438\":false,\"49520771123_0.27311479097864666\":false,\"49612315725_0.0667574286485002\":false,\"49819116159_0.3898830536514881\":false},\"51698805443_0.02305654875537\"],[40010,{\"49809728719_0.046619702255007\":0,\"24538808102_0.9970934946254328\":1,\"49612012650_0.7509974095572418\":1,\"24538808435_0.6230939565765392\":2003,\"49518385245_0.9308839798952664\":1,\"50689082740_0.526404642451832\":true,\"49141521249_0.2965750598394892\":0,\"49519573910_0.08853124862540018\":1,\"49141521416_0.0884961804795068\":0,\"49519590084_0.3058131165318816\":1,\"49150249927_0.6881795527970145\":100,\"49519636189_0.2521948025226537\":1,\"49232462793_0.7622411974016037\":1,\"49520636693_0.8404154506260593\":1,\"49232464582_0.12430969584603324\":1,\"49520744730_0.6026838995761481\":1,\"49232999716_0.2133484967243402\":0,\"49520812848_0.5734967173507821\":1,\"49234813142_0.3142568229981375\":0,\"49520873912_0.5927053372462527\":1,\"49599648354_0.3738368266485066\":false,\"49518248081_0.4367396293869368\":false,\"49599660535_0.0823572381286597\":1,\"49518318443_0.5988810162565685\":false,\"49519399740_0.07229930251623617\":false,\"49519436070_0.9418611019894294\":false,\"49519475735_0.9428268094401824\":false,\"49519529748_0.519982170810438\":false,\"49520771123_0.27311479097864666\":false,\"49611947752_0.41521729946538755\":false},\"51698832732_0.09347914137487656\"],[40011,{\"49816072304_0.03131954665076897\":0,\"24538808102_0.9970934946254328\":1,\"49612329479_0.7433565589142674\":1,\"49819012242_0.02527395671440269\":2003,\"49819012242_0.4964322333365434\":1,\"49541474395_0.999063634948089\":1,\"49541474395_0.4302897217422976\":30,\"49541474396_0.5364167299087121\":\"\",\"49141521249_0.2965750598394892\":0,\"49519573910_0.08853124862540018\":1,\"49141521416_0.0884961804795068\":0,\"49519590084_0.3058131165318816\":1,\"49150249927_0.6881795527970145\":100,\"49519636189_0.2521948025226537\":1,\"49232462793_0.7622411974016037\":1,\"49520636693_0.8404154506260593\":1,\"49232464582_0.12430969584603324\":1,\"49520744730_0.6026838995761481\":1,\"49232999716_0.2133484967243402\":0,\"49520812848_0.5734967173507821\":1,\"49234813142_0.3142568229981375\":1,\"49520873912_0.5927053372462527\":1,\"49594771755_0.963684096315716\":false,\"49518248081_0.4367396293869368\":false,\"49595153167_0.8002073773406164\":1,\"49519399740_0.07229930251623617\":false,\"49519436070_0.9418611019894294\":false,\"49519475735_0.9428268094401824\":false,\"49519529748_0.519982170810438\":false,\"49520771123_0.27311479097864666\":false,\"49612315725_0.0667574286485002\":false,\"49819116159_0.3898830536514881\":false},\"51698856092_0.09488833463836355\"],[17,30,0,false,{\"___cmdID\":\"51698878725_0.011790385747925347\"}],[40012,{\"49821564836_0.18023666032094843\":0,\"49821564836_0.05613902618903355\":1,\"49821564836_0.6578043100778947\":1,\"49821564836_0.7286666716958285\":1,\"49821564836_0.40792780858788147\":1,\"49821586470_0.8966191069628267\":false,\"49821586470_0.5086891336665356\":false},\"51698884443_0.2936444215096956\"],[40011,{\"49816072304_0.03131954665076897\":0,\"24538808102_0.9970934946254328\":1,\"49612329479_0.7433565589142674\":1,\"49819012242_0.02527395671440269\":2,\"49819012242_0.4964322333365434\":1,\"49541474395_0.999063634948089\":0,\"49541474395_0.4302897217422976\":30,\"49541474396_0.5364167299087121\":\"\",\"49141521249_0.2965750598394892\":0,\"49519573910_0.08853124862540018\":1,\"49141521416_0.0884961804795068\":0,\"49519590084_0.3058131165318816\":1,\"49150249927_0.6881795527970145\":100,\"49519636189_0.2521948025226537\":1,\"49232462793_0.7622411974016037\":1,\"49520636693_0.8404154506260593\":1,\"49232464582_0.12430969584603324\":1,\"49520744730_0.6026838995761481\":1,\"49232999716_0.2133484967243402\":0,\"49520812848_0.5734967173507821\":1,\"49234813142_0.3142568229981375\":1,\"49520873912_0.5927053372462527\":1,\"49594771755_0.963684096315716\":false,\"49518248081_0.4367396293869368\":false,\"49595153167_0.8002073773406164\":0,\"49519399740_0.07229930251623617\":false,\"49519436070_0.9418611019894294\":false,\"49519475735_0.9428268094401824\":false,\"49519529748_0.519982170810438\":false,\"49520771123_0.27311479097864666\":false,\"49612315725_0.0667574286485002\":false,\"49819116159_0.3898830536514881\":false},\"51698893770_0.5959964881438244\"],[40012,{\"49821564836_0.18023666032094843\":0,\"49821564836_0.05613902618903355\":1,\"49821564836_0.6578043100778947\":1,\"49821564836_0.7286666716958285\":2,\"49821564836_0.40792780858788147\":1,\"49821586470_0.8966191069628267\":false,\"49821586470_0.5086891336665356\":false},\"51698911298_0.3502816695305646\"]]",
+                "copy": false
+            },
+            "loadGameEndEvent": {
+                "varType": 1,
+                "value": "读档载入完成事件\u000551699626256_0.7095268738488711\u0005[[40012,{\"49821564836_0.18023666032094843\":0,\"49821564836_0.05613902618903355\":1,\"49821564836_0.6578043100778947\":1,\"49821564836_0.7286666716958285\":5,\"49821564836_0.40792780858788147\":1,\"49821586470_0.8966191069628267\":false,\"49821586470_0.5086891336665356\":false},\"51698935356_0.3500850176826864\"],[40012,{\"49821564836_0.18023666032094843\":0,\"49821564836_0.05613902618903355\":1,\"49821564836_0.6578043100778947\":1,\"49821564836_0.7286666716958285\":3,\"49821564836_0.40792780858788147\":1,\"49821586470_0.8966191069628267\":false,\"49821586470_0.5086891336665356\":false},\"51698940690_0.2718359716534977\"],[40011,{\"49816072304_0.03131954665076897\":0,\"24538808102_0.9970934946254328\":1,\"49612329479_0.7433565589142674\":1,\"49819012242_0.02527395671440269\":2003,\"49819012242_0.4964322333365434\":1,\"49541474395_0.999063634948089\":1,\"49541474395_0.4302897217422976\":30,\"49541474396_0.5364167299087121\":\"\",\"49141521249_0.2965750598394892\":0,\"49519573910_0.08853124862540018\":1,\"49141521416_0.0884961804795068\":0,\"49519590084_0.3058131165318816\":1,\"49150249927_0.6881795527970145\":100,\"49519636189_0.2521948025226537\":1,\"49232462793_0.7622411974016037\":1,\"49520636693_0.8404154506260593\":1,\"49232464582_0.12430969584603324\":1,\"49520744730_0.6026838995761481\":1,\"49232999716_0.2133484967243402\":0,\"49520812848_0.5734967173507821\":1,\"49234813142_0.3142568229981375\":0,\"49520873912_0.5927053372462527\":1,\"49594771755_0.963684096315716\":false,\"49518248081_0.4367396293869368\":false,\"49595153167_0.8002073773406164\":0,\"49519399740_0.07229930251623617\":false,\"49519436070_0.9418611019894294\":false,\"49519475735_0.9428268094401824\":false,\"49519529748_0.519982170810438\":false,\"49520771123_0.27311479097864666\":false,\"49612315725_0.0667574286485002\":false,\"49819116159_0.3898830536514881\":false},\"51698949703_0.5100255508067628\"],[15,\"等待60帧后关闭读档载入界面\",true,[[17,60,0,false,{\"___cmdID\":\"51699570600_0.7106073824444319\"}],[40012,{\"49821564836_0.18023666032094843\":0,\"49821564836_0.05613902618903355\":1,\"49821564836_0.6578043100778947\":1,\"49821564836_0.7286666716958285\":2003,\"49821564836_0.40792780858788147\":1,\"49821586470_0.8966191069628267\":false,\"49821586470_0.5086891336665356\":false},\"51699570600_0.5785842552538916\"]],\"51699569251_0.9219730838923939\",{\"___cmdID\":\"51699569251_0.9145302274344747\"}]]",
+                "copy": false
+            },
+            "sceneBGMGradientTime": {
+                "varType": 0,
+                "value": 0.5,
+                "copy": false
+            },
+            "sceneBGSGradientTime": {
+                "varType": 0,
+                "value": 0.5,
+                "copy": false
+            },
+            "inSceneLoadCompleteEvent": {
+                "varType": 1,
+                "value": "进入场景过渡效果\u000557512523108_0.7018880537669783\u0005[[40010,{\"49809728719_0.046619702255007\":0,\"24538808102_0.9970934946254328\":1,\"49612012650_0.7509974095572418\":1,\"24538808435_0.6230939565765392\":2004,\"49518385245_0.9308839798952664\":1,\"50689082740_0.526404642451832\":true,\"49141521249_0.2965750598394892\":0,\"49519573910_0.08853124862540018\":1,\"49141521416_0.0884961804795068\":0,\"49519590084_0.3058131165318816\":1,\"49150249927_0.6881795527970145\":100,\"49519636189_0.2521948025226537\":1,\"49232462793_0.7622411974016037\":1,\"49520636693_0.8404154506260593\":1,\"49232464582_0.12430969584603324\":1,\"49520744730_0.6026838995761481\":1,\"49232999716_0.2133484967243402\":0,\"49520812848_0.5734967173507821\":1,\"49234813142_0.3142568229981375\":1,\"49520873912_0.5927053372462527\":1,\"49599648354_0.3738368266485066\":false,\"49518248081_0.4367396293869368\":false,\"49599660535_0.0823572381286597\":1,\"49518318443_0.5988810162565685\":false,\"49519399740_0.07229930251623617\":false,\"49519436070_0.9418611019894294\":false,\"49519475735_0.9428268094401824\":false,\"49519529748_0.519982170810438\":false,\"49520771123_0.27311479097864666\":false,\"49611947752_0.41521729946538755\":false},\"51699758183_0.8174670995419213\"],[40011,{\"49816072304_0.03131954665076897\":0,\"24538808102_0.9970934946254328\":1,\"49612329479_0.7433565589142674\":1,\"49819012242_0.02527395671440269\":2004,\"49819012242_0.4964322333365434\":1,\"49541474395_0.999063634948089\":1,\"49541474395_0.4302897217422976\":10,\"49541474396_0.5364167299087121\":\"\",\"49141521249_0.2965750598394892\":0,\"49519573910_0.08853124862540018\":1,\"49141521416_0.0884961804795068\":0,\"49519590084_0.3058131165318816\":1,\"49150249927_0.6881795527970145\":100,\"49519636189_0.2521948025226537\":1,\"49232462793_0.7622411974016037\":1,\"49520636693_0.8404154506260593\":1,\"49232464582_0.12430969584603324\":1,\"49520744730_0.6026838995761481\":1,\"49232999716_0.2133484967243402\":0,\"49520812848_0.5734967173507821\":1,\"49234813142_0.3142568229981375\":0,\"49520873912_0.5927053372462527\":1,\"49594771755_0.963684096315716\":false,\"49518248081_0.4367396293869368\":false,\"49595153167_0.8002073773406164\":1,\"49519399740_0.07229930251623617\":false,\"49519436070_0.9418611019894294\":false,\"49519475735_0.9428268094401824\":false,\"49519529748_0.519982170810438\":false,\"49520771123_0.27311479097864666\":false,\"49612315725_0.0667574286485002\":false,\"49819116159_0.3898830536514881\":false},\"51699774966_0.7940132896532497\"],[15,\"关闭场景载入界面\",true,[[17,10,0,false,{\"___cmdID\":\"57512288875_0.04433966924751043\"}],[40012,{\"49821564836_0.18023666032094843\":0,\"49821564836_0.05613902618903355\":1002004,\"49821564836_0.6578043100778947\":1,\"49821564836_0.7286666716958285\":2004,\"49821564836_0.40792780858788147\":1,\"49821586470_0.8966191069628267\":false,\"49821586470_0.5086891336665356\":false},\"57512288875_0.8867427592937753\"]],\"57512284819_0.23541478592035459\",{\"___cmdID\":\"57512284819_0.8327050533035725\"}]]",
+                "copy": false
+            },
+            "leaveSceneEvent": {
+                "varType": 1,
+                "value": "离开场景过渡效果\u000557510830386_0.06610602186471026\u0005[[40010,{\"49809728719_0.046619702255007\":0,\"24538808102_0.9970934946254328\":1,\"49612012650_0.7509974095572418\":1,\"24538808435_0.6230939565765392\":2004,\"49518385245_0.9308839798952664\":1,\"50689082740_0.526404642451832\":true,\"49141521249_0.2965750598394892\":0,\"49519573910_0.08853124862540018\":1,\"49141521416_0.0884961804795068\":0,\"49519590084_0.3058131165318816\":1,\"49150249927_0.6881795527970145\":100,\"49519636189_0.2521948025226537\":1,\"49232462793_0.7622411974016037\":1,\"49520636693_0.8404154506260593\":1,\"49232464582_0.12430969584603324\":1,\"49520744730_0.6026838995761481\":1,\"49232999716_0.2133484967243402\":0,\"49520812848_0.5734967173507821\":1,\"49234813142_0.3142568229981375\":0,\"49520873912_0.5927053372462527\":1,\"49599648354_0.3738368266485066\":false,\"49518248081_0.4367396293869368\":false,\"49599660535_0.0823572381286597\":1,\"49518318443_0.5988810162565685\":false,\"49519399740_0.07229930251623617\":false,\"49519436070_0.9418611019894294\":false,\"49519475735_0.9428268094401824\":false,\"49519529748_0.519982170810438\":false,\"49520771123_0.27311479097864666\":false,\"49611947752_0.41521729946538755\":false},\"51699813538_0.7611498897992541\"],[40011,{\"49816072304_0.03131954665076897\":0,\"24538808102_0.9970934946254328\":1,\"49612329479_0.7433565589142674\":1,\"49819012242_0.02527395671440269\":2004,\"49819012242_0.4964322333365434\":1,\"49541474395_0.999063634948089\":1,\"49541474395_0.4302897217422976\":10,\"49541474396_0.5364167299087121\":\"\",\"49141521249_0.2965750598394892\":0,\"49519573910_0.08853124862540018\":1,\"49141521416_0.0884961804795068\":0,\"49519590084_0.3058131165318816\":1,\"49150249927_0.6881795527970145\":100,\"49519636189_0.2521948025226537\":1,\"49232462793_0.7622411974016037\":1,\"49520636693_0.8404154506260593\":1,\"49232464582_0.12430969584603324\":1,\"49520744730_0.6026838995761481\":1,\"49232999716_0.2133484967243402\":0,\"49520812848_0.5734967173507821\":1,\"49234813142_0.3142568229981375\":1,\"49520873912_0.5927053372462527\":1,\"49594771755_0.963684096315716\":false,\"49518248081_0.4367396293869368\":false,\"49595153167_0.8002073773406164\":1,\"49519399740_0.07229930251623617\":false,\"49519436070_0.9418611019894294\":false,\"49519475735_0.9428268094401824\":false,\"49519529748_0.519982170810438\":false,\"49520771123_0.27311479097864666\":false,\"49612315725_0.0667574286485002\":false,\"49819116159_0.3898830536514881\":false},\"51699822358_0.866491667054968\"],[17,10,0,false,{\"___cmdID\":\"51699833681_0.538235740462552\"}]]",
+                "copy": false
+            },
+            "moveToGridCenter": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "moveDir4": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "jumpTimeCost": {
+                "varType": 0,
+                "value": 0.5,
+                "copy": false
+            },
+            "jumpHeight": {
+                "varType": 0,
+                "value": 150,
+                "copy": false
+            },
+            "menuEnabled": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "sceneObjectCollisionSize": {
+                "varType": 0,
+                "value": 32,
+                "copy": false
+            },
+            "sceneObjectMoveStartAct": {
+                "varType": 0,
+                "value": 2,
+                "copy": false
+            },
+            "useSceneObjectMoveStartAct2": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "sceneObjectMoveStartAct2": {
+                "varType": 0,
+                "value": 2,
+                "copy": false
+            },
+            "sceneObjectMoveStartAct2Speed": {
+                "varType": 0,
+                "value": 400,
+                "copy": false
+            },
+            "selectSceneObjectEffect": {
+                "varType": 0,
+                "value": 1001,
+                "copy": false
+            },
+            "saveFileMax": {
+                "varType": 0,
+                "value": 10,
+                "copy": false
+            },
+            "loadGameFailEvent": {
+                "varType": 1,
+                "value": "读档失败处理\u000543778789297_0.36443409197155385\u0005[[11,14,null,\"\",3,-3,\"<span style='color:#FfFffF'>[.s]</span>\",null,1],[3,14,0,0],[4,\"存档已损坏\",0,0],[10]]",
+                "copy": false
+            },
+            "saveSuccessEvent": {
+                "varType": 1,
+                "value": "存档成功音效\u000575291617395_0.8706370428706078\u0005[[60005,{\"74577032484_0.13493609495640202\":\"asset/audio/se/menu/Save.mp3,1,1\",\"74578579319_0.15291120828407134\":1,\"74587606222_0.5579985331498136\":false,\"74587987674_0.5977703161602927\":false},\"75291589182_0.23354861530637727\"]]",
+                "copy": false
+            },
+            "saveFailEvent": {
+                "varType": 1,
+                "value": "存档失败提示\u000543779416625_0.25009645303116\u0005[[11,14,null,\"\",3,-3,\"<span style='color:#FfFffF'>[.s]</span>\",null,1],[3,14,0,0],[4,\"存档失败\",0,0],[10]]",
+                "copy": false
+            },
+            "gameInitEvent": {
+                "varType": 1,
+                "value": "游戏初始化\u000558624681253_0.6718464717159929\u0005[[18,\"//------------------------------------------------------------------------------------------------------\\n// 初始化设定\\n//------------------------------------------------------------------------------------------------------\",{\"___cmdID\":\"51701887470_0.4108228679712487\"}],[13,3,15003,0,0,-1,1,1,[0,100],0,-1,[6,{\"type\":4,\"isGrid\":false},[{\"42659087992_0.8295512812431562\":4,\"42659158937_0.6717730699983109\":false}]],{\"___cmdID\":\"51701887470_0.9387197118430783\"}],[18,\"//------------------------------------------------------------------------------------------------------\\n// 快捷键菜单\\n//------------------------------------------------------------------------------------------------------\",{\"___cmdID\":\"51701887470_0.741038101173447\"}],[10003,{\"42612293498_0.480752728811654\":0,\"43114340537_0.8908961983320582\":2,\"51692867073_0.6443640385999863\":false,\"43114858493_0.09543223886965402\":27,\"57883028646_0.2982354273966177\":9,\"43114858493_0.3171744305791697\":0,\"43114873548_0.23450080376522942\":0,\"43114653398_0.8881147052471978\":[27,96],\"57883649884_0.7324924597224358\":[],\"43116389200_0.5571849278665717\":false,\"43116402659_0.5042655137768752\":false,\"43116419156_0.632745028317159\":false,\"42612627174_0.578758902506004\":\"呼出和关闭菜单\\u000543779517992_0.1203458014010359\\u0005[[16,15001,false]]\",\"51693260347_0.8762158613518642\":1},\"51701887470_0.9672833356972084\"],[18,\"//------------------------------------------------------------------------------------------------------\\n// 鼠标右键操作\\n//------------------------------------------------------------------------------------------------------\",{\"___cmdID\":\"51701887470_0.6083634875665047\"}],[10004,{\"42616483455_0.4639772550758601\":0,\"42616489134_0.7730466615484748\":6,\"42616655343_0.8231014458198378\":\"菜单已打开的场合则关闭菜单\\u000558624665454_0.6962159261935372\\u0005[[16,15001,false,{\\\"___cmdID\\\":\\\"58624663869_0.06071993869094494\\\"}]]\",\"42875522865_0.10960228539938566\":false,\"51693487585_0.29766152907542853\":false,\"51693539518_0.7462589003893905\":1},\"51701887470_0.496796268108298\"],[18,\"//------------------------------------------------------------------------------------------------------\\n// 鼠标左键操作\\n//------------------------------------------------------------------------------------------------------\",{\"___cmdID\":\"51701887470_0.2893582543051718\"}],[10004,{\"42616483455_0.4639772550758601\":0,\"42616489134_0.7730466615484748\":0,\"42616655343_0.8231014458198378\":\"玩家移动和Debug-拖拽场景对象\\u000557962787134_0.5915212701331432\\u0005[[0,6,0,[0,1,1,0],0,0,[0,1,1,0],0,[1,1,[0,0]],0,0,[1,1],\\\"\\\",\\\"\\\",false,null,[6,{\\\"type\\\":1},[{\\\"42662223132_0.13407162179315324\\\":1}]],null,null,null,null,0,{\\\"___cmdID\\\":\\\"57962761890_0.10148996258583387\\\"}],[14,{\\\"___cmdID\\\":\\\"57962761890_0.6846000386441702\\\"}],[2,{\\\"___cmdID\\\":\\\"57962761890_0.28341066754193767\\\"}],[0,6,0,[0,1,1,0],0,0,[0,1,1,0],0,[1,1,[0,0]],0,0,[1,1],\\\"\\\",\\\"\\\",false,null,[6,{\\\"type\\\":3},[{\\\"42662223132_0.13407162179315324\\\":3}]],null,null,null,null,0,{\\\"___cmdID\\\":\\\"57962761890_0.16850075727919855\\\"}],[14,{\\\"___cmdID\\\":\\\"57962761890_0.44066680380092005\\\"}],[2,{\\\"___cmdID\\\":\\\"57962761890_0.22939138176319718\\\"}],[13,3,15001,0,5,0,1,1,[0,100],0,-1,[6,{\\\"type\\\":2,\\\"isGrid\\\":false},[{\\\"42659087992_0.8295512812431562\\\":2,\\\"42659158937_0.6717730699983109\\\":false}]],{\\\"___cmdID\\\":\\\"57962761890_0.3686286304886861\\\"}],[13,3,15002,0,5,0,1,1,[0,100],0,-1,[6,{\\\"type\\\":3,\\\"isGrid\\\":false},[{\\\"42659087992_0.8295512812431562\\\":3,\\\"42659158937_0.6717730699983109\\\":false}]],{\\\"___cmdID\\\":\\\"57962761890_0.4137295545316033\\\"}],[0,0,4,[0,1,1,0],0,0,[-1,1,1,0],0,[1,1,[0,0]],0,0,[1,1],\\\"\\\",\\\"\\\",true,null,null,[6,{\\\"type\\\":4,\\\"isGrid\\\":false},[{\\\"42659087992_0.8295512812431562\\\":4,\\\"42659158937_0.6717730699983109\\\":false}]],null,null,null,0,{\\\"___cmdID\\\":\\\"57962761890_0.8587120680036417\\\"}],[22,-1,0,[[37,0,true],[12,true,0,0,true,15001,15002,false,false,true,1]],true,1,{\\\"___cmdID\\\":\\\"57962761890_0.1854754226618227\\\"}],[20006,{\\\"42691436099_0.8290727679738321\\\":1,\\\"42692800243_0.10817979826025992\\\":1003,\\\"42692647022_0.5213078957291057\\\":0,\\\"42692700542_0.9825288543377158\\\":0,\\\"42692719697_0.7848757543816436\\\":0,\\\"42692730274_0.23872561935337355\\\":0,\\\"42692980955_0.8834541146052268\\\":0,\\\"42692981109_0.5276450548815796\\\":0,\\\"42692993023_0.6297447669580152\\\":1,\\\"42693001203_0.23557071628047788\\\":false,\\\"42693083121_0.2657811055450363\\\":15001,\\\"42693110044_0.12130863119710433\\\":15002,\\\"42749860758_0.42298175338042476\\\":0,\\\"42762434678_0.6257666089948546\\\":0,\\\"42762434679_0.30822982992224546\\\":0,\\\"42762434679_0.7084479758172235\\\":0,\\\"42762434679_0.46925836968479584\\\":0,\\\"42762434679_0.2553505357996644\\\":0},\\\"57962761890_0.5518800587881592\\\"],[1,{\\\"___cmdID\\\":\\\"57962761890_0.2812644141739833\\\"}],[18,\\\"//------------------------------------------------------------------------------------------------------\\\\n// Debug 当开启世界设定中的-鼠标左键拖拽场景对象\\\\n//------------------------------------------------------------------------------------------------------\\\",{\\\"___cmdID\\\":\\\"57962761890_0.6007383300483096\\\"}],[0,6,4,[0,1,1,0],0,0,[1,1,1,0],0,[1,1,[0,0]],0,0,[1,1],\\\"\\\",\\\"\\\",false,null,[6,{\\\"type\\\":4,\\\"systemKey\\\":0,\\\"worldAttrName\\\":\\\"dragSceneObjectDebug\\\"},[{\\\"42662223132_0.13407162179315324\\\":4,\\\"57826722587_0.7855492054518531\\\":0,\\\"57826849318_0.6165429918083871\\\":\\\"dragSceneObjectDebug\\\"}]],[8,{\\\"type\\\":1,\\\"presetType\\\":0,\\\"attrName\\\":\\\"dragSceneObjectDebug\\\"},[{\\\"42660948399_0.4388897640372913\\\":1,\\\"42660990400_0.36388036175695726\\\":0,\\\"42661072222_0.9055346908254995\\\":\\\"dragSceneObjectDebug\\\"}]],null,null,null,0,0,[0,{},\\\"\\\"],[0,{},\\\"\\\"],{\\\"___cmdID\\\":\\\"57962761890_0.24487590020233396\\\"}],[0,3,0,[0,1,1,0],0,0,[0,1,1,0],0,[1,1,[0,0]],0,0,[1,1],\\\"\\\",\\\"os.inGC()\\\",false,\\\"os.inGC();\\\\n\\\",[6,{\\\"type\\\":4,\\\"worldAttrName\\\":\\\"zoomCameraDebug\\\"},[{\\\"42662223132_0.13407162179315324\\\":4,\\\"43779873615_0.4941850885571317\\\":\\\"zoomCameraDebug\\\"}]],null,null,null,null,0,{\\\"___cmdID\\\":\\\"57962761890_0.06066270591344036\\\"}],[50002,null,\\\"57962761890_0.3213927016793918\\\"],[13,3,15003,0,5,0,1,1,[0,100],0,-1,[6,{\\\"type\\\":4,\\\"isGrid\\\":false},[{\\\"42659087992_0.8295512812431562\\\":4,\\\"42659158937_0.6717730699983109\\\":false}]],{\\\"___cmdID\\\":\\\"57962761890_0.5496492169126892\\\"}],[10004,{\\\"42616483455_0.4639772550758601\\\":1,\\\"42616489134_0.7730466615484748\\\":1,\\\"42616655343_0.8231014458198378\\\":\\\"关闭可拖拽场景对象的状态\\\\u000543780617643_0.5870271722922349\\\\u0005[[13,3,15003,0,0,-1,1,1,[0,100],0,-1,[6,{\\\\\\\"type\\\\\\\":4,\\\\\\\"isGrid\\\\\\\":false},[{\\\\\\\"42659087992_0.8295512812431562\\\\\\\":4,\\\\\\\"42659158937_0.6717730699983109\\\\\\\":false}]]],[50001]]\\\",\\\"42875522865_0.10960228539938566\\\":false},\\\"57962761890_0.8825232084461749\\\"],[2,{\\\"___cmdID\\\":\\\"57962761890_0.20512561214115954\\\"}],[2,{\\\"___cmdID\\\":\\\"57962761890_0.042057856761301915\\\"}],[2,{\\\"___cmdID\\\":\\\"57962761890_0.32884710021628627\\\"}]]\",\"42875522865_0.10960228539938566\":true,\"51693487585_0.29766152907542853\":false,\"51693539518_0.7462589003893905\":1},\"51701887470_0.2695723102656429\"],[10004,{\"42616483455_0.4639772550758601\":0,\"42616489134_0.7730466615484748\":8,\"42616655343_0.8231014458198378\":\"Debug-拖拽场景对象\\u000557962803199_0.7070962674445744\\u0005[[18,\\\"//------------------------------------------------------------------------------------------------------\\\\n// Debug 当开启世界设定中的-鼠标左键拖拽场景对象\\\\n//------------------------------------------------------------------------------------------------------\\\",{\\\"___cmdID\\\":\\\"57962789844_0.7899409079057136\\\"}],[0,6,4,[0,1,1,0],0,0,[1,1,1,0],0,[1,1,[0,0]],0,0,[1,1],\\\"\\\",\\\"\\\",false,null,[6,{\\\"type\\\":4,\\\"systemKey\\\":0,\\\"worldAttrName\\\":\\\"dragSceneObjectDebug\\\"},[{\\\"42662223132_0.13407162179315324\\\":4,\\\"57826722587_0.7855492054518531\\\":0,\\\"57826849318_0.6165429918083871\\\":\\\"dragSceneObjectDebug\\\"}]],[8,{\\\"type\\\":1,\\\"presetType\\\":0,\\\"attrName\\\":\\\"dragSceneObjectDebug\\\"},[{\\\"42660948399_0.4388897640372913\\\":1,\\\"42660990400_0.36388036175695726\\\":0,\\\"42661072222_0.9055346908254995\\\":\\\"dragSceneObjectDebug\\\"}]],null,null,null,0,0,[0,{},\\\"\\\"],[0,{},\\\"\\\"],{\\\"___cmdID\\\":\\\"57962789844_0.7644200650007167\\\"}],[0,0,2,[0,1,15003,0],1,0,[0,1,1,0],1,[1,8,[0,0]],0,0,[1,1],\\\"\\\",\\\"\\\",false,null,null,null,null,null,null,0,{\\\"___cmdID\\\":\\\"57962789844_0.0848810804061022\\\"}],[13,3,15001,0,5,0,1,1,[0,100],0,-1,[6,{\\\"type\\\":2,\\\"isGrid\\\":false},[{\\\"42659087992_0.8295512812431562\\\":2,\\\"42659158937_0.6717730699983109\\\":false}]],{\\\"___cmdID\\\":\\\"57962789844_0.13159203144394627\\\"}],[13,3,15002,0,5,0,1,1,[0,100],0,-1,[6,{\\\"type\\\":3,\\\"isGrid\\\":false},[{\\\"42659087992_0.8295512812431562\\\":3,\\\"42659158937_0.6717730699983109\\\":false}]],{\\\"___cmdID\\\":\\\"57962789844_0.2148221744942862\\\"}],[22,-1,0,[[14,1,0,0,15001,15002,false,false,1,true]],0,1,true,15003,{\\\"___cmdID\\\":\\\"57962789844_0.6061660705075649\\\"}],[2,{\\\"___cmdID\\\":\\\"57962789844_0.48950717622054496\\\"}],[2,{\\\"___cmdID\\\":\\\"57962789844_0.8057090231439317\\\"}]]\",\"42875522865_0.10960228539938566\":false,\"51693487585_0.29766152907542853\":false,\"51693539518_0.7462589003893905\":1},\"51701887470_0.38848333637442267\"],[18,\"//------------------------------------------------------------------------------------------------------\\n// SHIFT加速\\n//------------------------------------------------------------------------------------------------------\",{\"___cmdID\":\"51701887470_0.23243369066359154\"}],[10003,{\"42612293498_0.480752728811654\":0,\"43114340537_0.8908961983320582\":0,\"51692867073_0.6443640385999863\":false,\"43114858493_0.09543223886965402\":16,\"57883028646_0.2982354273966177\":0,\"43114858493_0.3171744305791697\":0,\"43114873548_0.23450080376522942\":0,\"43114653398_0.8881147052471978\":[],\"57883649884_0.7324924597224358\":[],\"43116389200_0.5571849278665717\":false,\"43116402659_0.5042655137768752\":false,\"43116419156_0.632745028317159\":false,\"42612627174_0.578758902506004\":\"奔跑\\u000557962809699_0.690972159538364\\u0005[[16,15002,false,{\\\"___cmdID\\\":\\\"52368894736_0.6045349929080261\\\"}]]\",\"51693260347_0.8762158613518642\":1},\"51701887470_0.29683686190184266\"],[10003,{\"42612293498_0.480752728811654\":0,\"43114340537_0.8908961983320582\":0,\"51692867073_0.6443640385999863\":false,\"43114858493_0.09543223886965402\":16,\"57883028646_0.2982354273966177\":0,\"43114858493_0.3171744305791697\":1,\"43114873548_0.23450080376522942\":0,\"43114653398_0.8881147052471978\":[],\"57883649884_0.7324924597224358\":[],\"43116389200_0.5571849278665717\":false,\"43116402659_0.5042655137768752\":false,\"43116419156_0.632745028317159\":false,\"42612627174_0.578758902506004\":\"停止奔跑\\u000557962814882_0.28358612180295406\\u0005[[16,15003,false,{\\\"___cmdID\\\":\\\"52368904842_0.8189488598979107\\\"}]]\",\"51693260347_0.8762158613518642\":1},\"51701887470_0.5847519514194628\"],[18,\"//------------------------------------------------------------------------------------------------------\\n// Debug-镜头缩放\\n//------------------------------------------------------------------------------------------------------\",{\"___cmdID\":\"51701887470_0.21295820586203162\"}],[10004,{\"42616483455_0.4639772550758601\":0,\"42616489134_0.7730466615484748\":7,\"42616655343_0.8231014458198378\":\"缩放镜头\\u000557962823315_0.07275491598773853\\u0005[[0,6,0,[0,1,1,0],0,0,[0,1,1,0],0,[1,1,[0,0]],0,0,[1,1],\\\"\\\",\\\"\\\",false,null,[6,{\\\"type\\\":4,\\\"systemKey\\\":0,\\\"worldAttrName\\\":\\\"zoomCameraDebug\\\"},[{\\\"42662223132_0.13407162179315324\\\":4,\\\"57826722587_0.7855492054518531\\\":0,\\\"57826849318_0.6165429918083871\\\":\\\"zoomCameraDebug\\\"}]],null,null,null,null,0,0,[0,{},\\\"\\\"],[0,{},\\\"\\\"],{\\\"___cmdID\\\":\\\"57934016266_0.5334340195592133\\\"}],[0,3,0,[0,1,1,0],0,0,[0,1,1,0],0,[1,1,[0,0]],0,0,[1,1],\\\"\\\",\\\"os.inGC()\\\",false,\\\"os.inGC();\\\\n\\\",[6,{\\\"type\\\":4,\\\"worldAttrName\\\":\\\"zoomCameraDebug\\\"},[{\\\"42662223132_0.13407162179315324\\\":4,\\\"43779873615_0.4941850885571317\\\":\\\"zoomCameraDebug\\\"}]],null,null,null,null,0,{\\\"___cmdID\\\":\\\"57934016266_0.8109098792930183\\\"}],[13,3,15004,0,5,0,1,1,[0,100],0,-1,[1,{\\\"type\\\":5,\\\"isGrid\\\":false,\\\"dataGridIndex\\\":0,\\\"dynamicObs\\\":false,\\\"dataGridUseVar\\\":false,\\\"x\\\":0,\\\"y\\\":0,\\\"x2\\\":0,\\\"y2\\\":0,\\\"dataLayerSoType\\\":0,\\\"dataLayerSoUseVar\\\":false,\\\"dataLayerSoVarID\\\":0,\\\"dataLayerSoIndex\\\":0,\\\"cameraAttr\\\":2},[{\\\"42101845956_0.8730813196191607\\\":5,\\\"42657145705_0.9930480064113001\\\":false,\\\"43047206289_0.36058056962019447\\\":0,\\\"43047272124_0.2595698638938173\\\":false,\\\"43047684791_0.03966293763994644\\\":false,\\\"43047666052_0.7626406764063804\\\":0,\\\"43047666251_0.2055671666042833\\\":0,\\\"43047712231_0.7086049147923745\\\":0,\\\"43047734877_0.32972624068697254\\\":0,\\\"43050327925_0.22422935865295934\\\":0,\\\"43050327925_0.9276339184038924\\\":false,\\\"43050327925_0.35442251649050016\\\":0,\\\"43050327925_0.5240730279692234\\\":0,\\\"43048968034_0.36092987778959884\\\":2}]],{\\\"___cmdID\\\":\\\"57934016266_0.32472969043320443\\\"}],[13,3,15005,0,5,0,1,1,[0,100],0,-1,[1,{\\\"type\\\":5,\\\"isGrid\\\":false,\\\"dataGridIndex\\\":0,\\\"dynamicObs\\\":false,\\\"dataGridUseVar\\\":false,\\\"x\\\":0,\\\"y\\\":0,\\\"x2\\\":0,\\\"y2\\\":0,\\\"dataLayerSoType\\\":0,\\\"dataLayerSoUseVar\\\":false,\\\"dataLayerSoVarID\\\":0,\\\"dataLayerSoIndex\\\":0,\\\"cameraAttr\\\":3},[{\\\"42101845956_0.8730813196191607\\\":5,\\\"42657145705_0.9930480064113001\\\":false,\\\"43047206289_0.36058056962019447\\\":0,\\\"43047272124_0.2595698638938173\\\":false,\\\"43047684791_0.03966293763994644\\\":false,\\\"43047666052_0.7626406764063804\\\":0,\\\"43047666251_0.2055671666042833\\\":0,\\\"43047712231_0.7086049147923745\\\":0,\\\"43047734877_0.32972624068697254\\\":0,\\\"43050327925_0.22422935865295934\\\":0,\\\"43050327925_0.9276339184038924\\\":false,\\\"43050327925_0.35442251649050016\\\":0,\\\"43050327925_0.5240730279692234\\\":0,\\\"43048968034_0.36092987778959884\\\":3}]],{\\\"___cmdID\\\":\\\"57934016266_0.0012776390163040663\\\"}],[13,3,15006,0,5,0,1,1,[0,100],0,-1,[6,{\\\"type\\\":5,\\\"isGrid\\\":false},[{\\\"42659087992_0.8295512812431562\\\":5,\\\"42659158937_0.6717730699983109\\\":false}]],{\\\"___cmdID\\\":\\\"57934016266_0.16204863510013712\\\"}],[13,3,15006,4,0,40,1,1,[0,100],0,-1,[6,{\\\"type\\\":5,\\\"isGrid\\\":false},[{\\\"42659087992_0.8295512812431562\\\":5,\\\"42659158937_0.6717730699983109\\\":false}]],{\\\"___cmdID\\\":\\\"57934016266_0.36453765094846147\\\"}],[13,3,15004,1,2,0,1,15006,[0,100],0,-1,[1,{\\\"type\\\":5,\\\"isGrid\\\":false,\\\"dataGridIndex\\\":0,\\\"dynamicObs\\\":false,\\\"dataGridUseVar\\\":false,\\\"x\\\":0,\\\"y\\\":0,\\\"x2\\\":0,\\\"y2\\\":0,\\\"dataLayerSoType\\\":0,\\\"dataLayerSoUseVar\\\":false,\\\"dataLayerSoVarID\\\":0,\\\"dataLayerSoIndex\\\":0,\\\"cameraAttr\\\":2},[{\\\"42101845956_0.8730813196191607\\\":5,\\\"42657145705_0.9930480064113001\\\":false,\\\"43047206289_0.36058056962019447\\\":0,\\\"43047272124_0.2595698638938173\\\":false,\\\"43047684791_0.03966293763994644\\\":false,\\\"43047666052_0.7626406764063804\\\":0,\\\"43047666251_0.2055671666042833\\\":0,\\\"43047712231_0.7086049147923745\\\":0,\\\"43047734877_0.32972624068697254\\\":0,\\\"43050327925_0.22422935865295934\\\":0,\\\"43050327925_0.9276339184038924\\\":false,\\\"43050327925_0.35442251649050016\\\":0,\\\"43050327925_0.5240730279692234\\\":0,\\\"43048968034_0.36092987778959884\\\":2}]],{\\\"___cmdID\\\":\\\"57934016266_0.4610129604891007\\\"}],[13,3,15005,1,2,0,1,15006,[0,100],0,-1,[1,{\\\"type\\\":5,\\\"isGrid\\\":false,\\\"dataGridIndex\\\":0,\\\"dynamicObs\\\":false,\\\"dataGridUseVar\\\":false,\\\"x\\\":0,\\\"y\\\":0,\\\"x2\\\":0,\\\"y2\\\":0,\\\"dataLayerSoType\\\":0,\\\"dataLayerSoUseVar\\\":false,\\\"dataLayerSoVarID\\\":0,\\\"dataLayerSoIndex\\\":0,\\\"cameraAttr\\\":2},[{\\\"42101845956_0.8730813196191607\\\":5,\\\"42657145705_0.9930480064113001\\\":false,\\\"43047206289_0.36058056962019447\\\":0,\\\"43047272124_0.2595698638938173\\\":false,\\\"43047684791_0.03966293763994644\\\":false,\\\"43047666052_0.7626406764063804\\\":0,\\\"43047666251_0.2055671666042833\\\":0,\\\"43047712231_0.7086049147923745\\\":0,\\\"43047734877_0.32972624068697254\\\":0,\\\"43050327925_0.22422935865295934\\\":0,\\\"43050327925_0.9276339184038924\\\":false,\\\"43050327925_0.35442251649050016\\\":0,\\\"43050327925_0.5240730279692234\\\":0,\\\"43048968034_0.36092987778959884\\\":2}]],{\\\"___cmdID\\\":\\\"57934016266_0.22255505048076052\\\"}],[0,0,2,[0,1,15004,0],3,0,[0.2,1,1,0],0,[1,1,[0,0]],0,0,[1,1],\\\"\\\",\\\"\\\",false,null,null,null,null,null,null,0,{\\\"___cmdID\\\":\\\"57934016266_0.7878380451916935\\\"}],[13,3,15004,0,0,0.2,1,15006,[0,100],0,-1,[1,{\\\"type\\\":5,\\\"isGrid\\\":false,\\\"dataGridIndex\\\":0,\\\"dynamicObs\\\":false,\\\"dataGridUseVar\\\":false,\\\"x\\\":0,\\\"y\\\":0,\\\"x2\\\":0,\\\"y2\\\":0,\\\"dataLayerSoType\\\":0,\\\"dataLayerSoUseVar\\\":false,\\\"dataLayerSoVarID\\\":0,\\\"dataLayerSoIndex\\\":0,\\\"cameraAttr\\\":2},[{\\\"42101845956_0.8730813196191607\\\":5,\\\"42657145705_0.9930480064113001\\\":false,\\\"43047206289_0.36058056962019447\\\":0,\\\"43047272124_0.2595698638938173\\\":false,\\\"43047684791_0.03966293763994644\\\":false,\\\"43047666052_0.7626406764063804\\\":0,\\\"43047666251_0.2055671666042833\\\":0,\\\"43047712231_0.7086049147923745\\\":0,\\\"43047734877_0.32972624068697254\\\":0,\\\"43050327925_0.22422935865295934\\\":0,\\\"43050327925_0.9276339184038924\\\":false,\\\"43050327925_0.35442251649050016\\\":0,\\\"43050327925_0.5240730279692234\\\":0,\\\"43048968034_0.36092987778959884\\\":2}]],{\\\"___cmdID\\\":\\\"57934016266_0.7094701848858536\\\"}],[2,{\\\"___cmdID\\\":\\\"57934016266_0.2153742662975242\\\"}],[0,0,2,[0,1,15005,0],3,0,[0.2,1,1,0],0,[1,1,[0,0]],0,0,[1,1],\\\"\\\",\\\"\\\",false,null,null,null,null,null,null,0,{\\\"___cmdID\\\":\\\"57934016266_0.9762118436998983\\\"}],[13,3,15005,0,0,0.2,1,15006,[0,100],0,-1,[1,{\\\"type\\\":5,\\\"isGrid\\\":false,\\\"dataGridIndex\\\":0,\\\"dynamicObs\\\":false,\\\"dataGridUseVar\\\":false,\\\"x\\\":0,\\\"y\\\":0,\\\"x2\\\":0,\\\"y2\\\":0,\\\"dataLayerSoType\\\":0,\\\"dataLayerSoUseVar\\\":false,\\\"dataLayerSoVarID\\\":0,\\\"dataLayerSoIndex\\\":0,\\\"cameraAttr\\\":2},[{\\\"42101845956_0.8730813196191607\\\":5,\\\"42657145705_0.9930480064113001\\\":false,\\\"43047206289_0.36058056962019447\\\":0,\\\"43047272124_0.2595698638938173\\\":false,\\\"43047684791_0.03966293763994644\\\":false,\\\"43047666052_0.7626406764063804\\\":0,\\\"43047666251_0.2055671666042833\\\":0,\\\"43047712231_0.7086049147923745\\\":0,\\\"43047734877_0.32972624068697254\\\":0,\\\"43050327925_0.22422935865295934\\\":0,\\\"43050327925_0.9276339184038924\\\":false,\\\"43050327925_0.35442251649050016\\\":0,\\\"43050327925_0.5240730279692234\\\":0,\\\"43048968034_0.36092987778959884\\\":2}]],{\\\"___cmdID\\\":\\\"57934016266_0.2174293964105003\\\"}],[2,{\\\"___cmdID\\\":\\\"57934016266_0.4279436635800338\\\"}],[20007,{\\\"43051758089_0.8517857177889556\\\":true,\\\"43051758272_0.979879749702349\\\":true,\\\"43051823895_0.3521426531944132\\\":0,\\\"43051863458_0.9640562669471746\\\":0,\\\"43051900008_0.025005284802844585\\\":1,\\\"43051938318_0.39508807132253976\\\":1,\\\"43052004295_0.8231250546635629\\\":15004,\\\"43052012740_0.35968828444562195\\\":15005},\\\"57934016266_0.6666529106681363\\\"],[2,{\\\"___cmdID\\\":\\\"57934016266_0.17033230361803042\\\"}],[2,{\\\"___cmdID\\\":\\\"57934016266_0.6345372364202071\\\"}]]\",\"42875522865_0.10960228539938566\":false,\"51693487585_0.29766152907542853\":false,\"51693539518_0.7462589003893905\":1},\"51701887470_0.7177304982058619\"],[10003,{\"42612293498_0.480752728811654\":0,\"43114340537_0.8908961983320582\":0,\"51692867073_0.6443640385999863\":false,\"43114858493_0.09543223886965402\":90,\"57883028646_0.2982354273966177\":0,\"43114858493_0.3171744305791697\":0,\"43114873548_0.23450080376522942\":0,\"43114653398_0.8881147052471978\":[],\"57883649884_0.7324924597224358\":[],\"43116389200_0.5571849278665717\":false,\"43116402659_0.5042655137768752\":false,\"43116419156_0.632745028317159\":false,\"42612627174_0.578758902506004\":\"还原镜头\\u000557962828382_0.5874589279609497\\u0005[[0,6,0,[0,1,1,0],0,0,[0,1,1,0],0,[1,1,[0,0]],0,0,[1,1],\\\"\\\",\\\"\\\",false,null,[6,{\\\"type\\\":4,\\\"systemKey\\\":0,\\\"worldAttrName\\\":\\\"zoomCameraDebug\\\"},[{\\\"42662223132_0.13407162179315324\\\":4,\\\"57826722587_0.7855492054518531\\\":0,\\\"57826849318_0.6165429918083871\\\":\\\"zoomCameraDebug\\\"}]],null,null,null,null,0,0,[0,{},\\\"\\\"],[0,{},\\\"\\\"],{\\\"___cmdID\\\":\\\"57934041569_0.3318094581951456\\\"}],[0,3,0,[0,1,1,0],0,0,[0,1,1,0],0,[1,1,[0,0]],0,0,[1,1],\\\"\\\",\\\"os.inGC()\\\",false,\\\"os.inGC();\\\\n\\\",[6,{\\\"type\\\":4,\\\"worldAttrName\\\":\\\"zoomCameraDebug\\\"},[{\\\"42662223132_0.13407162179315324\\\":4,\\\"43779873615_0.4941850885571317\\\":\\\"zoomCameraDebug\\\"}]],null,null,null,null,0,{\\\"___cmdID\\\":\\\"57934041569_0.4118943388614045\\\"}],[20007,{\\\"43051758089_0.8517857177889556\\\":true,\\\"43051758272_0.979879749702349\\\":true,\\\"43051823895_0.3521426531944132\\\":1,\\\"43051863458_0.9640562669471746\\\":1,\\\"43051900008_0.025005284802844585\\\":0,\\\"43051938318_0.39508807132253976\\\":0,\\\"43052004295_0.8231250546635629\\\":15004,\\\"43052012740_0.35968828444562195\\\":15005},\\\"57934041569_0.27199881902418044\\\"],[2,{\\\"___cmdID\\\":\\\"57934041569_0.16420197805823578\\\"}],[2,{\\\"___cmdID\\\":\\\"57934041569_0.9537136086986924\\\"}]]\",\"51693260347_0.8762158613518642\":1},\"51701887470_0.652708190922288\"]]",
+                "copy": false
+            },
+            "playCtrlEnabled": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "uiCompFocusAnimation": {
+                "varType": 0,
+                "value": 1002,
+                "copy": false
+            },
+            "DEBUG": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "gridObsDebug": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "rectObsDebug": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "游戏音乐过渡": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "游戏角色运动规则": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "游戏交互效果": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "其他": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "对应音效": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "游戏启动事件处理": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "存取档相关事件处理": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "场景事件处理": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "dialogSEEnabled": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "dragSceneObjectDebug": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "zoomCameraDebug": {
+                "varType": 2,
+                "value": false,
+                "copy": false
+            },
+            "focusEnabled": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "hotKeyListEnabled": {
+                "varType": 2,
+                "value": true,
+                "copy": false
+            },
+            "beforeSceneObjectClickHandle": {
+                "varType": 1,
+                "value": "无\u000552371715457_0.3915968101728047\u0005[]",
+                "copy": false
+            },
+            "执行事件前通用处理": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            },
+            "beforePlaySceneObjectBehaviorHandle1": {
+                "varType": 1,
+                "value": "停止奔跑\u000552380140427_0.3519152241656074\u0005[[18,\"派发新的玩家行为前暂停奔跑，如果有些地方不需要此功能，可以自行用开关控制\",{\"___cmdID\":\"52380078010_0.23829331599591308\"}],[0,1,0,[0,1,1,0],0,0,[0,1,1,0],1,[1,15001,[0,0]],1,0,[1,1],\"\",\"\",false,null,null,null,null,null,null,0,{\"___cmdID\":\"52370764889_0.30904632925842956\"}],[0,0,2,[0,1,15007,0],5,0,[0,1,1,0],0,[1,1,[0,0]],0,0,[1,1],\"\",\"\",false,null,null,null,null,null,null,0,{\"___cmdID\":\"52372969524_0.4485213816562974\"}],[13,4,15002,0,0,1,1,1,[0,100],0,-1,[],0,0,0,{\"___cmdID\":\"52372974301_0.09214035650459063\"}],[16,15003,false,{\"___cmdID\":\"52372974301_0.1940757995515685\"}],[2,{\"___cmdID\":\"52372969523_0.17242831199904285\"}],[2,{\"___cmdID\":\"52370770971_0.7771368906154854\"}]]",
+                "copy": false
+            },
+            "beforeSceneObjectTouchHandle": {
+                "varType": 1,
+                "value": "无\u000552371713195_0.6196260250211729\u0005[]",
+                "copy": false
+            }
+        }
+    },
+    "playerAttributeConfig": {
+        "attrs": {
+            "package": {
+                "varType": 9,
+                "value": [
+                    {
+                        "item": {
+                            "varType": 5,
+                            "value": {
+                                "id": 1,
+                                "data": {
+                                    "icon": {
+                                        "varType": 1,
+                                        "value": "asset/image/picture/icon/item/Medicine_1.png",
+                                        "copy": false
+                                    },
+                                    "intro": {
+                                        "varType": 1,
+                                        "value": "药水1的功能描述。",
+                                        "copy": false
+                                    },
+                                    "sell": {
+                                        "varType": 0,
+                                        "value": 0,
+                                        "copy": false
+                                    },
+                                    "isUse": {
+                                        "varType": 2,
+                                        "value": true,
+                                        "copy": false
+                                    },
+                                    "isConsumables": {
+                                        "varType": 2,
+                                        "value": true,
+                                        "copy": false
+                                    },
+                                    "se": {
+                                        "varType": 1,
+                                        "value": "asset/audio/se/item/Drink_1.mp3,1,1",
+                                        "copy": false,
+                                        "volume": "1",
+                                        "pitch": "1"
+                                    },
+                                    "callEvent": {
+                                        "varType": 1,
+                                        "value": "",
+                                        "copy": false
+                                    },
+                                    "描述": {
+                                        "varType": 1,
+                                        "value": "",
+                                        "copy": false
+                                    },
+                                    "未命名变量": {
+                                        "varType": 1,
+                                        "value": "",
+                                        "copy": false
+                                    },
+                                    "sellEnabled": {
+                                        "varType": 2,
+                                        "value": false,
+                                        "copy": false
+                                    }
+                                }
+                            },
+                            "copy": false
+                        },
+                        "number": {
+                            "varType": 0,
+                            "value": 1,
+                            "copy": false
+                        }
+                    }
+                ],
+                "copy": false
+            },
+            "gold": {
+                "varType": 0,
+                "value": 233,
+                "copy": false
+            },
+            "未命名变量": {
+                "varType": 1,
+                "value": "",
+                "copy": false
+            }
+        }
+    }
+}

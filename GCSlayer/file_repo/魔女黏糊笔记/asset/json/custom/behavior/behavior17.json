@@ -1,0 +1,13 @@
+{
+    "compAutoOrderLimitHeight": 0,
+    "id": 17,
+    "blockList": [
+        {
+            "name": "脸朝左",
+            "blockAttrs": [],
+            "blockCondition": [],
+            "blockHeight": 35,
+            "autoOrder": true
+        }
+    ]
+}

@@ -1,0 +1,310 @@
+{
+    "compAutoOrderLimitHeight": 0,
+    "id": 15,
+    "blockList": [
+        {
+            "name": "函数",
+            "blockAttrs": [
+                {
+                    "attr": {
+                        "id": "79382713113_0.9528328882879964",
+                        "varName": "operation",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 2,
+                            "compParam": {
+                                "items": "sin,cos,tan,asin,acos,atan",
+                                "showIndex": true
+                            }
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "操作",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false
+                    },
+                    "attrConditions": [],
+                    "y": 18,
+                    "x": 16,
+                    "width": 128,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "79382784671_0.5752189750089134",
+                        "varName": "num",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 0,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "值(角度)",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": null,
+                            "value": null,
+                            "isExpression": true,
+                            "jsCode": "[0, 1, 2].indexOf(attrs.operation) != -1;\n",
+                            "tsCode": "// 根据属性名称值编写条件表达式（目前支持选择框和复选框），如： (attrs.xxx>5 && attrs.yyy<=10) || attrs.zzz==6;\r\n[0, 1, 2].indexOf(attrs.operation) != -1; ",
+                            "codeName": "条件表达式脚本："
+                        },
+                        {
+                            "attrID": "79383069307_0.6941748598714317",
+                            "value": false,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 17.333333333333336,
+                    "x": 145.5,
+                    "width": 135,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "79382961982_0.4964461612795992",
+                        "varName": "num2",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 0,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "值()",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": null,
+                            "value": null,
+                            "isExpression": true,
+                            "jsCode": "[3, 4, 5].indexOf(attrs.operation) != -1;\n",
+                            "tsCode": "// 根据属性名称值编写条件表达式（目前支持选择框和复选框），如： (attrs.xxx>5 && attrs.yyy<=10) || attrs.zzz==6;\r\n[3, 4, 5].indexOf(attrs.operation) != -1; ",
+                            "codeName": "条件表达式脚本："
+                        },
+                        {
+                            "attrID": "79383069307_0.6941748598714317",
+                            "value": false,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 17.333333333333336,
+                    "x": 145.5,
+                    "width": 135,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "79383069307_0.6941748598714317",
+                        "varName": "useVar",
+                        "varType": 2,
+                        "compData": {
+                            "compType": 15,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "使用变量",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false
+                    },
+                    "attrConditions": [],
+                    "y": 16,
+                    "x": 290,
+                    "width": 86,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "79383214598_0.9832705103217398",
+                        "varName": "numVar",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 6,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "值(角度)",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": null,
+                            "value": null,
+                            "isExpression": true,
+                            "jsCode": "[0, 1, 2].indexOf(attrs.operation) != -1;\n",
+                            "tsCode": "// 根据属性名称值编写条件表达式（目前支持选择框和复选框），如： (attrs.xxx>5 && attrs.yyy<=10) || attrs.zzz==6;\r\n[0, 1, 2].indexOf(attrs.operation) != -1; ",
+                            "codeName": "条件表达式脚本："
+                        },
+                        {
+                            "attrID": "79383069307_0.6941748598714317",
+                            "value": true,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 17.333333333333336,
+                    "x": 145.5,
+                    "width": 135,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "79383221207_0.2567741925472333",
+                        "varName": "num2Var",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 6,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "值()",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": null,
+                            "value": null,
+                            "isExpression": true,
+                            "jsCode": "[3, 4, 5].indexOf(attrs.operation) != -1;\n",
+                            "tsCode": "// 根据属性名称值编写条件表达式（目前支持选择框和复选框），如： (attrs.xxx>5 && attrs.yyy<=10) || attrs.zzz==6;\r\n[3, 4, 5].indexOf(attrs.operation) != -1; ",
+                            "codeName": "条件表达式脚本："
+                        },
+                        {
+                            "attrID": "79383069307_0.6941748598714317",
+                            "value": true,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 17.333333333333336,
+                    "x": 145.5,
+                    "width": 135,
+                    "height": 32
+                }
+            ],
+            "blockCondition": [],
+            "blockHeight": 60,
+            "autoOrder": true,
+            "hideBlockTitle": false
+        }
+    ],
+    "isCustomPhraseDesc": false,
+    "name": "三角函数"
+}

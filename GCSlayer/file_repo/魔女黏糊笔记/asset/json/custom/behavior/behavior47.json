@@ -1,0 +1,273 @@
+{
+    "compAutoOrderLimitHeight": 0,
+    "id": 47,
+    "blockList": [
+        {
+            "name": "更改动作",
+            "blockAttrs": [
+                {
+                    "attr": {
+                        "id": "43042915421_0.1423719866292057",
+                        "varName": "useVar",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 2,
+                            "compParam": {
+                                "items": "常量,变量",
+                                "showIndex": false
+                            }
+                        },
+                        "defaultValue": "0",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 0,
+                        "eyeShow": true,
+                        "lockBlock": false
+                    },
+                    "attrConditions": [],
+                    "y": 10,
+                    "x": 243,
+                    "width": 105,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "43042915421_0.14857828752398383",
+                        "varName": "actionID",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 21,
+                            "compParam": {
+                                "items": "常量,变量",
+                                "showIndex": true
+                            }
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "动作",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 50,
+                        "eyeShow": true,
+                        "lockBlock": false
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": "43042915421_0.1423719866292057",
+                            "value": 0,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 10,
+                    "x": 15,
+                    "width": 225,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "43042915421_0.25906637318515013",
+                        "varName": "actionIDVarID",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 6,
+                            "compParam": {}
+                        },
+                        "defaultValue": "1",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "动作",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 50,
+                        "eyeShow": true,
+                        "lockBlock": false
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": "43042915421_0.1423719866292057",
+                            "value": 1,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 10,
+                    "x": 15,
+                    "width": 225,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "43042915421_0.3240270869143047",
+                        "varName": "tips",
+                        "varType": 1,
+                        "compData": {
+                            "compType": 32,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "保持原有的方向、帧",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false
+                    },
+                    "attrConditions": [],
+                    "y": 50,
+                    "x": 15,
+                    "width": 151,
+                    "height": 20
+                },
+                {
+                    "attr": {
+                        "id": "63451688365_0.9464319034807276",
+                        "varName": "once",
+                        "varType": 2,
+                        "compData": {
+                            "compType": 15,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "勾选此项该动作只会播放一次，并且播放完成后会将「自动播放动作」设置为OFF",
+                        "alias": "仅播放一次",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false
+                    },
+                    "attrConditions": [],
+                    "y": 10,
+                    "x": 353,
+                    "width": 101,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "94601769641_0.9060938542201933",
+                        "varName": "waitOver",
+                        "varType": 2,
+                        "compData": {
+                            "compType": 15,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "勾选此项后会等待该动作播放完毕后继续下一个动作",
+                        "alias": "等待播放完成",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": "63451688365_0.9464319034807276",
+                            "value": true,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 10,
+                    "x": 450,
+                    "width": 101,
+                    "height": 32
+                }
+            ],
+            "blockCondition": [],
+            "blockHeight": 75,
+            "autoOrder": true,
+            "hideBlockTitle": true
+        }
+    ],
+    "isCustomPhraseDesc": true,
+    "customPhraseDescTS": "// 根据属性名称值编写自定义短语描述，如：\"我的短语是\"+attrs.xxx\n// 使用下拉框组件的变量attrs.xxx有对应的attrs.xxxItems的属性以便获得标签名集合\n// 获取自定义模块的数据名称的函数：getModuleDataName(moduleID:number,dataID:number):string;\n// 获取各种列表内数据名称的函数：getTypeDataListName(typeID: number, dataID: number):string;\n// -- typeID ：0-全局变量 1-全局开关 2-全局字符串 3-玩家变量 4-玩家开关 5-玩家字符串\n//           ：6-场景列表 7-场景对象模型列表 8-图块列表 9-行走图列表 10-行走图动作列表 11-立绘列表 12-立绘表情列表\n//           ：13-公共事件 14-对话框列表 15-动画列表 16-动画信号列表 17-界面列表 18-数据结构列表 19-自定义模块列表\n//           ：20-自定义命令列表 21-自定义行为列表 22-自动元件列表 23-行走图部件列表 24-立绘部件列表\nlet str = `${attrs.useVar == 1 ? (\"[\" + attrs.actionIDVarID + \"-\" + getTypeDataListName(3, attrs.actionIDVarID) + \"]\") : (\"[\" + attrs.actionID + \"-\" + getTypeDataListName(10, attrs.actionID) + \"]\")}`;\nif (attrs.once) {\n    str += ` 仅播放一次`;\n    if (attrs.waitOver) {\n        str += ` 等待播放结束`;\n    }\n}\nstr;",
+    "customPhraseDescJS": "var str = \"\" + (attrs.useVar == 1 ? (\"[\" + attrs.actionIDVarID + \"-\" + getTypeDataListName(3, attrs.actionIDVarID) + \"]\") : (\"[\" + attrs.actionID + \"-\" + getTypeDataListName(10, attrs.actionID) + \"]\"));\nif (attrs.once) {\n    str += \" \\u4EC5\\u64AD\\u653E\\u4E00\\u6B21\";\n    if (attrs.waitOver) {\n        str += \" \\u7B49\\u5F85\\u64AD\\u653E\\u7ED3\\u675F\";\n    }\n}\nstr;\n"
+}
