@@ -40,4 +40,4 @@ This tool is for educational and recovery purposes only. Use only on games you o
 
 ### License
 
-GPL 3.0
+GPL-3.0
