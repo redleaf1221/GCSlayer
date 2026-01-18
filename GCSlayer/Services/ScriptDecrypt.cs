@@ -51,4 +51,23 @@ public static class ScriptDecrypt {
         }
         return script.Trim();
     }
+
+    public static async Task<bool> CheckNodeExists() {
+        var startInfo = new ProcessStartInfo {
+            FileName = "node",
+            Arguments = $"-v",
+            RedirectStandardOutput = true,
+            UseShellExecute = false,
+            CreateNoWindow = true,
+        };
+        try {
+            using var process = new Process();
+            process.StartInfo = startInfo;
+            process.Start();
+            await process.WaitForExitAsync();
+            return (await process.StandardOutput.ReadToEndAsync()).Contains('v');
+        } catch (Exception _) {
+            return false;
+        }
+    }
 }

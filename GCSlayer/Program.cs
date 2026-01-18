@@ -29,6 +29,10 @@ namespace GCSlayer {
     
         public async ValueTask ExecuteAsync(IConsole console) {
             try {
+                if (!await ScriptDecrypt.CheckNodeExists()) {
+                    AnsiConsole.MarkupLine("[red bold]Couldn't find NodeJs![/]");
+                    return;
+                }
                 var context = new OperationContext {
                     GamePath = Path.GetFullPath(GamePath),
                     OutputPath = OutputPath ?? Path.GetFileName(GamePath),
@@ -38,7 +42,7 @@ namespace GCSlayer {
                 await new RecoverOrchestrator(context).ExecuteAsync();
                 await new InferOrchestrator(context).ExecuteAsync();
             } catch (Exception ex) {
-                await console.Error.WriteLineAsync(ex.ToString());
+                AnsiConsole.MarkupLine($"[red bold]{ex.ToString().EscapeMarkup()}[/]");
             }
         }
     }
