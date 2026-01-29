@@ -1,33 +1,32 @@
 ﻿using System.Diagnostics;
+using CliFx.Infrastructure;
 using GCSlayer.Models;
-using Spectre.Console;
 
 namespace GCSlayer.Services;
 
-public static class ScriptDecrypt {
-    public static async Task<EncryptionStatus> DecryptScriptAsync(string inputPath, string outputPath) {
-        if (!File.Exists(inputPath))
-            throw new FileNotFoundException($"Script file not found: {inputPath}");
+public class ScriptDecrypt(IConsole console) {
+    public async Task<string> DecryptScriptAsync(string inputPath, string outputPath, bool removeFramework = false) {
+        if (!File.Exists(inputPath)) {
+            await console.Error.WriteLineAsync($"- Fle not found {inputPath}");
+        }
         
-        await DecryptScriptContentAsync(inputPath);
+        await CallGcjsDecrypt(inputPath);
         
-        var decryptedContent = await File.ReadAllTextAsync(Path.Combine(OperationContext.GcJsDecryptPath, "decryptedScript.js"));
+        var decryptedContent = await File.ReadAllTextAsync(Path.Combine(Constants.GcJsDecryptPath, "decryptedScript.js"));
+
+        if (removeFramework) {
+            decryptedContent = RemoveUnessentialCode(decryptedContent);
+        }
         
-        EncryptionStatus encryptionStatus = EncryptionStatus.FromScriptAnalysis(decryptedContent);
-        
-        AnsiConsole.MarkupLine("- Remove unessential code");
-        decryptedContent = RemoveUnessentialCode(decryptedContent);
-        
-        AnsiConsole.MarkupLine($"- Cleaned script saved to {Path.GetFileName(outputPath)}");
         await File.WriteAllTextAsync(outputPath, decryptedContent);
         
-        return encryptionStatus;
+        return decryptedContent;
     }
     
-    private static async Task DecryptScriptContentAsync(string inputPath) {
+    private async Task CallGcjsDecrypt(string inputPath) {
         var startInfo = new ProcessStartInfo {
             FileName = "node",
-            Arguments = $"{Path.Combine(OperationContext.GcJsDecryptPath, "GCJSDecrypt.js")} {inputPath}",
+            Arguments = $"{Path.Combine(Constants.GcJsDecryptPath, "GCJSDecrypt.js")} {inputPath}",
             RedirectStandardOutput = true,
             UseShellExecute = false,
             CreateNoWindow = true,
@@ -37,7 +36,7 @@ public static class ScriptDecrypt {
         process.Start();
         await process.WaitForExitAsync();
         var output = await process.StandardOutput.ReadToEndAsync(); 
-        AnsiConsole.Markup($"[dim]{output}[/]");
+        await console.Output.WriteLineAsync(output);
     }
     
     private static string RemoveUnessentialCode(string script) {

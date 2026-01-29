@@ -1,13 +1,16 @@
 ﻿using System.Text.Json;
+using CliFx.Infrastructure;
 using ICSharpCode.SharpZipLib.Zip;
 
 namespace GCSlayer.Services;
 
-public static class StartupJsonDecrypt {
-    public static async Task DecryptStartupJsonAsync(string assetPath, Action<double>? progressCallback = null) {
-        var startupJsonPath = Path.Combine(assetPath, "asset", "json", "startup.json");
-        if (!File.Exists(startupJsonPath)) 
-            throw new DirectoryNotFoundException($"startup.json not found: {startupJsonPath}.");
+public class StartupCryptoService(IConsole console) {
+    public async Task ExtractStartupJsonAsync(string projectPath, IProgress<double>? progress = null) {
+        var startupJsonPath = Path.Combine(projectPath, "asset", "json", "startup.json");
+        if (!File.Exists(startupJsonPath)) {
+            await console.Error.WriteLineAsync("- startup.json not found");
+            return;
+        }
         var rawData = await File.ReadAllBytesAsync(startupJsonPath);
         File.Delete(startupJsonPath);
         using var ms = new MemoryStream(rawData);
@@ -16,13 +19,16 @@ public static class StartupJsonDecrypt {
         await using Stream? zs = zf.GetInputStream(zf[0]);
         using JsonDocument jsonDoc = await JsonDocument.ParseAsync(zs);
         List<JsonProperty> properties = jsonDoc.RootElement.EnumerateObject().ToList();
+        var processedCount = 0;
         foreach (JsonProperty item in properties) {
-            var path = Path.Combine(assetPath, item.Name);
+            var path = Path.Combine(projectPath, item.Name);
             JsonElement jsonElement = item.Value;
             Directory.CreateDirectory(Path.GetDirectoryName(path)!);
             await File.WriteAllTextAsync(path, jsonElement.GetRawText());
-            progressCallback?.Invoke(1D / properties.Count);
+            processedCount++;
+            progress?.Report((double)processedCount / properties.Count);
         }
-        progressCallback?.Invoke(1D);
+        progress?.Report(1D);
+        await console.Output.WriteLineAsync($"- {properties.Count} entries in startup.json processed");
     }
 }

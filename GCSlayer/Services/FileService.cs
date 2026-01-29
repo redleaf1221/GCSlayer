@@ -3,7 +3,7 @@
 public static class FileService {
     public static async Task CopyDirectoryAsync(string sourcePath,
         string destPath,
-        Action<double>? progressCallback = null) {
+        IProgress<double>? progress = null) {
         
         var dir = new DirectoryInfo(sourcePath);
         if (!dir.Exists)
@@ -13,6 +13,7 @@ public static class FileService {
 
         FileInfo[] files = dir.GetFiles("*", SearchOption.AllDirectories);
         var totalSize = files.Sum(f => f.Length);
+        long completedSize = 0;
 
         await Parallel.ForEachAsync(files, 
             new ParallelOptions{ MaxDegreeOfParallelism = Environment.ProcessorCount / 2}, 
@@ -25,30 +26,36 @@ public static class FileService {
             await using FileStream destStream = File.Create(destFile);
             await sourceStream.CopyToAsync(destStream, ct);
             
-            progressCallback?.Invoke((double)file.Length / totalSize);
+            Interlocked.Add(ref completedSize, file.Length);
+            
+            progress?.Report((double)completedSize / totalSize);
         });
         
-        progressCallback?.Invoke(1D);
+        progress?.Report(1D);
     }
     
     public static async Task DeleteDirectoryAsync(string targetPath,
-        Action<double>? progressCallback = null) {
+        IProgress<double>? progress = null) {
         
         var dir = new DirectoryInfo(targetPath);
         if (!dir.Exists) return;
 
         FileInfo[] files = dir.GetFiles("*", SearchOption.AllDirectories);
+        
+        var completedCount = 0;
 
         await Parallel.ForEachAsync(files, 
             new ParallelOptions{ MaxDegreeOfParallelism = Environment.ProcessorCount / 2}, 
             (file, _) => {
             File.Delete(file.FullName);
             
-            progressCallback?.Invoke(1D / files.Length);
+            Interlocked.Increment(ref completedCount);
+            
+            progress?.Report((double)completedCount / files.Length);
             return ValueTask.CompletedTask;
         });
         Directory.Delete(targetPath, true);
         
-        progressCallback?.Invoke(1D);
+        progress?.Report(1D);
     }
 }
