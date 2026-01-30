@@ -65,7 +65,7 @@ public class ScriptDecrypt(IConsole console) {
             process.Start();
             await process.WaitForExitAsync();
             return (await process.StandardOutput.ReadToEndAsync()).Contains('v');
-        } catch (Exception _) {
+        } catch (Exception) {
             return false;
         }
     }

@@ -31,29 +31,7 @@ public class FullRecoveryFlow(IConsole console, RecoverParameter parameter) {
             Path.Combine(parameter.ProjectPath, $"{configJson.GameProjectName}.gamecreator"));
         await console.Output.WriteLineAsync("Extraction done");
         await console.Output.WriteLineAsync();
-        
-        // AnsiConsole.MarkupLine("[yellow]Infer missing assets...[/]");
-        //
-        // await AnsiConsole.Progress().StartAsync(async ctx => {
-        //     ProgressTask task = ctx.AddTask("Copy from repo", maxValue: 1D);
-        //     var repoPath = context.LocalSourcePath ?? Path.Combine(Constants.FileRepoPath, configJson.GameProjectName);
-        //     await Parallel.ForEachAsync(missingAssets, 
-        //         new ParallelOptions{ MaxDegreeOfParallelism = Environment.ProcessorCount / 2}, 
-        //         (missingFile, ct) => {
-        //             Directory.CreateDirectory(Path.GetDirectoryName(Path.Combine(context.ProjectPath, missingFile))!);
-        //             if (File.Exists(Path.Combine(repoPath, missingFile))) {
-        //                 File.Copy(Path.Combine(repoPath, missingFile),
-        //                     Path.Combine(context.ProjectPath, missingFile));
-        //             } else if (File.Exists(Path.Combine(Constants.TemplatePath, missingFile))) {
-        //                 File.Copy(Path.Combine(Constants.TemplatePath, missingFile),
-        //                     Path.Combine(context.ProjectPath, missingFile));
-        //             }
-        //             task.Increment(1D / missingFile.Length);
-        //             return ValueTask.CompletedTask;
-        //         });
-        //     task.Increment(1D);
-        // });
-        //
+
         // await AnsiConsole.Progress().StartAsync(async ctx => {
         //     ProgressTask task = ctx.AddTask("Decrypt meaningless files", maxValue: 1D);
         //     List<string> jsonArr = ["custom/customBehaviorType.json", "avatar/avatarActList.json",
@@ -62,7 +40,7 @@ public class FullRecoveryFlow(IConsole console, RecoverParameter parameter) {
         //         var rawText = await File.ReadAllTextAsync(Path.Combine(context.ProjectPath, "asset", "json", asset));
         //         var decryptedText = TemplateJsonEncryption.Decrypt(rawText);
         //         await File.WriteAllTextAsync(Path.Combine(context.ProjectPath, "asset", "json", asset), decryptedText);
-        //         task.Increment(1D / missingAssets.Count);
+        //         task.Increment(1D / missingAssets.Count);  
         //     }
         //     task.Increment(1D);
         // });

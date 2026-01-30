@@ -1,0 +1,370 @@
+{
+    "compAutoOrderLimitHeight": 0,
+    "id": 2,
+    "blockList": [
+        {
+            "name": "场景对象字符串属性",
+            "blockAttrs": [
+                {
+                    "attr": {
+                        "id": "57873249930_0.5369920299407613",
+                        "varName": "soType",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 2,
+                            "compParam": {
+                                "items": "玩家的场景对象,触发者,执行者,指定编号",
+                                "showIndex": false
+                            }
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "对象",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 70,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable": true,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [],
+                    "y": 11,
+                    "x": 15,
+                    "width": 225,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "57873287982_0.7892727883407202",
+                        "varName": "no",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 0,
+                            "compParam": {}
+                        },
+                        "defaultValue": "0",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 50,
+                        "eyeShow": true,
+                        "lockBlock": false
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": "57873356521_0.09220833711059506",
+                            "value": 0,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        },
+                        {
+                            "attrID": "57873249930_0.5369920299407613",
+                            "value": 3,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 10,
+                    "x": 250,
+                    "width": 225,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "57873260547_0.27221717583107696",
+                        "varName": "varID",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 6,
+                            "compParam": {}
+                        },
+                        "defaultValue": "1",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "编号",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 50,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": "57873356521_0.09220833711059506",
+                            "value": 1,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        },
+                        {
+                            "attrID": "57873249930_0.5369920299407613",
+                            "value": 3,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 10,
+                    "x": 250,
+                    "width": 225,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "57873356521_0.09220833711059506",
+                        "varName": "useVar",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 2,
+                            "compParam": {
+                                "items": "常量,变量",
+                                "showIndex": false
+                            }
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "使用变量指定",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 0,
+                        "eyeShow": true,
+                        "lockBlock": false
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": "57873249930_0.5369920299407613",
+                            "value": 3,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 12,
+                    "x": 480,
+                    "width": 107,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "57873408136_0.8199297247660688",
+                        "varName": "type",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 2,
+                            "compParam": {
+                                "items": "名称,公共属性,对象模块",
+                                "showIndex": false
+                            }
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "属性",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 70,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable": true,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [],
+                    "y": 46,
+                    "x": 15,
+                    "width": 225,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "57873408669_0.6068715290886117",
+                        "varName": "customAttr",
+                        "varType": 5,
+                        "compData": {
+                            "compType": 57,
+                            "compParam": {
+                                "numType": false,
+                                "strType": true,
+                                "boolType": false,
+                                "getSetType": 0
+                            }
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "对应场景对象的自定义属性（英文属性名称，如moveSpeed）",
+                        "alias": "属性",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": true,
+                        "titleWidth": 50,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable": true,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": "57873408136_0.8199297247660688",
+                            "value": 1,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 46,
+                    "x": 250,
+                    "width": 450,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "103534105724_0.42353533727547066",
+                        "varName": "soModuleAttr",
+                        "varType": 5,
+                        "compData": {
+                            "compType": 58,
+                            "compParam": {
+                                "numType": false,
+                                "strType": true,
+                                "boolType": false,
+                                "getSetType": 0
+                            }
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "对应场景对象的自定义属性（英文属性名称，如moveSpeed）",
+                        "alias": "属性",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": true,
+                        "titleWidth": 50,
+                        "eyeShow": false,
+                        "lockBlock": false,
+                        "enumEnable": true,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": "57873408136_0.8199297247660688",
+                            "value": 2,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 46,
+                    "x": 250,
+                    "width": 450,
+                    "height": 32
+                }
+            ],
+            "blockCondition": [],
+            "blockHeight": 90,
+            "autoOrder": true
+        }
+    ],
+    "isCustomPhraseDesc": true,
+    "customPhraseDescTS": "// 根据属性名称值编写自定义短语描述，如：\"我的短语是\"+attrs.xxx\n// 使用下拉框组件的变量attrs.xxx有对应的attrs.xxxItems的属性以便获得标签名集合\n// 获取自定义模块的数据名称的函数：getModuleDataName(moduleID:number,dataID:number):string;\n// 获取各种列表内数据名称的函数：getTypeDataListName(typeID: number, dataID: number):string;\n// -- typeID ：0-全局变量 1-全局开关 2-全局字符串 3-玩家变量 4-玩家开关 5-玩家字符串\n//           ：6-场景列表 7-场景对象模型列表 8-图块列表 9-行走图列表 10-行走图动作列表 11-立绘列表 12-立绘表情列表\n//           ：13-公共事件 14-对话框列表 15-动画列表 16-动画信号列表 17-界面列表 18-数据结构列表 19-自定义模块列表\n//           ：20-自定义命令列表 21-自定义行为列表 22-自动元件列表 23-行走图部件列表 24-立绘部件列表\nvar str = \"\";\nstr += attrs.soTypeItems[attrs.soType];\nif (attrs.soType == 3) {\n    str += \":\";\n    if (attrs.useVar) {\n        str += ` [${attrs.varID}-${getTypeDataListName(3, attrs.varID)}]`;\n    }\n    else {\n        str += ` ${attrs.no}号`;\n    }\n}\nstr += `的`;\nif (attrs.type == 1) {\n    let mapping = { 0: 3, 1: 5, 2: 4 };\n    if (attrs.customAttr.selectMode == 1) {\n        let mode = attrs.customAttr.inputModeInfo.mode;\n        let constName = attrs.customAttr.inputModeInfo.constName;\n        let varNameIndex = attrs.customAttr.inputModeInfo.varNameIndex;\n        let varName = mode == 0 ? constName : `[@${varNameIndex}-${getTypeDataListName(mapping[varNameIndex], varNameIndex)}]`;\n        str += `「${varName}」`;\n    }\n    else {\n        str += `「${attrs.customAttr.varName}」`;\n    }\n}\nelse if (attrs.type == 2) {\n    let mapping = { 0: 3, 1: 5, 2: 4 };\n    if (attrs.soModuleAttr.selectMode == 1) {\n        let mode = attrs.soModuleAttr.inputModeInfo.mode;\n        let constName = attrs.soModuleAttr.inputModeInfo.constName;\n        let varNameIndex = attrs.soModuleAttr.inputModeInfo.varNameIndex;\n        let varName = mode == 0 ? constName : `[@${varNameIndex}-${getTypeDataListName(mapping[varNameIndex], varNameIndex)}]`;\n        str += ` 模块「${attrs.soModuleAttr.moduleID}-${getTypeDataListName(26, attrs.soModuleAttr.moduleID)}」.${varName}`;\n    }\n    else {\n        str += ` 模块「${attrs.soModuleAttr.moduleID}-${getTypeDataListName(26, attrs.soModuleAttr.moduleID)}」.${attrs.soModuleAttr.varName}`;\n    }\n}\nelse {\n    str += `「${attrs.typeItems[attrs.type]}」`;\n}",
+    "customPhraseDescJS": "var str = \"\";\nstr += attrs.soTypeItems[attrs.soType];\nif (attrs.soType == 3) {\n    str += \":\";\n    if (attrs.useVar) {\n        str += \" [\" + attrs.varID + \"-\" + getTypeDataListName(3, attrs.varID) + \"]\";\n    }\n    else {\n        str += \" \" + attrs.no + \"\\u53F7\";\n    }\n}\nstr += \"\\u7684\";\nif (attrs.type == 1) {\n    var mapping = { 0: 3, 1: 5, 2: 4 };\n    if (attrs.customAttr.selectMode == 1) {\n        var mode = attrs.customAttr.inputModeInfo.mode;\n        var constName = attrs.customAttr.inputModeInfo.constName;\n        var varNameIndex = attrs.customAttr.inputModeInfo.varNameIndex;\n        var varName = mode == 0 ? constName : \"[@\" + varNameIndex + \"-\" + getTypeDataListName(mapping[varNameIndex], varNameIndex) + \"]\";\n        str += \"\\u300C\" + varName + \"\\u300D\";\n    }\n    else {\n        str += \"\\u300C\" + attrs.customAttr.varName + \"\\u300D\";\n    }\n}\nelse if (attrs.type == 2) {\n    var mapping = { 0: 3, 1: 5, 2: 4 };\n    if (attrs.soModuleAttr.selectMode == 1) {\n        var mode = attrs.soModuleAttr.inputModeInfo.mode;\n        var constName = attrs.soModuleAttr.inputModeInfo.constName;\n        var varNameIndex = attrs.soModuleAttr.inputModeInfo.varNameIndex;\n        var varName = mode == 0 ? constName : \"[@\" + varNameIndex + \"-\" + getTypeDataListName(mapping[varNameIndex], varNameIndex) + \"]\";\n        str += \" \\u6A21\\u5757\\u300C\" + attrs.soModuleAttr.moduleID + \"-\" + getTypeDataListName(26, attrs.soModuleAttr.moduleID) + \"\\u300D.\" + varName;\n    }\n    else {\n        str += \" \\u6A21\\u5757\\u300C\" + attrs.soModuleAttr.moduleID + \"-\" + getTypeDataListName(26, attrs.soModuleAttr.moduleID) + \"\\u300D.\" + attrs.soModuleAttr.varName;\n    }\n}\nelse {\n    str += \"\\u300C\" + attrs.typeItems[attrs.type] + \"\\u300D\";\n}\n"
+}

@@ -1,0 +1,570 @@
+{
+    "compAutoOrderLimitHeight": 0,
+    "id": 8,
+    "blockList": [
+        {
+            "name": "玩家",
+            "blockAttrs": [
+                {
+                    "attr": {
+                        "id": "55507959498_0.7782830317432077",
+                        "varName": "ownType",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 2,
+                            "compParam": {
+                                "items": "背包里的道具,背包里的装备,角色",
+                                "showIndex": true
+                            }
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "是否拥有",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [],
+                    "y": 10,
+                    "x": 15,
+                    "width": 250,
+                    "height": 32
+                }
+            ],
+            "blockCondition": [],
+            "blockHeight": 50,
+            "autoOrder": true,
+            "hideBlockTitle": true
+        },
+        {
+            "name": "道具",
+            "blockAttrs": [
+                {
+                    "attr": {
+                        "id": "55508091489_0.2758573893596401",
+                        "varName": "itemID",
+                        "varType": 4,
+                        "compData": {
+                            "compType": 1004,
+                            "compParam": {
+                                "lowerLimit": 0,
+                                "upperLimit": 1000,
+                                "stepValue": 1,
+                                "limitInteger": true,
+                                "lockTextLimit": false,
+                                "xDragEnabled": true,
+                                "yDragEnabled": true
+                            }
+                        },
+                        "defaultValue": "1",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": true,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "道具",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 50,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": "55508091489_0.8788943982060891",
+                            "value": 0,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 10,
+                    "x": 15,
+                    "width": 217,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "55508091489_0.4276787988449562",
+                        "varName": "itemIDVarID",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 6,
+                            "compParam": {
+                                "lowerLimit": 0,
+                                "upperLimit": 1000,
+                                "stepValue": 1,
+                                "limitInteger": true,
+                                "lockTextLimit": false,
+                                "xDragEnabled": true,
+                                "yDragEnabled": true
+                            }
+                        },
+                        "defaultValue": "1",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "道具",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 50,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": "55508091489_0.8788943982060891",
+                            "value": 1,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 10,
+                    "x": 15,
+                    "width": 225,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "55508091489_0.8788943982060891",
+                        "varName": "itemUseVar",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 2,
+                            "compParam": {
+                                "items": "常量,变量",
+                                "showIndex": false
+                            }
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "使用变量指定",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 0,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [],
+                    "y": 11,
+                    "x": 245,
+                    "width": 107,
+                    "height": 32
+                }
+            ],
+            "blockCondition": [
+                {
+                    "attrID": "55507959498_0.7782830317432077",
+                    "value": 0,
+                    "isExpression": false,
+                    "jsCode": null,
+                    "tsCode": null,
+                    "codeName": null
+                }
+            ],
+            "blockHeight": 50,
+            "autoOrder": true,
+            "hideBlockTitle": true
+        },
+        {
+            "name": "装备",
+            "blockAttrs": [
+                {
+                    "attr": {
+                        "id": "55508282202_0.05258139521903482",
+                        "varName": "equipID",
+                        "varType": 4,
+                        "compData": {
+                            "compType": 1004,
+                            "compParam": {
+                                "lowerLimit": 0,
+                                "upperLimit": 1000,
+                                "stepValue": 1,
+                                "limitInteger": true,
+                                "lockTextLimit": false,
+                                "xDragEnabled": true,
+                                "yDragEnabled": true
+                            }
+                        },
+                        "defaultValue": "1",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": true,
+                        "moduleID": 9,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "装备",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 50,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": "55508282202_0.6424903009005531",
+                            "value": 0,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 10,
+                    "x": 15,
+                    "width": 219,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "55508282202_0.9301917987960129",
+                        "varName": "equipIDVarID",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 6,
+                            "compParam": {
+                                "lowerLimit": 0,
+                                "upperLimit": 1000,
+                                "stepValue": 1,
+                                "limitInteger": true,
+                                "lockTextLimit": false,
+                                "xDragEnabled": true,
+                                "yDragEnabled": true
+                            }
+                        },
+                        "defaultValue": "1",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "装备",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 50,
+                        "eyeShow": true,
+                        "lockBlock": false
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": "55508282202_0.6424903009005531",
+                            "value": 1,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 10,
+                    "x": 15,
+                    "width": 225,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "55508282202_0.6424903009005531",
+                        "varName": "equipUseVar",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 2,
+                            "compParam": {
+                                "items": "常量,变量",
+                                "showIndex": false
+                            }
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "使用变量指定",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 0,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [],
+                    "y": 11,
+                    "x": 245,
+                    "width": 107,
+                    "height": 32
+                }
+            ],
+            "blockCondition": [
+                {
+                    "attrID": "55507959498_0.7782830317432077",
+                    "value": 1,
+                    "isExpression": false,
+                    "jsCode": null,
+                    "tsCode": null,
+                    "codeName": null
+                }
+            ],
+            "blockHeight": 50,
+            "autoOrder": true,
+            "hideBlockTitle": true
+        },
+        {
+            "name": "角色",
+            "blockAttrs": [
+                {
+                    "attr": {
+                        "id": "55508498296_0.7104694640545286",
+                        "varName": "actorID",
+                        "varType": 4,
+                        "compData": {
+                            "compType": 1004,
+                            "compParam": {
+                                "lowerLimit": 0,
+                                "upperLimit": 1000,
+                                "stepValue": 1,
+                                "limitInteger": true,
+                                "lockTextLimit": false,
+                                "xDragEnabled": true,
+                                "yDragEnabled": true
+                            }
+                        },
+                        "defaultValue": "1",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": true,
+                        "moduleID": 6,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "角色",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 50,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": "55508498296_0.9554198310410864",
+                            "value": 0,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 10,
+                    "x": 15,
+                    "width": 219,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "55508498296_0.19271560165125812",
+                        "varName": "actorIDVarID",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 6,
+                            "compParam": {
+                                "lowerLimit": 0,
+                                "upperLimit": 1000,
+                                "stepValue": 1,
+                                "limitInteger": true,
+                                "lockTextLimit": false,
+                                "xDragEnabled": true,
+                                "yDragEnabled": true
+                            }
+                        },
+                        "defaultValue": "1",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "角色",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 50,
+                        "eyeShow": true,
+                        "lockBlock": false
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": "55508498296_0.9554198310410864",
+                            "value": 1,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 10,
+                    "x": 15,
+                    "width": 225,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "55508498296_0.9554198310410864",
+                        "varName": "actorUseVar",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 2,
+                            "compParam": {
+                                "items": "常量,变量",
+                                "showIndex": false
+                            }
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "使用变量指定",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 0,
+                        "eyeShow": true,
+                        "lockBlock": false
+                    },
+                    "attrConditions": [],
+                    "y": 11,
+                    "x": 245,
+                    "width": 107,
+                    "height": 32
+                }
+            ],
+            "blockCondition": [
+                {
+                    "attrID": "55507959498_0.7782830317432077",
+                    "value": 2,
+                    "isExpression": false,
+                    "jsCode": null,
+                    "tsCode": null,
+                    "codeName": null
+                }
+            ],
+            "blockHeight": 50,
+            "autoOrder": true,
+            "hideBlockTitle": true
+        }
+    ],
+    "isCustomPhraseDesc": true,
+    "customPhraseDescTS": "// 根据属性名称值编写自定义短语描述，如：\"我的短语是\"+attrs.xxx\n// 使用下拉框组件的变量attrs.xxx有对应的attrs.xxxItems的属性以便获得标签名集合\n// 获取自定义模块的数据名称的函数：getModuleDataName(moduleID:number,dataID:number):string;\n// 获取各种列表内数据名称的函数：getTypeDataListName(typeID: number, dataID: number):string;\n// -- typeID ：0-全局变量 1-全局开关 2-全局字符串 3-玩家变量 4-玩家开关 5-玩家字符串\n//           ：6-场景列表 7-场景对象模型列表 8-图块列表 9-行走图列表 10-行走图动作列表 11-立绘列表 12-立绘表情列表\n//           ：13-公共事件 14-对话框列表 15-动画列表 16-动画信号列表 17-界面列表 18-数据结构列表 19-自定义模块列表\n//           ：20-自定义命令列表 21-自定义行为列表 22-自动元件列表 23-行走图部件列表 24-立绘部件列表 25-材质列表\nvar str = `${attrs.ownTypeItems[attrs.ownType]}`;\nswitch (attrs.ownType) {\n    case 0:\n        str += attrs.itemUseVar ? `「${attrs.itemIDVarID}-${getTypeDataListName(3, attrs.itemIDVarID)}」` : `「${attrs.itemID}-${getModuleDataName(1, attrs.itemID)}」`;\n        break;\n    case 1:\n        str += attrs.equipUseVar ? `「${attrs.equipIDVarID}-${getTypeDataListName(3, attrs.equipIDVarID)}」` : `「${attrs.equipID}-${getModuleDataName(9, attrs.equipID)}」`;\n        break;\n    case 2:\n        str += attrs.actorUseVar ? `「${attrs.actorIDVarID}-${getTypeDataListName(3, attrs.actorIDVarID)}」` : `「${attrs.actorID}-${getModuleDataName(6, attrs.actorID)}」`;\n        break;\n}",
+    "customPhraseDescJS": "var str = \"\" + attrs.ownTypeItems[attrs.ownType];\nswitch (attrs.ownType) {\n    case 0:\n        str += attrs.itemUseVar ? \"\\u300C\" + attrs.itemIDVarID + \"-\" + getTypeDataListName(3, attrs.itemIDVarID) + \"\\u300D\" : \"\\u300C\" + attrs.itemID + \"-\" + getModuleDataName(1, attrs.itemID) + \"\\u300D\";\n        break;\n    case 1:\n        str += attrs.equipUseVar ? \"\\u300C\" + attrs.equipIDVarID + \"-\" + getTypeDataListName(3, attrs.equipIDVarID) + \"\\u300D\" : \"\\u300C\" + attrs.equipID + \"-\" + getModuleDataName(9, attrs.equipID) + \"\\u300D\";\n        break;\n    case 2:\n        str += attrs.actorUseVar ? \"\\u300C\" + attrs.actorIDVarID + \"-\" + getTypeDataListName(3, attrs.actorIDVarID) + \"\\u300D\" : \"\\u300C\" + attrs.actorID + \"-\" + getModuleDataName(6, attrs.actorID) + \"\\u300D\";\n        break;\n}\n"
+}

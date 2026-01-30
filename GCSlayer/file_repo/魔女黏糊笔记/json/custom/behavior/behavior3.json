@@ -1,0 +1,13 @@
+{
+    "compAutoOrderLimitHeight": 0,
+    "id": 3,
+    "blockList": [
+        {
+            "name": "向上移动一步",
+            "blockAttrs": [],
+            "blockCondition": [],
+            "blockHeight": 35,
+            "autoOrder": true
+        }
+    ]
+}

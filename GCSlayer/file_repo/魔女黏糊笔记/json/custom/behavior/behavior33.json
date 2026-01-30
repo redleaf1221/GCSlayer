@@ -1,0 +1,188 @@
+{
+    "compAutoOrderLimitHeight": 0,
+    "id": 33,
+    "blockList": [
+        {
+            "name": "更改影子",
+            "blockAttrs": [
+                {
+                    "attr": {
+                        "id": "42489476065_0.4610105767800956",
+                        "varName": "enabled",
+                        "varType": 2,
+                        "compData": {
+                            "compType": 15,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "启用影子",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false
+                    },
+                    "attrConditions": [],
+                    "y": 10,
+                    "x": 15,
+                    "width": 200,
+                    "height": 32
+                }
+            ],
+            "blockCondition": [],
+            "blockHeight": 50,
+            "autoOrder": true,
+            "hideBlockTitle": true
+        },
+        {
+            "name": "影子参数设定",
+            "blockAttrs": [
+                {
+                    "attr": {
+                        "id": "42489502523_0.8078123997615776",
+                        "varName": "w",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 0,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "影子宽度",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 80,
+                        "eyeShow": true,
+                        "lockBlock": false
+                    },
+                    "attrConditions": [],
+                    "y": 10,
+                    "x": 15,
+                    "width": 160,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "42489502724_0.906588882865909",
+                        "varName": "h",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 0,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "影子高度",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": false,
+                        "titleWidth": 80,
+                        "eyeShow": true,
+                        "lockBlock": false
+                    },
+                    "attrConditions": [],
+                    "y": 10,
+                    "x": 195,
+                    "width": 160,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "42489565526_0.6584173670179305",
+                        "varName": "alpha",
+                        "varType": 0,
+                        "compData": {
+                            "compType": 1,
+                            "compParam": {
+                                "minLimit": 0,
+                                "maxLimit": 1,
+                                "tickValue": 0.01,
+                                "limitInteger": false,
+                                "lockTextLimit": true
+                            }
+                        },
+                        "defaultValue": "1",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": false,
+                        "moduleID": 1,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "影子透明度",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false
+                    },
+                    "attrConditions": [],
+                    "y": 45,
+                    "x": 15,
+                    "width": 340,
+                    "height": 32
+                }
+            ],
+            "blockCondition": [
+                {
+                    "attrID": "42489476065_0.4610105767800956",
+                    "value": true,
+                    "isExpression": false,
+                    "jsCode": null,
+                    "tsCode": null,
+                    "codeName": null
+                }
+            ],
+            "blockHeight": 85,
+            "autoOrder": true,
+            "hideBlockTitle": false
+        }
+    ],
+    "isCustomPhraseDesc": false
+}
