@@ -7,18 +7,15 @@ namespace GCSlayer.Services;
 public class ScriptDecrypt(IConsole console) {
     public async Task<string> DecryptScriptAsync(string inputPath, string outputPath, bool removeFramework = false) {
         if (!File.Exists(inputPath)) {
-            await console.Error.WriteLineAsync($"- Fle not found {inputPath}");
+            await console.Error.WriteLineAsync($"- File not found {inputPath}");
         }
         
         await CallGcjsDecrypt(inputPath);
         
         var decryptedContent = await File.ReadAllTextAsync(Path.Combine(Constants.GcJsDecryptPath, "decryptedScript.js"));
-
-        if (removeFramework) {
-            decryptedContent = RemoveUnessentialCode(decryptedContent);
-        }
         
-        await File.WriteAllTextAsync(outputPath, decryptedContent);
+        await File.WriteAllTextAsync(outputPath, 
+            removeFramework ? RemoveUnessentialCode(decryptedContent) : decryptedContent);
         
         return decryptedContent;
     }

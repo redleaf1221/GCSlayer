@@ -1,19 +1,19 @@
 {
     "compAutoOrderLimitHeight": 0,
-    "id": 13,
+    "id": 14,
     "blockList": [
         {
-            "name": "Steam",
+            "name": "多语言",
             "blockAttrs": [
                 {
                     "attr": {
-                        "id": "153096216141_0.1733359074987697",
+                        "id": "158654766559_0.9766936213461417",
                         "varName": "type",
                         "varType": 0,
                         "compData": {
                             "compType": 2,
                             "compParam": {
-                                "items": "是否购买本体 - Is purchase game self,是否正在运行steam - Is running steam,是否安装DLC - Is DLC installed,是否拥有DLC - Is DLC owned",
+                                "items": "当前是否为开发环境,当前语言是否为",
                                 "showIndex": true
                             }
                         },
@@ -31,55 +31,7 @@
                         "accessMode": 1,
                         "syncMode": 0,
                         "attrTips": "",
-                        "alias": "",
-                        "onlyConfig": false,
-                        "preview": false,
-                        "autoTitleWidth": false,
-                        "titleWidth": 0,
-                        "eyeShow": true,
-                        "lockBlock": false,
-                        "enumEnable_get": true,
-                        "enumEnable_set": true
-                    },
-                    "attrConditions": [],
-                    "y": 10,
-                    "x": 16,
-                    "width": 500,
-                    "height": 32
-                }
-            ],
-            "blockCondition": [],
-            "blockHeight": 60,
-            "autoOrder": true,
-            "hideBlockTitle": false
-        },
-        {
-            "name": "DLC",
-            "blockAttrs": [
-                {
-                    "attr": {
-                        "id": "153098823153_0.5550695948142024",
-                        "varName": "dlcID",
-                        "varType": 0,
-                        "compData": {
-                            "compType": 0,
-                            "compParam": {}
-                        },
-                        "defaultValue": "",
-                        "hideMode": false,
-                        "useCommand": false,
-                        "onlyPointTo": false,
-                        "moduleID": 1,
-                        "dataStructureID": 1,
-                        "arrayMode": false,
-                        "arrayLength": 100,
-                        "arrayAllowDelete": false,
-                        "arrayAllowSwap": false,
-                        "arrayAllowUpdate": false,
-                        "accessMode": 1,
-                        "syncMode": 0,
-                        "attrTips": "",
-                        "alias": "",
+                        "alias": "判断类型",
                         "onlyConfig": false,
                         "preview": false,
                         "autoTitleWidth": true,
@@ -90,27 +42,65 @@
                         "enumEnable_set": true
                     },
                     "attrConditions": [],
-                    "y": 10,
-                    "x": 15,
+                    "y": 20,
+                    "x": 30,
+                    "width": 250,
+                    "height": 32
+                },
+                {
+                    "attr": {
+                        "id": "158654814409_0.9625095100555334",
+                        "varName": "judgeLanguage",
+                        "varType": 4,
+                        "compData": {
+                            "compType": 1004,
+                            "compParam": {}
+                        },
+                        "defaultValue": "",
+                        "hideMode": false,
+                        "useCommand": false,
+                        "onlyPointTo": true,
+                        "moduleID": 16,
+                        "dataStructureID": 1,
+                        "arrayMode": false,
+                        "arrayLength": 100,
+                        "arrayAllowDelete": false,
+                        "arrayAllowSwap": false,
+                        "arrayAllowUpdate": false,
+                        "accessMode": 1,
+                        "syncMode": 0,
+                        "attrTips": "",
+                        "alias": "判断语言",
+                        "onlyConfig": false,
+                        "preview": false,
+                        "autoTitleWidth": true,
+                        "titleWidth": 100,
+                        "eyeShow": true,
+                        "lockBlock": false,
+                        "enumEnable_get": true,
+                        "enumEnable_set": true
+                    },
+                    "attrConditions": [
+                        {
+                            "attrID": "158654766559_0.9766936213461417",
+                            "value": 1,
+                            "isExpression": false,
+                            "jsCode": null,
+                            "tsCode": null,
+                            "codeName": null
+                        }
+                    ],
+                    "y": 20,
+                    "x": 300,
                     "width": 250,
                     "height": 32
                 }
             ],
-            "blockCondition": [
-                {
-                    "attrID": null,
-                    "value": null,
-                    "isExpression": true,
-                    "jsCode": "attrs.type == 2 || attrs.type == 3;\n",
-                    "tsCode": "attrs.type == 2 || attrs.type == 3",
-                    "codeName": "DLC"
-                }
-            ],
-            "blockHeight": 55,
-            "autoOrder": true,
-            "hideBlockTitle": true
+            "blockCondition": [],
+            "blockHeight": 300,
+            "autoOrder": true
         }
     ],
     "isCustomPhraseDesc": false,
-    "name": "Steam"
+    "name": "多语言"
 }

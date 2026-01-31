@@ -2,7 +2,7 @@
 
 namespace GCSlayer.Services;
 
-public static class TemplateJsonEncryption {
+public static class DrmEncryption {
     public static string Encrypt(string str) {
         if (str.Length >= 3 && str.StartsWith("\x05\x05\x05")) return str;
         var shift = new Random().Next(1, 1315);

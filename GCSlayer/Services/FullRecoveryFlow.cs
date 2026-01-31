@@ -12,7 +12,7 @@ public class FullRecoveryFlow(IConsole console, RecoverParameter parameter) {
 
         await console.Output.WriteLineAsync("Decrypt script");
         var gameScript = await new ScriptDecrypt(console).DecryptScriptAsync(Path.Combine(parameter.GamePath, "script.js"),
-            Path.Combine(parameter.ProjectPath, "Game", "GCMain.ts"));
+            Path.Combine(parameter.ProjectPath, "Game", "GCMain.ts"), true);
         EncryptionStatus status = EncryptionStatus.FromScriptAnalysis(gameScript);
         await console.Output.WriteLineAsync("- Encryption status: ");
         await console.Output.WriteLineAsync($"- - Image: {status.ImageEncrypted}");
