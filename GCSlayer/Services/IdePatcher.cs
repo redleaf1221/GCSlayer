@@ -30,7 +30,7 @@ public partial class IdePatcher(IConsole console) {
     public async Task PatchIdeScript(string scriptPath) {
         await console.Output.WriteLineAsync("- Patch IDE script");
         if (!await ScriptDecrypt.IsGcjsEncrypted(scriptPath)) {
-            await console.Output.WriteLineAsync("- Already patched, skipping");
+            await console.Output.WriteLineAsync("- - Already patched, skipping");
             return;
         }
         File.Copy(scriptPath, scriptPath + ".bak");

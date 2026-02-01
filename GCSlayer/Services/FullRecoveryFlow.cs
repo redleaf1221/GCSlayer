@@ -32,6 +32,7 @@ public class FullRecoveryFlow(IConsole console, RecoverParameter parameter) {
 
         await console.Output.WriteLineAsync("Copy repo");
         var repoPath = parameter.LocalSourcePath ?? Path.Combine(Constants.FileRepoPath, configJson.GameProjectName);
+        if (!Directory.Exists(repoPath)) repoPath = Constants.DefaultRepoPath;
         await FileService.CopyDirectoryAsync(repoPath, parameter.AssetsPath);
 
         await console.Output.WriteLineAsync("Done");
