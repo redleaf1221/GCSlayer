@@ -37,8 +37,14 @@ public class InitFlow(IConsole console, InitParameter parameter) {
         await idePatcher.PatchIdeScript(parameter.IdeScriptPath);
         await idePatcher.PatchCoreTemplate(parameter.CoreTemplatePath);
         await console.Output.WriteLineAsync("Copy core template to local");
+        if (Directory.Exists(Constants.TemplatePath)) {
+            await FileService.DeleteDirectoryAsync(Constants.TemplatePath);
+        }
         await FileService.CopyDirectoryAsync(parameter.CoreTemplatePath, Constants.TemplatePath);
         await console.Output.WriteLineAsync("Copy essential files to file repo");
+        if (Directory.Exists(Constants.DefaultRepoPath)) {
+            await FileService.DeleteDirectoryAsync(Constants.DefaultRepoPath);
+        }
         foreach (var file in TargetPrefixes) {
             Directory.CreateDirectory(Path.GetDirectoryName(Path.Combine(Constants.DefaultRepoPath, file))!);
             if (File.Exists(Path.Combine(Constants.TemplatePath, "asset", file))) {
