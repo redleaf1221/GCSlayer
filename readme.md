@@ -8,16 +8,16 @@ GCSlayer extracts and decrypts GameCreator project files from compiled games, re
 
 ## Features
 
-* Full Project Recovery: Converts encrypted game builds back to editable projects.
-* Asset Decryption: Handles images, JSON, audio, and video encryption, extracts merged json.
-* Script Extraction: Handles obfuscated scripts.js, stripping framework codes.
-* Patch IDE: Enables access to encrypted files beyond what the original author can see.
+- Full Project Recovery: Converts encrypted game builds back to editable projects.
+- Asset Decryption: Handles images, JSON, audio, and video encryption, extracts merged json.
+- Script Extraction: Handles obfuscated scripts.js, stripping framework codes.
+- Patch IDE: Enables access to encrypted files beyond what the original author can see.
 
 ## When to Use GCSlayer
 
-* You want to mod a GameCreator game but lack source access
-* You need to recover lost project files from a compiled build
-* You need to bypass IDE limitations for legitimate development work
+- You want to mod a GameCreator game but lack source access
+- You need to recover lost project files from a compiled build
+- You need to bypass IDE limitations for legitimate development work
 
 ## Quick Start
 
@@ -31,7 +31,7 @@ GCSlayer extracts and decrypts GameCreator project files from compiled games, re
 
 ## Commands
 
-### init - Prepare IDE and template
+* ### init - Prepare IDE and template
 
 #### Usage
 
@@ -39,7 +39,7 @@ GCSlayer extracts and decrypts GameCreator project files from compiled games, re
 
 #### Arguments
 
-* `ide_path`: Path to the IDE installation directory.
+- `ide_path`: Path to the IDE installation directory.
 
 #### What it does:
 
@@ -51,7 +51,7 @@ More precisely:
 2. Removes script obfuscation from core templates.
 3. Copies prepared templates to the tool's working directory.
 
-### recover - Reconstruct projects
+* ### recover - Reconstruct projects
 
 #### Usage
 
@@ -59,15 +59,15 @@ More precisely:
 
 #### Arguments and options
 
-* `game_path`: Path to the game installation directory.
-* `--local_source`: Local repository for missing assets (optional, default to `./file_repo`).
-* `--output`/`-o`: Output directory (defaults to tool folder).
+- `game_path`: Path to the game installation directory.
+- `--local_source`: Local repository for missing assets (optional, default to `./file_repo`).
+- `--output`/`-o`: Output directory (defaults to tool folder).
 
 #### What it does:
 
 Decrypt all the assets and script, and give you a working project.
 
-### drm_crypto – Direct decryption/encryption
+* ### drm_crypto – Direct decryption/encryption
 
 #### Usage
 
@@ -75,9 +75,9 @@ Decrypt all the assets and script, and give you a working project.
 
 #### Arguments and options
 
-* `file_path`: Path to the file you want to decrypt or encrypt.
-* `--output`/`-o`: Output file path.
-* `--encrypt` Specific this to do encryption instead of decryption.
+- `file_path`: Path to the file you want to decrypt or encrypt.
+- `--output`/`-o`: Output file path.
+- `--encrypt` Specific this to do encryption instead of decryption.
 
 #### What it does:
 
@@ -85,8 +85,15 @@ Decrypt or encrypt using a certain encryption by GameCreator, which is used on s
 
 ## Requirements
 
-* .NET 9.0
-* Node.js (for script decryption)
+- .NET 9.0
+- Node.js (for script decryption)
+
+## Credits
+
+- Me, of course.
+- **print_0**: For GCJSDecrypt, the deobfuscation tool for KDSEncode.
+- **Karson.DS**: For GameCreator, the **slightly** flawed game engine.
+
 
 ## Disclaimer
 
