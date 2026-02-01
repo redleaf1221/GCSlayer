@@ -1,446 +1,446 @@
 {
-    "list": {
-        "1": [
-            null,
-            "",
-            ""
-        ],
-        "2": [
-            null
-        ],
-        "3": [
-            null
-        ],
-        "4": [
-            null
-        ],
-        "5": [
-            null
-        ],
-        "6": [
-            null
-        ],
-        "7": [
-            null
-        ],
-        "8": [
-            null
-        ],
-        "9": [
-            null
-        ],
-        "10": [
-            null
-        ],
-        "11": [
-            null
-        ],
-        "12": [
-            null
-        ],
-        "15": [
-            null
-        ],
-        "16": [
-            null
-        ]
-    },
-    "type": {
-        "1": "人物",
-        "2": "怪物",
-        "3": "动物",
-        "4": "窗户",
-        "5": "门",
-        "6": "环境",
-        "7": "灯光",
-        "8": "薪火",
-        "9": "宝箱",
-        "10": "开关",
-        "11": "魔法",
-        "12": "战斗",
-        "15": "GC社区",
-        "16": "插件"
-    },
-    "typeTreeNode": {
+  "list": {
+    "1": [
+      null,
+      "",
+      ""
+    ],
+    "2": [
+      null
+    ],
+    "3": [
+      null
+    ],
+    "4": [
+      null
+    ],
+    "5": [
+      null
+    ],
+    "6": [
+      null
+    ],
+    "7": [
+      null
+    ],
+    "8": [
+      null
+    ],
+    "9": [
+      null
+    ],
+    "10": [
+      null
+    ],
+    "11": [
+      null
+    ],
+    "12": [
+      null
+    ],
+    "15": [
+      null
+    ],
+    "16": [
+      null
+    ]
+  },
+  "type": {
+    "1": "人物",
+    "2": "怪物",
+    "3": "动物",
+    "4": "窗户",
+    "5": "门",
+    "6": "环境",
+    "7": "灯光",
+    "8": "薪火",
+    "9": "宝箱",
+    "10": "开关",
+    "11": "魔法",
+    "12": "战斗",
+    "15": "GC社区",
+    "16": "插件"
+  },
+  "typeTreeNode": {
+    "isDirectory": true,
+    "children": [
+      {
         "isDirectory": true,
-        "children": [
-            {
-                "isDirectory": true,
-                "children": [],
-                "isOpen": true,
-                "name": "人物",
-                "id": null
-            },
-            {
-                "isDirectory": true,
-                "children": [],
-                "isOpen": true,
-                "name": "怪物",
-                "id": null
-            },
-            {
-                "id": 1,
-                "name": "剑士",
-                "children": []
-            },
-            {
-                "id": 2,
-                "name": "魔法师",
-                "children": []
-            },
-            {
-                "id": 3,
-                "name": "弓箭手",
-                "children": []
-            },
-            {
-                "id": 4,
-                "name": "医师",
-                "children": []
-            },
-            {
-                "id": 5,
-                "name": "理世子",
-                "children": []
-            },
-            {
-                "id": 6,
-                "name": "狼姬",
-                "children": []
-            },
-            {
-                "id": 7,
-                "name": "硕明云书",
-                "children": []
-            },
-            {
-                "id": 8,
-                "name": "黑白",
-                "children": []
-            },
-            {
-                "id": 9,
-                "name": "卫兵",
-                "children": []
-            },
-            {
-                "id": 10,
-                "name": "将军",
-                "children": []
-            },
-            {
-                "id": 11,
-                "name": "女仆",
-                "children": []
-            },
-            {
-                "id": 12,
-                "name": "公主",
-                "children": []
-            },
-            {
-                "id": 13,
-                "name": "国王",
-                "children": []
-            },
-            {
-                "id": 14,
-                "name": "王后",
-                "children": []
-            },
-            {
-                "id": 15,
-                "name": "王子",
-                "children": []
-            },
-            {
-                "id": 16,
-                "name": "大臣",
-                "children": []
-            },
-            {
-                "id": 17,
-                "name": "大法师",
-                "children": []
-            },
-            {
-                "id": 18,
-                "name": "贵族",
-                "children": []
-            },
-            {
-                "id": 19,
-                "name": "主教",
-                "children": []
-            },
-            {
-                "id": 20,
-                "name": "神父",
-                "children": []
-            },
-            {
-                "id": 21,
-                "name": "僧侣",
-                "children": []
-            },
-            {
-                "id": 22,
-                "name": "修女",
-                "children": []
-            },
-            {
-                "id": 23,
-                "name": "管家",
-                "children": []
-            },
-            {
-                "id": 24,
-                "name": "侍从",
-                "children": []
-            },
-            {
-                "id": 25,
-                "name": "精灵女王",
-                "children": []
-            },
-            {
-                "id": 26,
-                "name": "男老精灵",
-                "children": []
-            },
-            {
-                "id": 27,
-                "name": "女老精灵",
-                "children": []
-            },
-            {
-                "id": 28,
-                "name": "精灵少女",
-                "children": []
-            },
-            {
-                "id": 29,
-                "name": "精灵王子",
-                "children": []
-            },
-            {
-                "id": 30,
-                "name": "厨师",
-                "children": []
-            },
-            {
-                "id": 31,
-                "name": "商人",
-                "children": []
-            },
-            {
-                "id": 32,
-                "name": "小孩村民",
-                "children": []
-            },
-            {
-                "id": 33,
-                "name": "小孩村民2",
-                "children": []
-            },
-            {
-                "id": 34,
-                "name": "小孩村民3",
-                "children": []
-            },
-            {
-                "id": 35,
-                "name": "村长",
-                "children": []
-            },
-            {
-                "id": 36,
-                "name": "男成年村民",
-                "children": []
-            },
-            {
-                "id": 37,
-                "name": "女成年村民",
-                "children": []
-            },
-            {
-                "id": 38,
-                "name": "男老年村民",
-                "children": []
-            },
-            {
-                "id": 1001,
-                "name": "史莱姆",
-                "children": []
-            },
-            {
-                "id": 1002,
-                "name": "恶魔",
-                "children": []
-            },
-            {
-                "id": 1003,
-                "name": "魅魔",
-                "children": []
-            },
-            {
-                "id": 1004,
-                "name": "魔王",
-                "children": []
-            },
-            {
-                "id": 2001,
-                "name": "白猫",
-                "children": []
-            },
-            {
-                "id": 2002,
-                "name": "黑猫",
-                "children": []
-            },
-            {
-                "id": 2003,
-                "name": "蜜蜂",
-                "children": []
-            },
-            {
-                "id": 2004,
-                "name": "野猪",
-                "children": []
-            },
-            {
-                "id": 2005,
-                "name": "狼",
-                "children": []
-            },
-            {
-                "id": 3001,
-                "name": "倒地烟雾",
-                "children": []
-            },
-            {
-                "id": 3002,
-                "name": "倒地烟雾(后)",
-                "children": []
-            },
-            {
-                "id": 4001,
-                "name": "门1",
-                "children": []
-            },
-            {
-                "id": 4002,
-                "name": "门2",
-                "children": []
-            },
-            {
-                "id": 4003,
-                "name": "门3",
-                "children": []
-            },
-            {
-                "id": 4004,
-                "name": "门4",
-                "children": []
-            },
-            {
-                "id": 4005,
-                "name": "门5",
-                "children": []
-            },
-            {
-                "id": 4006,
-                "name": "门6",
-                "children": []
-            },
-            {
-                "id": 4007,
-                "name": "门7",
-                "children": []
-            },
-            {
-                "id": 4008,
-                "name": "门8",
-                "children": []
-            },
-            {
-                "id": 4009,
-                "name": "门9",
-                "children": []
-            },
-            {
-                "id": 4010,
-                "name": "门10",
-                "children": []
-            },
-            {
-                "id": 4011,
-                "name": "门11",
-                "children": []
-            },
-            {
-                "id": 4012,
-                "name": "门12",
-                "children": []
-            },
-            {
-                "id": 4013,
-                "name": "门13",
-                "children": []
-            },
-            {
-                "id": 4014,
-                "name": "门14",
-                "children": []
-            },
-            {
-                "id": 4015,
-                "name": "门15",
-                "children": []
-            },
-            {
-                "id": 4016,
-                "name": "门16",
-                "children": []
-            },
-            {
-                "id": 4017,
-                "name": "门17",
-                "children": []
-            },
-            {
-                "id": 4018,
-                "name": "门18",
-                "children": []
-            },
-            {
-                "id": 5001,
-                "name": "草1",
-                "children": []
-            },
-            {
-                "id": 5002,
-                "name": "草2",
-                "children": []
-            },
-            {
-                "id": 5003,
-                "name": "花1",
-                "children": []
-            },
-            {
-                "id": 5004,
-                "name": "风车1",
-                "children": []
-            },
-            {
-                "id": 5005,
-                "name": "风车2",
-                "children": []
-            }
-        ],
+        "children": [],
         "isOpen": true,
-        "name": "行走图"
-    },
-    "dataShowMode": 0
+        "name": "人物",
+        "id": null
+      },
+      {
+        "isDirectory": true,
+        "children": [],
+        "isOpen": true,
+        "name": "怪物",
+        "id": null
+      },
+      {
+        "id": 1,
+        "name": "剑士",
+        "children": []
+      },
+      {
+        "id": 2,
+        "name": "魔法师",
+        "children": []
+      },
+      {
+        "id": 3,
+        "name": "弓箭手",
+        "children": []
+      },
+      {
+        "id": 4,
+        "name": "医师",
+        "children": []
+      },
+      {
+        "id": 5,
+        "name": "理世子",
+        "children": []
+      },
+      {
+        "id": 6,
+        "name": "狼姬",
+        "children": []
+      },
+      {
+        "id": 7,
+        "name": "硕明云书",
+        "children": []
+      },
+      {
+        "id": 8,
+        "name": "黑白",
+        "children": []
+      },
+      {
+        "id": 9,
+        "name": "卫兵",
+        "children": []
+      },
+      {
+        "id": 10,
+        "name": "将军",
+        "children": []
+      },
+      {
+        "id": 11,
+        "name": "女仆",
+        "children": []
+      },
+      {
+        "id": 12,
+        "name": "公主",
+        "children": []
+      },
+      {
+        "id": 13,
+        "name": "国王",
+        "children": []
+      },
+      {
+        "id": 14,
+        "name": "王后",
+        "children": []
+      },
+      {
+        "id": 15,
+        "name": "王子",
+        "children": []
+      },
+      {
+        "id": 16,
+        "name": "大臣",
+        "children": []
+      },
+      {
+        "id": 17,
+        "name": "大法师",
+        "children": []
+      },
+      {
+        "id": 18,
+        "name": "贵族",
+        "children": []
+      },
+      {
+        "id": 19,
+        "name": "主教",
+        "children": []
+      },
+      {
+        "id": 20,
+        "name": "神父",
+        "children": []
+      },
+      {
+        "id": 21,
+        "name": "僧侣",
+        "children": []
+      },
+      {
+        "id": 22,
+        "name": "修女",
+        "children": []
+      },
+      {
+        "id": 23,
+        "name": "管家",
+        "children": []
+      },
+      {
+        "id": 24,
+        "name": "侍从",
+        "children": []
+      },
+      {
+        "id": 25,
+        "name": "精灵女王",
+        "children": []
+      },
+      {
+        "id": 26,
+        "name": "男老精灵",
+        "children": []
+      },
+      {
+        "id": 27,
+        "name": "女老精灵",
+        "children": []
+      },
+      {
+        "id": 28,
+        "name": "精灵少女",
+        "children": []
+      },
+      {
+        "id": 29,
+        "name": "精灵王子",
+        "children": []
+      },
+      {
+        "id": 30,
+        "name": "厨师",
+        "children": []
+      },
+      {
+        "id": 31,
+        "name": "商人",
+        "children": []
+      },
+      {
+        "id": 32,
+        "name": "小孩村民",
+        "children": []
+      },
+      {
+        "id": 33,
+        "name": "小孩村民2",
+        "children": []
+      },
+      {
+        "id": 34,
+        "name": "小孩村民3",
+        "children": []
+      },
+      {
+        "id": 35,
+        "name": "村长",
+        "children": []
+      },
+      {
+        "id": 36,
+        "name": "男成年村民",
+        "children": []
+      },
+      {
+        "id": 37,
+        "name": "女成年村民",
+        "children": []
+      },
+      {
+        "id": 38,
+        "name": "男老年村民",
+        "children": []
+      },
+      {
+        "id": 1001,
+        "name": "史莱姆",
+        "children": []
+      },
+      {
+        "id": 1002,
+        "name": "恶魔",
+        "children": []
+      },
+      {
+        "id": 1003,
+        "name": "魅魔",
+        "children": []
+      },
+      {
+        "id": 1004,
+        "name": "魔王",
+        "children": []
+      },
+      {
+        "id": 2001,
+        "name": "白猫",
+        "children": []
+      },
+      {
+        "id": 2002,
+        "name": "黑猫",
+        "children": []
+      },
+      {
+        "id": 2003,
+        "name": "蜜蜂",
+        "children": []
+      },
+      {
+        "id": 2004,
+        "name": "野猪",
+        "children": []
+      },
+      {
+        "id": 2005,
+        "name": "狼",
+        "children": []
+      },
+      {
+        "id": 3001,
+        "name": "倒地烟雾",
+        "children": []
+      },
+      {
+        "id": 3002,
+        "name": "倒地烟雾(后)",
+        "children": []
+      },
+      {
+        "id": 4001,
+        "name": "门1",
+        "children": []
+      },
+      {
+        "id": 4002,
+        "name": "门2",
+        "children": []
+      },
+      {
+        "id": 4003,
+        "name": "门3",
+        "children": []
+      },
+      {
+        "id": 4004,
+        "name": "门4",
+        "children": []
+      },
+      {
+        "id": 4005,
+        "name": "门5",
+        "children": []
+      },
+      {
+        "id": 4006,
+        "name": "门6",
+        "children": []
+      },
+      {
+        "id": 4007,
+        "name": "门7",
+        "children": []
+      },
+      {
+        "id": 4008,
+        "name": "门8",
+        "children": []
+      },
+      {
+        "id": 4009,
+        "name": "门9",
+        "children": []
+      },
+      {
+        "id": 4010,
+        "name": "门10",
+        "children": []
+      },
+      {
+        "id": 4011,
+        "name": "门11",
+        "children": []
+      },
+      {
+        "id": 4012,
+        "name": "门12",
+        "children": []
+      },
+      {
+        "id": 4013,
+        "name": "门13",
+        "children": []
+      },
+      {
+        "id": 4014,
+        "name": "门14",
+        "children": []
+      },
+      {
+        "id": 4015,
+        "name": "门15",
+        "children": []
+      },
+      {
+        "id": 4016,
+        "name": "门16",
+        "children": []
+      },
+      {
+        "id": 4017,
+        "name": "门17",
+        "children": []
+      },
+      {
+        "id": 4018,
+        "name": "门18",
+        "children": []
+      },
+      {
+        "id": 5001,
+        "name": "草1",
+        "children": []
+      },
+      {
+        "id": 5002,
+        "name": "草2",
+        "children": []
+      },
+      {
+        "id": 5003,
+        "name": "花1",
+        "children": []
+      },
+      {
+        "id": 5004,
+        "name": "风车1",
+        "children": []
+      },
+      {
+        "id": 5005,
+        "name": "风车2",
+        "children": []
+      }
+    ],
+    "isOpen": true,
+    "name": "行走图"
+  },
+  "dataShowMode": 0
 }

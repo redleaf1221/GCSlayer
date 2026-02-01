@@ -7,5 +7,4 @@ public record RecoverParameter {
 
     public string ProjectPath => Path.GetFullPath(OutputPath);
     public string AssetsPath => Path.Combine(ProjectPath, "asset");
-
 }

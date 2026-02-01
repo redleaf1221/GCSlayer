@@ -1,5 +1,4 @@
-﻿
-using CliFx.Infrastructure;
+﻿using CliFx.Infrastructure;
 using GCSlayer.Models;
 using ICSharpCode.SharpZipLib.Core;
 using ICSharpCode.SharpZipLib.Zip;
@@ -9,9 +8,9 @@ namespace GCSlayer.Services;
 public class AssetCryptoService(IConsole console) {
     private static readonly HashSet<string> AudioExtensions = new(StringComparer.OrdinalIgnoreCase) {
         ".mp3",
-        ".ogg",
+        ".ogg"
     };
-    
+
     private static readonly HashSet<string> ImageExtensions = new(StringComparer.OrdinalIgnoreCase) {
         ".jpg",
         ".jpeg",
@@ -22,8 +21,10 @@ public class AssetCryptoService(IConsole console) {
 
     private async Task ZipUnpackAsync(FileInfo[] assets, IProgress<double>? progress = null) {
         var processedCount = 0;
-        await Parallel.ForEachAsync(assets, 
-            new ParallelOptions{ MaxDegreeOfParallelism = 1}, 
+        await Parallel.ForEachAsync(assets,
+            new ParallelOptions {
+                MaxDegreeOfParallelism = 1
+            },
             async (file, ct) => {
                 try {
                     var rawData = await File.ReadAllBytesAsync(file.FullName, ct);
@@ -43,15 +44,15 @@ public class AssetCryptoService(IConsole console) {
             });
         progress?.Report(1D);
     }
-    
+
     private static byte[] ImageProcess(byte[] data) {
         if (data.Length < 3) return data;
-        
+
         (data[1], data[2]) = (data[2], data[1]);
-        
+
         var middle = (data.Length - 1) / 2;
         var result = new byte[data.Length - 1];
-        
+
         Array.Copy(data, 0, result, 0, middle);
         Array.Copy(data, middle + 1, result, middle, data.Length - middle - 1);
 
@@ -70,20 +71,22 @@ public class AssetCryptoService(IConsole console) {
         await ZipUnpackAsync(files, progress);
         await console.Output.WriteLineAsync($"- {files.Length} files decrypted");
     }
-    
+
     public async Task DecryptImageAsync(string assetPath, IProgress<double>? progress = null) {
         var dir = new DirectoryInfo(assetPath);
         if (!dir.Exists) {
             await console.Error.WriteLineAsync("- Directory does not exist: " + assetPath);
         }
-        
+
         FileInfo[] files = dir.GetFiles("*", SearchOption.AllDirectories)
             .Where(f => ImageExtensions.Contains(f.Extension))
             .ToArray();
-        
+
         var processedCount = 0;
-        await Parallel.ForEachAsync(files, 
-            new ParallelOptions{ MaxDegreeOfParallelism = Environment.ProcessorCount / 2}, 
+        await Parallel.ForEachAsync(files,
+            new ParallelOptions {
+                MaxDegreeOfParallelism = Environment.ProcessorCount / 2
+            },
             async (file, ct) => {
                 var rawData = await File.ReadAllBytesAsync(file.FullName, ct);
                 var data = ImageProcess(rawData);

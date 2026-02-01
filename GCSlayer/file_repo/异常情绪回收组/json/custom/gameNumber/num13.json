@@ -1,154 +1,154 @@
 {
-    "compAutoOrderLimitHeight": 0,
-    "id": 13,
-    "blockList": [
+  "compAutoOrderLimitHeight": 0,
+  "id": 13,
+  "blockList": [
+    {
+      "name": "操作决定后行动",
+      "blockAttrs": [
         {
-            "name": "操作决定后行动",
-            "blockAttrs": [
-                {
-                    "attr": {
-                        "id": "124224549340_0.9412232576545132",
-                        "varName": "actorAttrName",
-                        "varType": 0,
-                        "compData": {
-                            "compType": 2,
-                            "compParam": {
-                                "items": "角色编号,所在队伍位置,职业,等级,当前经验值,当前升级所需经验值,最大生命值,最大魔法值,生命值,魔法值,攻击力,防御力,魔力,魔法防御力,命中率,暴击率,魔法暴击率,躲避率,力量,耐力,敏捷,速度,自定义",
-                                "showIndex": true
-                            }
-                        },
-                        "defaultValue": "",
-                        "hideMode": false,
-                        "useCommand": false,
-                        "onlyPointTo": false,
-                        "moduleID": 1,
-                        "dataStructureID": 1,
-                        "arrayMode": false,
-                        "arrayLength": 100,
-                        "arrayAllowDelete": false,
-                        "arrayAllowSwap": false,
-                        "arrayAllowUpdate": false,
-                        "accessMode": 1,
-                        "syncMode": 0,
-                        "attrTips": "",
-                        "alias": "属性",
-                        "onlyConfig": false,
-                        "preview": false,
-                        "autoTitleWidth": false,
-                        "titleWidth": 80,
-                        "eyeShow": true,
-                        "lockBlock": false,
-                        "enumEnable_get": true,
-                        "enumEnable_set": true
-                    },
-                    "attrConditions": [],
-                    "y": 69,
-                    "x": 15,
-                    "width": 300,
-                    "height": 32
-                },
-                {
-                    "attr": {
-                        "id": "124224549340_0.8053266180188001",
-                        "varName": "actorCustomAttrName",
-                        "varType": 1,
-                        "compData": {
-                            "compType": 9,
-                            "compParam": {
-                                "numType": true,
-                                "strType": false,
-                                "boolType": false,
-                                "getSetType": 0
-                            }
-                        },
-                        "defaultValue": "",
-                        "hideMode": false,
-                        "useCommand": false,
-                        "onlyPointTo": false,
-                        "moduleID": 1,
-                        "dataStructureID": 1,
-                        "arrayMode": false,
-                        "arrayLength": 100,
-                        "arrayAllowDelete": false,
-                        "arrayAllowSwap": false,
-                        "arrayAllowUpdate": false,
-                        "accessMode": 1,
-                        "syncMode": 0,
-                        "attrTips": "",
-                        "alias": "属性名",
-                        "onlyConfig": false,
-                        "preview": false,
-                        "autoTitleWidth": false,
-                        "titleWidth": 80,
-                        "eyeShow": true,
-                        "lockBlock": false,
-                        "enumEnable_get": true,
-                        "enumEnable_set": true
-                    },
-                    "attrConditions": [
-                        {
-                            "attrID": "124224549340_0.9412232576545132",
-                            "value": 22,
-                            "isExpression": false,
-                            "jsCode": null,
-                            "tsCode": null,
-                            "codeName": null
-                        }
-                    ],
-                    "y": 69,
-                    "x": 330,
-                    "width": 225,
-                    "height": 32
-                },
-                {
-                    "attr": {
-                        "id": "124224552677_0.4934269490418517",
-                        "varName": "opt",
-                        "varType": 0,
-                        "compData": {
-                            "compType": 2,
-                            "compParam": {
-                                "items": "当前操作行动的角色",
-                                "showIndex": true
-                            }
-                        },
-                        "defaultValue": "",
-                        "hideMode": false,
-                        "useCommand": false,
-                        "onlyPointTo": false,
-                        "moduleID": 1,
-                        "dataStructureID": 1,
-                        "arrayMode": false,
-                        "arrayLength": 100,
-                        "arrayAllowDelete": false,
-                        "arrayAllowSwap": false,
-                        "arrayAllowUpdate": false,
-                        "accessMode": 1,
-                        "syncMode": 0,
-                        "attrTips": "",
-                        "alias": "命令",
-                        "onlyConfig": false,
-                        "preview": false,
-                        "autoTitleWidth": true,
-                        "titleWidth": 100,
-                        "eyeShow": true,
-                        "lockBlock": false,
-                        "enumEnable_get": true,
-                        "enumEnable_set": true
-                    },
-                    "attrConditions": [],
-                    "y": 18,
-                    "x": 17,
-                    "width": 307,
-                    "height": 32
-                }
-            ],
-            "blockCondition": [],
-            "blockHeight": 120,
-            "autoOrder": true,
-            "hideBlockTitle": false
+          "attr": {
+            "id": "124224549340_0.9412232576545132",
+            "varName": "actorAttrName",
+            "varType": 0,
+            "compData": {
+              "compType": 2,
+              "compParam": {
+                "items": "角色编号,所在队伍位置,职业,等级,当前经验值,当前升级所需经验值,最大生命值,最大魔法值,生命值,魔法值,攻击力,防御力,魔力,魔法防御力,命中率,暴击率,魔法暴击率,躲避率,力量,耐力,敏捷,速度,自定义",
+                "showIndex": true
+              }
+            },
+            "defaultValue": "",
+            "hideMode": false,
+            "useCommand": false,
+            "onlyPointTo": false,
+            "moduleID": 1,
+            "dataStructureID": 1,
+            "arrayMode": false,
+            "arrayLength": 100,
+            "arrayAllowDelete": false,
+            "arrayAllowSwap": false,
+            "arrayAllowUpdate": false,
+            "accessMode": 1,
+            "syncMode": 0,
+            "attrTips": "",
+            "alias": "属性",
+            "onlyConfig": false,
+            "preview": false,
+            "autoTitleWidth": false,
+            "titleWidth": 80,
+            "eyeShow": true,
+            "lockBlock": false,
+            "enumEnable_get": true,
+            "enumEnable_set": true
+          },
+          "attrConditions": [],
+          "y": 69,
+          "x": 15,
+          "width": 300,
+          "height": 32
+        },
+        {
+          "attr": {
+            "id": "124224549340_0.8053266180188001",
+            "varName": "actorCustomAttrName",
+            "varType": 1,
+            "compData": {
+              "compType": 9,
+              "compParam": {
+                "numType": true,
+                "strType": false,
+                "boolType": false,
+                "getSetType": 0
+              }
+            },
+            "defaultValue": "",
+            "hideMode": false,
+            "useCommand": false,
+            "onlyPointTo": false,
+            "moduleID": 1,
+            "dataStructureID": 1,
+            "arrayMode": false,
+            "arrayLength": 100,
+            "arrayAllowDelete": false,
+            "arrayAllowSwap": false,
+            "arrayAllowUpdate": false,
+            "accessMode": 1,
+            "syncMode": 0,
+            "attrTips": "",
+            "alias": "属性名",
+            "onlyConfig": false,
+            "preview": false,
+            "autoTitleWidth": false,
+            "titleWidth": 80,
+            "eyeShow": true,
+            "lockBlock": false,
+            "enumEnable_get": true,
+            "enumEnable_set": true
+          },
+          "attrConditions": [
+            {
+              "attrID": "124224549340_0.9412232576545132",
+              "value": 22,
+              "isExpression": false,
+              "jsCode": null,
+              "tsCode": null,
+              "codeName": null
+            }
+          ],
+          "y": 69,
+          "x": 330,
+          "width": 225,
+          "height": 32
+        },
+        {
+          "attr": {
+            "id": "124224552677_0.4934269490418517",
+            "varName": "opt",
+            "varType": 0,
+            "compData": {
+              "compType": 2,
+              "compParam": {
+                "items": "当前操作行动的角色",
+                "showIndex": true
+              }
+            },
+            "defaultValue": "",
+            "hideMode": false,
+            "useCommand": false,
+            "onlyPointTo": false,
+            "moduleID": 1,
+            "dataStructureID": 1,
+            "arrayMode": false,
+            "arrayLength": 100,
+            "arrayAllowDelete": false,
+            "arrayAllowSwap": false,
+            "arrayAllowUpdate": false,
+            "accessMode": 1,
+            "syncMode": 0,
+            "attrTips": "",
+            "alias": "命令",
+            "onlyConfig": false,
+            "preview": false,
+            "autoTitleWidth": true,
+            "titleWidth": 100,
+            "eyeShow": true,
+            "lockBlock": false,
+            "enumEnable_get": true,
+            "enumEnable_set": true
+          },
+          "attrConditions": [],
+          "y": 18,
+          "x": 17,
+          "width": 307,
+          "height": 32
         }
-    ],
-    "isCustomPhraseDesc": false,
-    "name": "操作决定后行动"
+      ],
+      "blockCondition": [],
+      "blockHeight": 120,
+      "autoOrder": true,
+      "hideBlockTitle": false
+    }
+  ],
+  "isCustomPhraseDesc": false,
+  "name": "操作决定后行动"
 }

@@ -1,152 +1,152 @@
 {
-    "compAutoOrderLimitHeight": 0,
-    "id": 12,
-    "blockList": [
+  "compAutoOrderLimitHeight": 0,
+  "id": 12,
+  "blockList": [
+    {
+      "name": "未命名块",
+      "blockAttrs": [
         {
-            "name": "未命名块",
-            "blockAttrs": [
-                {
-                    "attr": {
-                        "id": "114049489517_0.9003899947246619",
-                        "varName": "name",
-                        "varType": 1,
-                        "compData": {
-                            "compType": 9,
-                            "compParam": {}
-                        },
-                        "defaultValue": "",
-                        "hideMode": false,
-                        "useCommand": false,
-                        "onlyPointTo": false,
-                        "moduleID": 1,
-                        "dataStructureID": 1,
-                        "arrayMode": false,
-                        "arrayLength": 100,
-                        "arrayAllowDelete": false,
-                        "arrayAllowSwap": false,
-                        "arrayAllowUpdate": false,
-                        "accessMode": 1,
-                        "syncMode": 0,
-                        "attrTips": "",
-                        "alias": "字段名",
-                        "onlyConfig": false,
-                        "preview": false,
-                        "autoTitleWidth": true,
-                        "titleWidth": 100,
-                        "eyeShow": true,
-                        "lockBlock": false,
-                        "enumEnable_get": true,
-                        "enumEnable_set": true
-                    },
-                    "attrConditions": [
-                        {
-                            "attrID": "114049571408_0.7088464970274564",
-                            "value": false,
-                            "isExpression": false,
-                            "jsCode": null,
-                            "tsCode": null,
-                            "codeName": null
-                        }
-                    ],
-                    "y": 13,
-                    "x": 16,
-                    "width": 190,
-                    "height": 32
-                },
-                {
-                    "attr": {
-                        "id": "114049590854_0.4279897504485919",
-                        "varName": "name1",
-                        "varType": 0,
-                        "compData": {
-                            "compType": 8,
-                            "compParam": {}
-                        },
-                        "defaultValue": "",
-                        "hideMode": false,
-                        "useCommand": false,
-                        "onlyPointTo": false,
-                        "moduleID": 1,
-                        "dataStructureID": 1,
-                        "arrayMode": false,
-                        "arrayLength": 100,
-                        "arrayAllowDelete": false,
-                        "arrayAllowSwap": false,
-                        "arrayAllowUpdate": false,
-                        "accessMode": 1,
-                        "syncMode": 0,
-                        "attrTips": "",
-                        "alias": "字段名",
-                        "onlyConfig": false,
-                        "preview": false,
-                        "autoTitleWidth": true,
-                        "titleWidth": 100,
-                        "eyeShow": true,
-                        "lockBlock": false,
-                        "enumEnable_get": true,
-                        "enumEnable_set": true
-                    },
-                    "attrConditions": [
-                        {
-                            "attrID": "114049571408_0.7088464970274564",
-                            "value": true,
-                            "isExpression": false,
-                            "jsCode": null,
-                            "tsCode": null,
-                            "codeName": null
-                        }
-                    ],
-                    "y": 13,
-                    "x": 16,
-                    "width": 190,
-                    "height": 32
-                },
-                {
-                    "attr": {
-                        "id": "114049571408_0.7088464970274564",
-                        "varName": "useVar",
-                        "varType": 2,
-                        "compData": {
-                            "compType": 15,
-                            "compParam": {}
-                        },
-                        "defaultValue": "",
-                        "hideMode": false,
-                        "useCommand": false,
-                        "onlyPointTo": false,
-                        "moduleID": 1,
-                        "dataStructureID": 1,
-                        "arrayMode": false,
-                        "arrayLength": 100,
-                        "arrayAllowDelete": false,
-                        "arrayAllowSwap": false,
-                        "arrayAllowUpdate": false,
-                        "accessMode": 1,
-                        "syncMode": 0,
-                        "attrTips": "",
-                        "alias": "使用变量",
-                        "onlyConfig": false,
-                        "preview": false,
-                        "autoTitleWidth": true,
-                        "titleWidth": 100,
-                        "eyeShow": true,
-                        "lockBlock": false,
-                        "enumEnable_get": true,
-                        "enumEnable_set": true
-                    },
-                    "attrConditions": [],
-                    "y": 13,
-                    "x": 216,
-                    "width": 139,
-                    "height": 32
-                }
-            ],
-            "blockCondition": [],
-            "blockHeight": 60,
-            "autoOrder": true,
-            "hideBlockTitle": true
+          "attr": {
+            "id": "114049489517_0.9003899947246619",
+            "varName": "name",
+            "varType": 1,
+            "compData": {
+              "compType": 9,
+              "compParam": {}
+            },
+            "defaultValue": "",
+            "hideMode": false,
+            "useCommand": false,
+            "onlyPointTo": false,
+            "moduleID": 1,
+            "dataStructureID": 1,
+            "arrayMode": false,
+            "arrayLength": 100,
+            "arrayAllowDelete": false,
+            "arrayAllowSwap": false,
+            "arrayAllowUpdate": false,
+            "accessMode": 1,
+            "syncMode": 0,
+            "attrTips": "",
+            "alias": "字段名",
+            "onlyConfig": false,
+            "preview": false,
+            "autoTitleWidth": true,
+            "titleWidth": 100,
+            "eyeShow": true,
+            "lockBlock": false,
+            "enumEnable_get": true,
+            "enumEnable_set": true
+          },
+          "attrConditions": [
+            {
+              "attrID": "114049571408_0.7088464970274564",
+              "value": false,
+              "isExpression": false,
+              "jsCode": null,
+              "tsCode": null,
+              "codeName": null
+            }
+          ],
+          "y": 13,
+          "x": 16,
+          "width": 190,
+          "height": 32
+        },
+        {
+          "attr": {
+            "id": "114049590854_0.4279897504485919",
+            "varName": "name1",
+            "varType": 0,
+            "compData": {
+              "compType": 8,
+              "compParam": {}
+            },
+            "defaultValue": "",
+            "hideMode": false,
+            "useCommand": false,
+            "onlyPointTo": false,
+            "moduleID": 1,
+            "dataStructureID": 1,
+            "arrayMode": false,
+            "arrayLength": 100,
+            "arrayAllowDelete": false,
+            "arrayAllowSwap": false,
+            "arrayAllowUpdate": false,
+            "accessMode": 1,
+            "syncMode": 0,
+            "attrTips": "",
+            "alias": "字段名",
+            "onlyConfig": false,
+            "preview": false,
+            "autoTitleWidth": true,
+            "titleWidth": 100,
+            "eyeShow": true,
+            "lockBlock": false,
+            "enumEnable_get": true,
+            "enumEnable_set": true
+          },
+          "attrConditions": [
+            {
+              "attrID": "114049571408_0.7088464970274564",
+              "value": true,
+              "isExpression": false,
+              "jsCode": null,
+              "tsCode": null,
+              "codeName": null
+            }
+          ],
+          "y": 13,
+          "x": 16,
+          "width": 190,
+          "height": 32
+        },
+        {
+          "attr": {
+            "id": "114049571408_0.7088464970274564",
+            "varName": "useVar",
+            "varType": 2,
+            "compData": {
+              "compType": 15,
+              "compParam": {}
+            },
+            "defaultValue": "",
+            "hideMode": false,
+            "useCommand": false,
+            "onlyPointTo": false,
+            "moduleID": 1,
+            "dataStructureID": 1,
+            "arrayMode": false,
+            "arrayLength": 100,
+            "arrayAllowDelete": false,
+            "arrayAllowSwap": false,
+            "arrayAllowUpdate": false,
+            "accessMode": 1,
+            "syncMode": 0,
+            "attrTips": "",
+            "alias": "使用变量",
+            "onlyConfig": false,
+            "preview": false,
+            "autoTitleWidth": true,
+            "titleWidth": 100,
+            "eyeShow": true,
+            "lockBlock": false,
+            "enumEnable_get": true,
+            "enumEnable_set": true
+          },
+          "attrConditions": [],
+          "y": 13,
+          "x": 216,
+          "width": 139,
+          "height": 32
         }
-    ],
-    "isCustomPhraseDesc": false,
-    "name": "获取开关参数"
+      ],
+      "blockCondition": [],
+      "blockHeight": 60,
+      "autoOrder": true,
+      "hideBlockTitle": true
+    }
+  ],
+  "isCustomPhraseDesc": false,
+  "name": "获取开关参数"
 }

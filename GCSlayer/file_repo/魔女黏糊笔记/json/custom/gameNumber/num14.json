@@ -1,54 +1,54 @@
 {
-    "compAutoOrderLimitHeight": 0,
-    "id": 14,
-    "blockList": [
+  "compAutoOrderLimitHeight": 0,
+  "id": 14,
+  "blockList": [
+    {
+      "name": "未命名块",
+      "blockAttrs": [
         {
-            "name": "未命名块",
-            "blockAttrs": [
-                {
-                    "attr": {
-                        "id": "78018893984_0.8726969948097465",
-                        "varName": "trophy",
-                        "varType": 4,
-                        "compData": {
-                            "compType": 1004,
-                            "compParam": {}
-                        },
-                        "defaultValue": "",
-                        "hideMode": false,
-                        "useCommand": false,
-                        "onlyPointTo": true,
-                        "moduleID": 16,
-                        "dataStructureID": 1,
-                        "arrayMode": true,
-                        "arrayLength": 100,
-                        "arrayAllowDelete": false,
-                        "arrayAllowSwap": false,
-                        "arrayAllowUpdate": false,
-                        "accessMode": 1,
-                        "syncMode": 0,
-                        "attrTips": "",
-                        "alias": "奖杯获取情况 0为为获取 1为获取",
-                        "onlyConfig": false,
-                        "preview": false,
-                        "autoTitleWidth": true,
-                        "titleWidth": 100,
-                        "eyeShow": true,
-                        "lockBlock": false
-                    },
-                    "attrConditions": [],
-                    "y": 7,
-                    "x": 13,
-                    "width": 602,
-                    "height": 278
-                }
-            ],
-            "blockCondition": [],
-            "blockHeight": 300,
-            "autoOrder": true,
-            "hideBlockTitle": true
+          "attr": {
+            "id": "78018893984_0.8726969948097465",
+            "varName": "trophy",
+            "varType": 4,
+            "compData": {
+              "compType": 1004,
+              "compParam": {}
+            },
+            "defaultValue": "",
+            "hideMode": false,
+            "useCommand": false,
+            "onlyPointTo": true,
+            "moduleID": 16,
+            "dataStructureID": 1,
+            "arrayMode": true,
+            "arrayLength": 100,
+            "arrayAllowDelete": false,
+            "arrayAllowSwap": false,
+            "arrayAllowUpdate": false,
+            "accessMode": 1,
+            "syncMode": 0,
+            "attrTips": "",
+            "alias": "奖杯获取情况 0为为获取 1为获取",
+            "onlyConfig": false,
+            "preview": false,
+            "autoTitleWidth": true,
+            "titleWidth": 100,
+            "eyeShow": true,
+            "lockBlock": false
+          },
+          "attrConditions": [],
+          "y": 7,
+          "x": 13,
+          "width": 602,
+          "height": 278
         }
-    ],
-    "isCustomPhraseDesc": false,
-    "name": "奖杯"
+      ],
+      "blockCondition": [],
+      "blockHeight": 300,
+      "autoOrder": true,
+      "hideBlockTitle": true
+    }
+  ],
+  "isCustomPhraseDesc": false,
+  "name": "奖杯"
 }

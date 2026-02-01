@@ -1,116 +1,116 @@
 {
-    "compAutoOrderLimitHeight": 0,
-    "id": 12,
-    "blockList": [
+  "compAutoOrderLimitHeight": 0,
+  "id": 12,
+  "blockList": [
+    {
+      "name": "Steam",
+      "blockAttrs": [
         {
-            "name": "Steam",
-            "blockAttrs": [
-                {
-                    "attr": {
-                        "id": "153096216141_0.1733359074987697",
-                        "varName": "type",
-                        "varType": 0,
-                        "compData": {
-                            "compType": 2,
-                            "compParam": {
-                                "items": "是否购买本体 - Is purchase game self,是否正在运行steam - Is running steam,是否安装DLC - Is DLC installed,是否拥有DLC - Is DLC owned",
-                                "showIndex": true
-                            }
-                        },
-                        "defaultValue": "",
-                        "hideMode": false,
-                        "useCommand": false,
-                        "onlyPointTo": false,
-                        "moduleID": 1,
-                        "dataStructureID": 1,
-                        "arrayMode": false,
-                        "arrayLength": 100,
-                        "arrayAllowDelete": false,
-                        "arrayAllowSwap": false,
-                        "arrayAllowUpdate": false,
-                        "accessMode": 1,
-                        "syncMode": 0,
-                        "attrTips": "",
-                        "alias": "",
-                        "onlyConfig": false,
-                        "preview": false,
-                        "autoTitleWidth": false,
-                        "titleWidth": 0,
-                        "eyeShow": true,
-                        "lockBlock": false,
-                        "enumEnable_get": true,
-                        "enumEnable_set": true
-                    },
-                    "attrConditions": [],
-                    "y": 10,
-                    "x": 16,
-                    "width": 500,
-                    "height": 32
-                }
-            ],
-            "blockCondition": [],
-            "blockHeight": 60,
-            "autoOrder": true,
-            "hideBlockTitle": false
-        },
-        {
-            "name": "DLC",
-            "blockAttrs": [
-                {
-                    "attr": {
-                        "id": "153098823153_0.5550695948142024",
-                        "varName": "dlcID",
-                        "varType": 0,
-                        "compData": {
-                            "compType": 0,
-                            "compParam": {}
-                        },
-                        "defaultValue": "",
-                        "hideMode": false,
-                        "useCommand": false,
-                        "onlyPointTo": false,
-                        "moduleID": 1,
-                        "dataStructureID": 1,
-                        "arrayMode": false,
-                        "arrayLength": 100,
-                        "arrayAllowDelete": false,
-                        "arrayAllowSwap": false,
-                        "arrayAllowUpdate": false,
-                        "accessMode": 1,
-                        "syncMode": 0,
-                        "attrTips": "",
-                        "alias": "",
-                        "onlyConfig": false,
-                        "preview": false,
-                        "autoTitleWidth": true,
-                        "titleWidth": 100,
-                        "eyeShow": true,
-                        "lockBlock": false,
-                        "enumEnable_get": true,
-                        "enumEnable_set": true
-                    },
-                    "attrConditions": [],
-                    "y": 10,
-                    "x": 15,
-                    "width": 250,
-                    "height": 32
-                }
-            ],
-            "blockCondition": [
-                {
-                    "attrID": null,
-                    "value": null,
-                    "isExpression": true,
-                    "jsCode": "attrs.type == 2 || attrs.type == 3;\n",
-                    "tsCode": "attrs.type == 2 || attrs.type == 3",
-                    "codeName": "DLC"
-                }
-            ],
-            "blockHeight": 55,
-            "autoOrder": true,
-            "hideBlockTitle": true
+          "attr": {
+            "id": "153096216141_0.1733359074987697",
+            "varName": "type",
+            "varType": 0,
+            "compData": {
+              "compType": 2,
+              "compParam": {
+                "items": "是否购买本体 - Is purchase game self,是否正在运行steam - Is running steam,是否安装DLC - Is DLC installed,是否拥有DLC - Is DLC owned",
+                "showIndex": true
+              }
+            },
+            "defaultValue": "",
+            "hideMode": false,
+            "useCommand": false,
+            "onlyPointTo": false,
+            "moduleID": 1,
+            "dataStructureID": 1,
+            "arrayMode": false,
+            "arrayLength": 100,
+            "arrayAllowDelete": false,
+            "arrayAllowSwap": false,
+            "arrayAllowUpdate": false,
+            "accessMode": 1,
+            "syncMode": 0,
+            "attrTips": "",
+            "alias": "",
+            "onlyConfig": false,
+            "preview": false,
+            "autoTitleWidth": false,
+            "titleWidth": 0,
+            "eyeShow": true,
+            "lockBlock": false,
+            "enumEnable_get": true,
+            "enumEnable_set": true
+          },
+          "attrConditions": [],
+          "y": 10,
+          "x": 16,
+          "width": 500,
+          "height": 32
         }
-    ],
-    "isCustomPhraseDesc": false,
-    "name": "Steam"
+      ],
+      "blockCondition": [],
+      "blockHeight": 60,
+      "autoOrder": true,
+      "hideBlockTitle": false
+    },
+    {
+      "name": "DLC",
+      "blockAttrs": [
+        {
+          "attr": {
+            "id": "153098823153_0.5550695948142024",
+            "varName": "dlcID",
+            "varType": 0,
+            "compData": {
+              "compType": 0,
+              "compParam": {}
+            },
+            "defaultValue": "",
+            "hideMode": false,
+            "useCommand": false,
+            "onlyPointTo": false,
+            "moduleID": 1,
+            "dataStructureID": 1,
+            "arrayMode": false,
+            "arrayLength": 100,
+            "arrayAllowDelete": false,
+            "arrayAllowSwap": false,
+            "arrayAllowUpdate": false,
+            "accessMode": 1,
+            "syncMode": 0,
+            "attrTips": "",
+            "alias": "",
+            "onlyConfig": false,
+            "preview": false,
+            "autoTitleWidth": true,
+            "titleWidth": 100,
+            "eyeShow": true,
+            "lockBlock": false,
+            "enumEnable_get": true,
+            "enumEnable_set": true
+          },
+          "attrConditions": [],
+          "y": 10,
+          "x": 15,
+          "width": 250,
+          "height": 32
+        }
+      ],
+      "blockCondition": [
+        {
+          "attrID": null,
+          "value": null,
+          "isExpression": true,
+          "jsCode": "attrs.type == 2 || attrs.type == 3;\n",
+          "tsCode": "attrs.type == 2 || attrs.type == 3",
+          "codeName": "DLC"
+        }
+      ],
+      "blockHeight": 55,
+      "autoOrder": true,
+      "hideBlockTitle": true
+    }
+  ],
+  "isCustomPhraseDesc": false,
+  "name": "Steam"
 }

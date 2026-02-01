@@ -1,1 +1,50 @@
-{"list":[null,"提前进入显示伤害阶段","","","","",""],"k1":"0.40394177775262174-1691478101022","typeTreeNode":{"isDirectory":true,"children":[{"id":1,"name":"xxx1","children":[]},{"id":2,"name":"xx2","children":[]},{"id":3,"name":"攻击","children":[]},{"id":4,"name":"跳跃","children":[]},{"id":5,"name":"跳舞","children":[]},{"id":6,"name":"受伤","children":[]}],"isOpen":true,"name":"[#GAME_DIRECTORY]"},"dataShowMode":0}
+{
+  "list": [
+    null,
+    "提前进入显示伤害阶段",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "k1": "0.40394177775262174-1691478101022",
+  "typeTreeNode": {
+    "isDirectory": true,
+    "children": [
+      {
+        "id": 1,
+        "name": "xxx1",
+        "children": []
+      },
+      {
+        "id": 2,
+        "name": "xx2",
+        "children": []
+      },
+      {
+        "id": 3,
+        "name": "攻击",
+        "children": []
+      },
+      {
+        "id": 4,
+        "name": "跳跃",
+        "children": []
+      },
+      {
+        "id": 5,
+        "name": "跳舞",
+        "children": []
+      },
+      {
+        "id": 6,
+        "name": "受伤",
+        "children": []
+      }
+    ],
+    "isOpen": true,
+    "name": "[#GAME_DIRECTORY]"
+  },
+  "dataShowMode": 0
+}

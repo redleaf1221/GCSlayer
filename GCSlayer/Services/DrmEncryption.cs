@@ -18,7 +18,7 @@ public static class DrmEncryption {
         }
         return result.ToString();
     }
-    
+
     public static string Decrypt(string str) {
         if (str.Length < 3 || !str.StartsWith("\x05\x05\x05")) return str;
         var shift = (int)str[3];

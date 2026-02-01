@@ -1,32 +1,32 @@
 {
-    "list": [
-        null,
-        "头部",
-        "身体",
-        "手",
-        "影子",
-        "三角形",
-        "正方形",
-        "六边形",
-        "",
-        "",
-        ""
+  "list": [
+    null,
+    "头部",
+    "身体",
+    "手",
+    "影子",
+    "三角形",
+    "正方形",
+    "六边形",
+    "",
+    "",
+    ""
+  ],
+  "typeTreeNode": {
+    "isDirectory": true,
+    "children": [
+      {
+        "id": 1,
+        "name": "头部",
+        "children": []
+      },
+      {
+        "id": 2,
+        "name": "身体",
+        "children": []
+      }
     ],
-    "typeTreeNode": {
-        "isDirectory": true,
-        "children": [
-            {
-                "id": 1,
-                "name": "头部",
-                "children": []
-            },
-            {
-                "id": 2,
-                "name": "身体",
-                "children": []
-            }
-        ],
-        "isOpen": true,
-        "name": "目录"
-    }
+    "isOpen": true,
+    "name": "目录"
+  }
 }

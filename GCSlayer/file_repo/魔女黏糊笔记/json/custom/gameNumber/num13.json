@@ -1,836 +1,836 @@
 {
-    "compAutoOrderLimitHeight": 0,
-    "id": 13,
-    "blockList": [
+  "compAutoOrderLimitHeight": 0,
+  "id": 13,
+  "blockList": [
+    {
+      "name": "数组插件",
+      "blockAttrs": [
         {
-            "name": "数组插件",
-            "blockAttrs": [
-                {
-                    "attr": {
-                        "id": "79386533804_0.2569009254765009",
-                        "varName": "operation",
-                        "varType": 0,
-                        "compData": {
-                            "compType": 2,
-                            "compParam": {
-                                "items": "数组存在(1存在0不存在),数组长度,数组最末尾索引,数值数组中最大值,数值数组中最小值,根据索引获取数值,获取数值所在的位置(获取索引),获取(平面数组)元素,获取(平面数组)元素.X,获取(平面数组)元素.Y,获取(平面数组).宽度,获取(平面数组).高度,根据索引获取(平面数组)X,根据索引获取(平面数组)Y",
-                                "showIndex": true
-                            }
-                        },
-                        "defaultValue": "",
-                        "hideMode": false,
-                        "useCommand": false,
-                        "onlyPointTo": false,
-                        "moduleID": 1,
-                        "dataStructureID": 1,
-                        "arrayMode": false,
-                        "arrayLength": 100,
-                        "arrayAllowDelete": false,
-                        "arrayAllowSwap": false,
-                        "arrayAllowUpdate": false,
-                        "accessMode": 1,
-                        "syncMode": 0,
-                        "attrTips": "",
-                        "alias": "操作",
-                        "onlyConfig": false,
-                        "preview": false,
-                        "autoTitleWidth": true,
-                        "titleWidth": 100,
-                        "eyeShow": true,
-                        "lockBlock": false,
-                        "enumEnable_get": true,
-                        "enumEnable_set": true
-                    },
-                    "attrConditions": [],
-                    "y": 30,
-                    "x": 23,
-                    "width": 280,
-                    "height": 32
-                },
-                {
-                    "attr": {
-                        "id": "79386621569_0.422112186504076",
-                        "varName": "arrayId",
-                        "varType": 0,
-                        "compData": {
-                            "compType": 8,
-                            "compParam": {}
-                        },
-                        "defaultValue": "",
-                        "hideMode": false,
-                        "useCommand": false,
-                        "onlyPointTo": false,
-                        "moduleID": 1,
-                        "dataStructureID": 1,
-                        "arrayMode": false,
-                        "arrayLength": 100,
-                        "arrayAllowDelete": false,
-                        "arrayAllowSwap": false,
-                        "arrayAllowUpdate": false,
-                        "accessMode": 1,
-                        "syncMode": 0,
-                        "attrTips": "",
-                        "alias": "数组",
-                        "onlyConfig": false,
-                        "preview": false,
-                        "autoTitleWidth": true,
-                        "titleWidth": 100,
-                        "eyeShow": true,
-                        "lockBlock": false,
-                        "enumEnable_get": true,
-                        "enumEnable_set": true
-                    },
-                    "attrConditions": [],
-                    "y": 72,
-                    "x": 23,
-                    "width": 196,
-                    "height": 32
-                },
-                {
-                    "attr": {
-                        "id": "119045851396_0.834782484276472",
-                        "varName": "_type",
-                        "varType": 0,
-                        "compData": {
-                            "compType": 2,
-                            "compParam": {
-                                "items": "数值,字符串",
-                                "showIndex": true
-                            }
-                        },
-                        "defaultValue": "",
-                        "hideMode": false,
-                        "useCommand": false,
-                        "onlyPointTo": false,
-                        "moduleID": 1,
-                        "dataStructureID": 1,
-                        "arrayMode": false,
-                        "arrayLength": 100,
-                        "arrayAllowDelete": false,
-                        "arrayAllowSwap": false,
-                        "arrayAllowUpdate": false,
-                        "accessMode": 1,
-                        "syncMode": 0,
-                        "attrTips": "",
-                        "alias": "类型",
-                        "onlyConfig": false,
-                        "preview": false,
-                        "autoTitleWidth": true,
-                        "titleWidth": 100,
-                        "eyeShow": true,
-                        "lockBlock": false,
-                        "enumEnable_get": true,
-                        "enumEnable_set": true
-                    },
-                    "attrConditions": [
-                        {
-                            "attrID": null,
-                            "value": null,
-                            "isExpression": true,
-                            "jsCode": "[6, 7, 8, 9].indexOf(attrs.operation) != -1;\n",
-                            "tsCode": "// 根据属性名称值编写条件表达式（目前支持选择框和复选框），如： (attrs.xxx>5 && attrs.yyy<=10) || attrs.zzz==6;\r\n[6, 7, 8, 9].indexOf(attrs.operation) != -1;",
-                            "codeName": "条件表达式脚本："
-                        }
-                    ],
-                    "y": 29,
-                    "x": 314,
-                    "width": 200,
-                    "height": 32
-                },
-                {
-                    "attr": {
-                        "id": "119046039333_0.7990672426199743",
-                        "varName": "index",
-                        "varType": 0,
-                        "compData": {
-                            "compType": 0,
-                            "compParam": {}
-                        },
-                        "defaultValue": "",
-                        "hideMode": false,
-                        "useCommand": false,
-                        "onlyPointTo": false,
-                        "moduleID": 1,
-                        "dataStructureID": 1,
-                        "arrayMode": false,
-                        "arrayLength": 100,
-                        "arrayAllowDelete": false,
-                        "arrayAllowSwap": false,
-                        "arrayAllowUpdate": false,
-                        "accessMode": 1,
-                        "syncMode": 0,
-                        "attrTips": "即 数组中的位置 第一位为0 依次往后推算",
-                        "alias": "索引",
-                        "onlyConfig": false,
-                        "preview": false,
-                        "autoTitleWidth": true,
-                        "titleWidth": 100,
-                        "eyeShow": true,
-                        "lockBlock": false,
-                        "enumEnable_get": true,
-                        "enumEnable_set": true
-                    },
-                    "attrConditions": [
-                        {
-                            "attrID": "119046226627_0.940020635155441",
-                            "value": false,
-                            "isExpression": false,
-                            "jsCode": null,
-                            "tsCode": null,
-                            "codeName": null
-                        },
-                        {
-                            "attrID": null,
-                            "value": null,
-                            "isExpression": true,
-                            "jsCode": "[5, 12, 13].indexOf(attrs.operation) != -1;\n",
-                            "tsCode": "// 根据属性名称值编写条件表达式（目前支持选择框和复选框），如： (attrs.xxx>5 && attrs.yyy<=10) || attrs.zzz==6;\r\n[5, 12, 13].indexOf(attrs.operation) != -1",
-                            "codeName": "条件表达式脚本："
-                        }
-                    ],
-                    "y": 73,
-                    "x": 238,
-                    "width": 200,
-                    "height": 32
-                },
-                {
-                    "attr": {
-                        "id": "119046218184_0.6364408414049223",
-                        "varName": "index1",
-                        "varType": 0,
-                        "compData": {
-                            "compType": 6,
-                            "compParam": {}
-                        },
-                        "defaultValue": "",
-                        "hideMode": false,
-                        "useCommand": false,
-                        "onlyPointTo": false,
-                        "moduleID": 1,
-                        "dataStructureID": 1,
-                        "arrayMode": false,
-                        "arrayLength": 100,
-                        "arrayAllowDelete": false,
-                        "arrayAllowSwap": false,
-                        "arrayAllowUpdate": false,
-                        "accessMode": 1,
-                        "syncMode": 0,
-                        "attrTips": "即 数组中的位置 第一位为0 依次往后推算",
-                        "alias": "索引",
-                        "onlyConfig": false,
-                        "preview": false,
-                        "autoTitleWidth": true,
-                        "titleWidth": 100,
-                        "eyeShow": true,
-                        "lockBlock": false,
-                        "enumEnable_get": true,
-                        "enumEnable_set": true
-                    },
-                    "attrConditions": [
-                        {
-                            "attrID": "119046226627_0.940020635155441",
-                            "value": true,
-                            "isExpression": false,
-                            "jsCode": null,
-                            "tsCode": null,
-                            "codeName": null
-                        },
-                        {
-                            "attrID": null,
-                            "value": null,
-                            "isExpression": true,
-                            "jsCode": "[5, 12, 13].indexOf(attrs.operation) != -1;\n",
-                            "tsCode": "// 根据属性名称值编写条件表达式（目前支持选择框和复选框），如： (attrs.xxx>5 && attrs.yyy<=10) || attrs.zzz==6;\r\n[5, 12, 13].indexOf(attrs.operation) != -1",
-                            "codeName": "条件表达式脚本："
-                        }
-                    ],
-                    "y": 73,
-                    "x": 238,
-                    "width": 200,
-                    "height": 32
-                },
-                {
-                    "attr": {
-                        "id": "119046226627_0.940020635155441",
-                        "varName": "useVar",
-                        "varType": 2,
-                        "compData": {
-                            "compType": 15,
-                            "compParam": {}
-                        },
-                        "defaultValue": "",
-                        "hideMode": false,
-                        "useCommand": false,
-                        "onlyPointTo": false,
-                        "moduleID": 1,
-                        "dataStructureID": 1,
-                        "arrayMode": false,
-                        "arrayLength": 100,
-                        "arrayAllowDelete": false,
-                        "arrayAllowSwap": false,
-                        "arrayAllowUpdate": false,
-                        "accessMode": 1,
-                        "syncMode": 0,
-                        "attrTips": "",
-                        "alias": "使用变量",
-                        "onlyConfig": false,
-                        "preview": false,
-                        "autoTitleWidth": true,
-                        "titleWidth": 100,
-                        "eyeShow": true,
-                        "lockBlock": false,
-                        "enumEnable_get": true,
-                        "enumEnable_set": true
-                    },
-                    "attrConditions": [
-                        {
-                            "attrID": null,
-                            "value": null,
-                            "isExpression": true,
-                            "jsCode": "[5, 6, 8, 9, 12, 13].indexOf(attrs.operation) != -1;\n",
-                            "tsCode": "// 根据属性名称值编写条件表达式（目前支持选择框和复选框），如： (attrs.xxx>5 && attrs.yyy<=10) || attrs.zzz==6;\r\n[5,6, 8, 9,12,13].indexOf(attrs.operation) != -1;",
-                            "codeName": "条件表达式脚本："
-                        }
-                    ],
-                    "y": 73,
-                    "x": 451,
-                    "width": 200,
-                    "height": 32
-                },
-                {
-                    "attr": {
-                        "id": "119046500501_0.9031815181919443",
-                        "varName": "valueNum",
-                        "varType": 0,
-                        "compData": {
-                            "compType": 0,
-                            "compParam": {}
-                        },
-                        "defaultValue": "",
-                        "hideMode": false,
-                        "useCommand": false,
-                        "onlyPointTo": false,
-                        "moduleID": 1,
-                        "dataStructureID": 1,
-                        "arrayMode": false,
-                        "arrayLength": 100,
-                        "arrayAllowDelete": false,
-                        "arrayAllowSwap": false,
-                        "arrayAllowUpdate": false,
-                        "accessMode": 1,
-                        "syncMode": 0,
-                        "attrTips": "即 数组中的位置 第一位为0 依次往后推算",
-                        "alias": "数值",
-                        "onlyConfig": false,
-                        "preview": false,
-                        "autoTitleWidth": true,
-                        "titleWidth": 100,
-                        "eyeShow": true,
-                        "lockBlock": false,
-                        "enumEnable_get": true,
-                        "enumEnable_set": true
-                    },
-                    "attrConditions": [
-                        {
-                            "attrID": "119046226627_0.940020635155441",
-                            "value": false,
-                            "isExpression": false,
-                            "jsCode": null,
-                            "tsCode": null,
-                            "codeName": null
-                        },
-                        {
-                            "attrID": "119045851396_0.834782484276472",
-                            "value": 0,
-                            "isExpression": false,
-                            "jsCode": null,
-                            "tsCode": null,
-                            "codeName": null
-                        },
-                        {
-                            "attrID": null,
-                            "value": null,
-                            "isExpression": true,
-                            "jsCode": "[6, 8, 9].indexOf(attrs.operation) != -1;\n",
-                            "tsCode": "// 根据属性名称值编写条件表达式（目前支持选择框和复选框），如： (attrs.xxx>5 && attrs.yyy<=10) || attrs.zzz==6;\r\n[6, 8, 9].indexOf(attrs.operation) != -1;",
-                            "codeName": "条件表达式脚本："
-                        }
-                    ],
-                    "y": 73,
-                    "x": 238,
-                    "width": 200,
-                    "height": 32
-                },
-                {
-                    "attr": {
-                        "id": "119046843233_0.1878506129235682",
-                        "varName": "valueNum1",
-                        "varType": 0,
-                        "compData": {
-                            "compType": 6,
-                            "compParam": {}
-                        },
-                        "defaultValue": "",
-                        "hideMode": false,
-                        "useCommand": false,
-                        "onlyPointTo": false,
-                        "moduleID": 1,
-                        "dataStructureID": 1,
-                        "arrayMode": false,
-                        "arrayLength": 100,
-                        "arrayAllowDelete": false,
-                        "arrayAllowSwap": false,
-                        "arrayAllowUpdate": false,
-                        "accessMode": 1,
-                        "syncMode": 0,
-                        "attrTips": "即 数组中的位置 第一位为0 依次往后推算",
-                        "alias": "数值",
-                        "onlyConfig": false,
-                        "preview": false,
-                        "autoTitleWidth": true,
-                        "titleWidth": 100,
-                        "eyeShow": true,
-                        "lockBlock": false,
-                        "enumEnable_get": true,
-                        "enumEnable_set": true
-                    },
-                    "attrConditions": [
-                        {
-                            "attrID": "119046226627_0.940020635155441",
-                            "value": true,
-                            "isExpression": false,
-                            "jsCode": null,
-                            "tsCode": null,
-                            "codeName": null
-                        },
-                        {
-                            "attrID": "119045851396_0.834782484276472",
-                            "value": 0,
-                            "isExpression": false,
-                            "jsCode": null,
-                            "tsCode": null,
-                            "codeName": null
-                        },
-                        {
-                            "attrID": null,
-                            "value": null,
-                            "isExpression": true,
-                            "jsCode": "[6, 8, 9].indexOf(attrs.operation) != -1;\n",
-                            "tsCode": "// 根据属性名称值编写条件表达式（目前支持选择框和复选框），如： (attrs.xxx>5 && attrs.yyy<=10) || attrs.zzz==6;\r\n[6, 8, 9].indexOf(attrs.operation) != -1;",
-                            "codeName": "条件表达式脚本："
-                        }
-                    ],
-                    "y": 73,
-                    "x": 238,
-                    "width": 200,
-                    "height": 32
-                },
-                {
-                    "attr": {
-                        "id": "119047026155_0.9933904602342019",
-                        "varName": "valueStr",
-                        "varType": 1,
-                        "compData": {
-                            "compType": 9,
-                            "compParam": {}
-                        },
-                        "defaultValue": "",
-                        "hideMode": false,
-                        "useCommand": false,
-                        "onlyPointTo": false,
-                        "moduleID": 1,
-                        "dataStructureID": 1,
-                        "arrayMode": false,
-                        "arrayLength": 100,
-                        "arrayAllowDelete": false,
-                        "arrayAllowSwap": false,
-                        "arrayAllowUpdate": false,
-                        "accessMode": 1,
-                        "syncMode": 0,
-                        "attrTips": "即 数组中的位置 第一位为0 依次往后推算",
-                        "alias": "字符串",
-                        "onlyConfig": false,
-                        "preview": false,
-                        "autoTitleWidth": true,
-                        "titleWidth": 100,
-                        "eyeShow": true,
-                        "lockBlock": false,
-                        "enumEnable_get": true,
-                        "enumEnable_set": true
-                    },
-                    "attrConditions": [
-                        {
-                            "attrID": "119046226627_0.940020635155441",
-                            "value": false,
-                            "isExpression": false,
-                            "jsCode": null,
-                            "tsCode": null,
-                            "codeName": null
-                        },
-                        {
-                            "attrID": "119045851396_0.834782484276472",
-                            "value": 1,
-                            "isExpression": false,
-                            "jsCode": null,
-                            "tsCode": null,
-                            "codeName": null
-                        },
-                        {
-                            "attrID": null,
-                            "value": null,
-                            "isExpression": true,
-                            "jsCode": "[6, 8, 9].indexOf(attrs.operation) != -1;\n",
-                            "tsCode": "// 根据属性名称值编写条件表达式（目前支持选择框和复选框），如： (attrs.xxx>5 && attrs.yyy<=10) || attrs.zzz==6;\r\n[6, 8, 9].indexOf(attrs.operation) != -1;",
-                            "codeName": "条件表达式脚本："
-                        }
-                    ],
-                    "y": 73,
-                    "x": 238,
-                    "width": 200,
-                    "height": 32
-                },
-                {
-                    "attr": {
-                        "id": "119047040239_0.3819211347106255",
-                        "varName": "valueStr1",
-                        "varType": 0,
-                        "compData": {
-                            "compType": 8,
-                            "compParam": {}
-                        },
-                        "defaultValue": "",
-                        "hideMode": false,
-                        "useCommand": false,
-                        "onlyPointTo": false,
-                        "moduleID": 1,
-                        "dataStructureID": 1,
-                        "arrayMode": false,
-                        "arrayLength": 100,
-                        "arrayAllowDelete": false,
-                        "arrayAllowSwap": false,
-                        "arrayAllowUpdate": false,
-                        "accessMode": 1,
-                        "syncMode": 0,
-                        "attrTips": "即 数组中的位置 第一位为0 依次往后推算",
-                        "alias": "字符串",
-                        "onlyConfig": false,
-                        "preview": false,
-                        "autoTitleWidth": true,
-                        "titleWidth": 100,
-                        "eyeShow": true,
-                        "lockBlock": false,
-                        "enumEnable_get": true,
-                        "enumEnable_set": true
-                    },
-                    "attrConditions": [
-                        {
-                            "attrID": "119046226627_0.940020635155441",
-                            "value": true,
-                            "isExpression": false,
-                            "jsCode": null,
-                            "tsCode": null,
-                            "codeName": null
-                        },
-                        {
-                            "attrID": "119045851396_0.834782484276472",
-                            "value": 1,
-                            "isExpression": false,
-                            "jsCode": null,
-                            "tsCode": null,
-                            "codeName": null
-                        },
-                        {
-                            "attrID": null,
-                            "value": null,
-                            "isExpression": true,
-                            "jsCode": "[6, 8, 9].indexOf(attrs.operation) != -1;\n",
-                            "tsCode": "// 根据属性名称值编写条件表达式（目前支持选择框和复选框），如： (attrs.xxx>5 && attrs.yyy<=10) || attrs.zzz==6;\r\n[6, 8, 9].indexOf(attrs.operation) != -1;",
-                            "codeName": "条件表达式脚本："
-                        }
-                    ],
-                    "y": 73,
-                    "x": 238,
-                    "width": 200,
-                    "height": 32
-                }
-            ],
-            "blockCondition": [],
-            "blockHeight": 120,
-            "autoOrder": true,
-            "hideBlockTitle": false
+          "attr": {
+            "id": "79386533804_0.2569009254765009",
+            "varName": "operation",
+            "varType": 0,
+            "compData": {
+              "compType": 2,
+              "compParam": {
+                "items": "数组存在(1存在0不存在),数组长度,数组最末尾索引,数值数组中最大值,数值数组中最小值,根据索引获取数值,获取数值所在的位置(获取索引),获取(平面数组)元素,获取(平面数组)元素.X,获取(平面数组)元素.Y,获取(平面数组).宽度,获取(平面数组).高度,根据索引获取(平面数组)X,根据索引获取(平面数组)Y",
+                "showIndex": true
+              }
+            },
+            "defaultValue": "",
+            "hideMode": false,
+            "useCommand": false,
+            "onlyPointTo": false,
+            "moduleID": 1,
+            "dataStructureID": 1,
+            "arrayMode": false,
+            "arrayLength": 100,
+            "arrayAllowDelete": false,
+            "arrayAllowSwap": false,
+            "arrayAllowUpdate": false,
+            "accessMode": 1,
+            "syncMode": 0,
+            "attrTips": "",
+            "alias": "操作",
+            "onlyConfig": false,
+            "preview": false,
+            "autoTitleWidth": true,
+            "titleWidth": 100,
+            "eyeShow": true,
+            "lockBlock": false,
+            "enumEnable_get": true,
+            "enumEnable_set": true
+          },
+          "attrConditions": [],
+          "y": 30,
+          "x": 23,
+          "width": 280,
+          "height": 32
         },
         {
-            "name": "平面数组",
-            "blockAttrs": [
-                {
-                    "attr": {
-                        "id": "119303855533_0.8594794982687421",
-                        "varName": "x",
-                        "varType": 0,
-                        "compData": {
-                            "compType": 0,
-                            "compParam": {}
-                        },
-                        "defaultValue": "",
-                        "hideMode": false,
-                        "useCommand": false,
-                        "onlyPointTo": false,
-                        "moduleID": 1,
-                        "dataStructureID": 1,
-                        "arrayMode": false,
-                        "arrayLength": 100,
-                        "arrayAllowDelete": false,
-                        "arrayAllowSwap": false,
-                        "arrayAllowUpdate": false,
-                        "accessMode": 1,
-                        "syncMode": 0,
-                        "attrTips": "",
-                        "alias": "X",
-                        "onlyConfig": false,
-                        "preview": false,
-                        "autoTitleWidth": true,
-                        "titleWidth": 100,
-                        "eyeShow": true,
-                        "lockBlock": false,
-                        "enumEnable_get": true,
-                        "enumEnable_set": true
-                    },
-                    "attrConditions": [],
-                    "y": 9,
-                    "x": 20,
-                    "width": 200,
-                    "height": 32
-                },
-                {
-                    "attr": {
-                        "id": "119303858350_0.2881624858250178",
-                        "varName": "y",
-                        "varType": 0,
-                        "compData": {
-                            "compType": 0,
-                            "compParam": {}
-                        },
-                        "defaultValue": "",
-                        "hideMode": false,
-                        "useCommand": false,
-                        "onlyPointTo": false,
-                        "moduleID": 1,
-                        "dataStructureID": 1,
-                        "arrayMode": false,
-                        "arrayLength": 100,
-                        "arrayAllowDelete": false,
-                        "arrayAllowSwap": false,
-                        "arrayAllowUpdate": false,
-                        "accessMode": 1,
-                        "syncMode": 0,
-                        "attrTips": "",
-                        "alias": "Y",
-                        "onlyConfig": false,
-                        "preview": false,
-                        "autoTitleWidth": true,
-                        "titleWidth": 100,
-                        "eyeShow": true,
-                        "lockBlock": false,
-                        "enumEnable_get": true,
-                        "enumEnable_set": true
-                    },
-                    "attrConditions": [],
-                    "y": 44,
-                    "x": 19,
-                    "width": 200,
-                    "height": 32
-                },
-                {
-                    "attr": {
-                        "id": "119303870167_0.659391789257725",
-                        "varName": "useVarX",
-                        "varType": 2,
-                        "compData": {
-                            "compType": 15,
-                            "compParam": {}
-                        },
-                        "defaultValue": "",
-                        "hideMode": false,
-                        "useCommand": false,
-                        "onlyPointTo": false,
-                        "moduleID": 1,
-                        "dataStructureID": 1,
-                        "arrayMode": false,
-                        "arrayLength": 100,
-                        "arrayAllowDelete": false,
-                        "arrayAllowSwap": false,
-                        "arrayAllowUpdate": false,
-                        "accessMode": 1,
-                        "syncMode": 0,
-                        "attrTips": "",
-                        "alias": "使用变量",
-                        "onlyConfig": false,
-                        "preview": false,
-                        "autoTitleWidth": true,
-                        "titleWidth": 100,
-                        "eyeShow": true,
-                        "lockBlock": false,
-                        "enumEnable_get": true,
-                        "enumEnable_set": true
-                    },
-                    "attrConditions": [],
-                    "y": 9,
-                    "x": 230,
-                    "width": 200,
-                    "height": 32
-                },
-                {
-                    "attr": {
-                        "id": "119303893205_0.267219739675183",
-                        "varName": "useVarY",
-                        "varType": 2,
-                        "compData": {
-                            "compType": 15,
-                            "compParam": {}
-                        },
-                        "defaultValue": "",
-                        "hideMode": false,
-                        "useCommand": false,
-                        "onlyPointTo": false,
-                        "moduleID": 1,
-                        "dataStructureID": 1,
-                        "arrayMode": false,
-                        "arrayLength": 100,
-                        "arrayAllowDelete": false,
-                        "arrayAllowSwap": false,
-                        "arrayAllowUpdate": false,
-                        "accessMode": 1,
-                        "syncMode": 0,
-                        "attrTips": "",
-                        "alias": "使用变量",
-                        "onlyConfig": false,
-                        "preview": false,
-                        "autoTitleWidth": true,
-                        "titleWidth": 100,
-                        "eyeShow": true,
-                        "lockBlock": false,
-                        "enumEnable_get": true,
-                        "enumEnable_set": true
-                    },
-                    "attrConditions": [],
-                    "y": 44,
-                    "x": 230,
-                    "width": 200,
-                    "height": 32
-                },
-                {
-                    "attr": {
-                        "id": "119303909022_0.10777663774601787",
-                        "varName": "x1",
-                        "varType": 0,
-                        "compData": {
-                            "compType": 6,
-                            "compParam": {}
-                        },
-                        "defaultValue": "",
-                        "hideMode": false,
-                        "useCommand": false,
-                        "onlyPointTo": false,
-                        "moduleID": 1,
-                        "dataStructureID": 1,
-                        "arrayMode": false,
-                        "arrayLength": 100,
-                        "arrayAllowDelete": false,
-                        "arrayAllowSwap": false,
-                        "arrayAllowUpdate": false,
-                        "accessMode": 1,
-                        "syncMode": 0,
-                        "attrTips": "",
-                        "alias": "X",
-                        "onlyConfig": false,
-                        "preview": false,
-                        "autoTitleWidth": true,
-                        "titleWidth": 100,
-                        "eyeShow": true,
-                        "lockBlock": false,
-                        "enumEnable_get": true,
-                        "enumEnable_set": true
-                    },
-                    "attrConditions": [
-                        {
-                            "attrID": "119303870167_0.659391789257725",
-                            "value": true,
-                            "isExpression": false,
-                            "jsCode": null,
-                            "tsCode": null,
-                            "codeName": null
-                        }
-                    ],
-                    "y": 9,
-                    "x": 20,
-                    "width": 200,
-                    "height": 32
-                },
-                {
-                    "attr": {
-                        "id": "119303914254_0.1147288394300705",
-                        "varName": "y1",
-                        "varType": 0,
-                        "compData": {
-                            "compType": 6,
-                            "compParam": {}
-                        },
-                        "defaultValue": "",
-                        "hideMode": false,
-                        "useCommand": false,
-                        "onlyPointTo": false,
-                        "moduleID": 1,
-                        "dataStructureID": 1,
-                        "arrayMode": false,
-                        "arrayLength": 100,
-                        "arrayAllowDelete": false,
-                        "arrayAllowSwap": false,
-                        "arrayAllowUpdate": false,
-                        "accessMode": 1,
-                        "syncMode": 0,
-                        "attrTips": "",
-                        "alias": "Y",
-                        "onlyConfig": false,
-                        "preview": false,
-                        "autoTitleWidth": true,
-                        "titleWidth": 100,
-                        "eyeShow": true,
-                        "lockBlock": false,
-                        "enumEnable_get": true,
-                        "enumEnable_set": true
-                    },
-                    "attrConditions": [
-                        {
-                            "attrID": "119303893205_0.267219739675183",
-                            "value": true,
-                            "isExpression": false,
-                            "jsCode": null,
-                            "tsCode": null,
-                            "codeName": null
-                        }
-                    ],
-                    "y": 44,
-                    "x": 19,
-                    "width": 200,
-                    "height": 32
-                }
-            ],
-            "blockCondition": [
-                {
-                    "attrID": null,
-                    "value": null,
-                    "isExpression": true,
-                    "jsCode": "[7, 8, 9].indexOf(attrs.operation) != -1;\n",
-                    "tsCode": "// 根据属性名称值编写条件表达式（目前支持选择框和复选框），如： (attrs.xxx>5 && attrs.yyy<=10) || attrs.zzz==6;\r\n[7, 8, 9].indexOf(attrs.operation) != -1;",
-                    "codeName": "条件表达式脚本："
-                }
-            ],
-            "blockHeight": 120,
-            "autoOrder": true
+          "attr": {
+            "id": "79386621569_0.422112186504076",
+            "varName": "arrayId",
+            "varType": 0,
+            "compData": {
+              "compType": 8,
+              "compParam": {}
+            },
+            "defaultValue": "",
+            "hideMode": false,
+            "useCommand": false,
+            "onlyPointTo": false,
+            "moduleID": 1,
+            "dataStructureID": 1,
+            "arrayMode": false,
+            "arrayLength": 100,
+            "arrayAllowDelete": false,
+            "arrayAllowSwap": false,
+            "arrayAllowUpdate": false,
+            "accessMode": 1,
+            "syncMode": 0,
+            "attrTips": "",
+            "alias": "数组",
+            "onlyConfig": false,
+            "preview": false,
+            "autoTitleWidth": true,
+            "titleWidth": 100,
+            "eyeShow": true,
+            "lockBlock": false,
+            "enumEnable_get": true,
+            "enumEnable_set": true
+          },
+          "attrConditions": [],
+          "y": 72,
+          "x": 23,
+          "width": 196,
+          "height": 32
+        },
+        {
+          "attr": {
+            "id": "119045851396_0.834782484276472",
+            "varName": "_type",
+            "varType": 0,
+            "compData": {
+              "compType": 2,
+              "compParam": {
+                "items": "数值,字符串",
+                "showIndex": true
+              }
+            },
+            "defaultValue": "",
+            "hideMode": false,
+            "useCommand": false,
+            "onlyPointTo": false,
+            "moduleID": 1,
+            "dataStructureID": 1,
+            "arrayMode": false,
+            "arrayLength": 100,
+            "arrayAllowDelete": false,
+            "arrayAllowSwap": false,
+            "arrayAllowUpdate": false,
+            "accessMode": 1,
+            "syncMode": 0,
+            "attrTips": "",
+            "alias": "类型",
+            "onlyConfig": false,
+            "preview": false,
+            "autoTitleWidth": true,
+            "titleWidth": 100,
+            "eyeShow": true,
+            "lockBlock": false,
+            "enumEnable_get": true,
+            "enumEnable_set": true
+          },
+          "attrConditions": [
+            {
+              "attrID": null,
+              "value": null,
+              "isExpression": true,
+              "jsCode": "[6, 7, 8, 9].indexOf(attrs.operation) != -1;\n",
+              "tsCode": "// 根据属性名称值编写条件表达式（目前支持选择框和复选框），如： (attrs.xxx>5 && attrs.yyy<=10) || attrs.zzz==6;\r\n[6, 7, 8, 9].indexOf(attrs.operation) != -1;",
+              "codeName": "条件表达式脚本："
+            }
+          ],
+          "y": 29,
+          "x": 314,
+          "width": 200,
+          "height": 32
+        },
+        {
+          "attr": {
+            "id": "119046039333_0.7990672426199743",
+            "varName": "index",
+            "varType": 0,
+            "compData": {
+              "compType": 0,
+              "compParam": {}
+            },
+            "defaultValue": "",
+            "hideMode": false,
+            "useCommand": false,
+            "onlyPointTo": false,
+            "moduleID": 1,
+            "dataStructureID": 1,
+            "arrayMode": false,
+            "arrayLength": 100,
+            "arrayAllowDelete": false,
+            "arrayAllowSwap": false,
+            "arrayAllowUpdate": false,
+            "accessMode": 1,
+            "syncMode": 0,
+            "attrTips": "即 数组中的位置 第一位为0 依次往后推算",
+            "alias": "索引",
+            "onlyConfig": false,
+            "preview": false,
+            "autoTitleWidth": true,
+            "titleWidth": 100,
+            "eyeShow": true,
+            "lockBlock": false,
+            "enumEnable_get": true,
+            "enumEnable_set": true
+          },
+          "attrConditions": [
+            {
+              "attrID": "119046226627_0.940020635155441",
+              "value": false,
+              "isExpression": false,
+              "jsCode": null,
+              "tsCode": null,
+              "codeName": null
+            },
+            {
+              "attrID": null,
+              "value": null,
+              "isExpression": true,
+              "jsCode": "[5, 12, 13].indexOf(attrs.operation) != -1;\n",
+              "tsCode": "// 根据属性名称值编写条件表达式（目前支持选择框和复选框），如： (attrs.xxx>5 && attrs.yyy<=10) || attrs.zzz==6;\r\n[5, 12, 13].indexOf(attrs.operation) != -1",
+              "codeName": "条件表达式脚本："
+            }
+          ],
+          "y": 73,
+          "x": 238,
+          "width": 200,
+          "height": 32
+        },
+        {
+          "attr": {
+            "id": "119046218184_0.6364408414049223",
+            "varName": "index1",
+            "varType": 0,
+            "compData": {
+              "compType": 6,
+              "compParam": {}
+            },
+            "defaultValue": "",
+            "hideMode": false,
+            "useCommand": false,
+            "onlyPointTo": false,
+            "moduleID": 1,
+            "dataStructureID": 1,
+            "arrayMode": false,
+            "arrayLength": 100,
+            "arrayAllowDelete": false,
+            "arrayAllowSwap": false,
+            "arrayAllowUpdate": false,
+            "accessMode": 1,
+            "syncMode": 0,
+            "attrTips": "即 数组中的位置 第一位为0 依次往后推算",
+            "alias": "索引",
+            "onlyConfig": false,
+            "preview": false,
+            "autoTitleWidth": true,
+            "titleWidth": 100,
+            "eyeShow": true,
+            "lockBlock": false,
+            "enumEnable_get": true,
+            "enumEnable_set": true
+          },
+          "attrConditions": [
+            {
+              "attrID": "119046226627_0.940020635155441",
+              "value": true,
+              "isExpression": false,
+              "jsCode": null,
+              "tsCode": null,
+              "codeName": null
+            },
+            {
+              "attrID": null,
+              "value": null,
+              "isExpression": true,
+              "jsCode": "[5, 12, 13].indexOf(attrs.operation) != -1;\n",
+              "tsCode": "// 根据属性名称值编写条件表达式（目前支持选择框和复选框），如： (attrs.xxx>5 && attrs.yyy<=10) || attrs.zzz==6;\r\n[5, 12, 13].indexOf(attrs.operation) != -1",
+              "codeName": "条件表达式脚本："
+            }
+          ],
+          "y": 73,
+          "x": 238,
+          "width": 200,
+          "height": 32
+        },
+        {
+          "attr": {
+            "id": "119046226627_0.940020635155441",
+            "varName": "useVar",
+            "varType": 2,
+            "compData": {
+              "compType": 15,
+              "compParam": {}
+            },
+            "defaultValue": "",
+            "hideMode": false,
+            "useCommand": false,
+            "onlyPointTo": false,
+            "moduleID": 1,
+            "dataStructureID": 1,
+            "arrayMode": false,
+            "arrayLength": 100,
+            "arrayAllowDelete": false,
+            "arrayAllowSwap": false,
+            "arrayAllowUpdate": false,
+            "accessMode": 1,
+            "syncMode": 0,
+            "attrTips": "",
+            "alias": "使用变量",
+            "onlyConfig": false,
+            "preview": false,
+            "autoTitleWidth": true,
+            "titleWidth": 100,
+            "eyeShow": true,
+            "lockBlock": false,
+            "enumEnable_get": true,
+            "enumEnable_set": true
+          },
+          "attrConditions": [
+            {
+              "attrID": null,
+              "value": null,
+              "isExpression": true,
+              "jsCode": "[5, 6, 8, 9, 12, 13].indexOf(attrs.operation) != -1;\n",
+              "tsCode": "// 根据属性名称值编写条件表达式（目前支持选择框和复选框），如： (attrs.xxx>5 && attrs.yyy<=10) || attrs.zzz==6;\r\n[5,6, 8, 9,12,13].indexOf(attrs.operation) != -1;",
+              "codeName": "条件表达式脚本："
+            }
+          ],
+          "y": 73,
+          "x": 451,
+          "width": 200,
+          "height": 32
+        },
+        {
+          "attr": {
+            "id": "119046500501_0.9031815181919443",
+            "varName": "valueNum",
+            "varType": 0,
+            "compData": {
+              "compType": 0,
+              "compParam": {}
+            },
+            "defaultValue": "",
+            "hideMode": false,
+            "useCommand": false,
+            "onlyPointTo": false,
+            "moduleID": 1,
+            "dataStructureID": 1,
+            "arrayMode": false,
+            "arrayLength": 100,
+            "arrayAllowDelete": false,
+            "arrayAllowSwap": false,
+            "arrayAllowUpdate": false,
+            "accessMode": 1,
+            "syncMode": 0,
+            "attrTips": "即 数组中的位置 第一位为0 依次往后推算",
+            "alias": "数值",
+            "onlyConfig": false,
+            "preview": false,
+            "autoTitleWidth": true,
+            "titleWidth": 100,
+            "eyeShow": true,
+            "lockBlock": false,
+            "enumEnable_get": true,
+            "enumEnable_set": true
+          },
+          "attrConditions": [
+            {
+              "attrID": "119046226627_0.940020635155441",
+              "value": false,
+              "isExpression": false,
+              "jsCode": null,
+              "tsCode": null,
+              "codeName": null
+            },
+            {
+              "attrID": "119045851396_0.834782484276472",
+              "value": 0,
+              "isExpression": false,
+              "jsCode": null,
+              "tsCode": null,
+              "codeName": null
+            },
+            {
+              "attrID": null,
+              "value": null,
+              "isExpression": true,
+              "jsCode": "[6, 8, 9].indexOf(attrs.operation) != -1;\n",
+              "tsCode": "// 根据属性名称值编写条件表达式（目前支持选择框和复选框），如： (attrs.xxx>5 && attrs.yyy<=10) || attrs.zzz==6;\r\n[6, 8, 9].indexOf(attrs.operation) != -1;",
+              "codeName": "条件表达式脚本："
+            }
+          ],
+          "y": 73,
+          "x": 238,
+          "width": 200,
+          "height": 32
+        },
+        {
+          "attr": {
+            "id": "119046843233_0.1878506129235682",
+            "varName": "valueNum1",
+            "varType": 0,
+            "compData": {
+              "compType": 6,
+              "compParam": {}
+            },
+            "defaultValue": "",
+            "hideMode": false,
+            "useCommand": false,
+            "onlyPointTo": false,
+            "moduleID": 1,
+            "dataStructureID": 1,
+            "arrayMode": false,
+            "arrayLength": 100,
+            "arrayAllowDelete": false,
+            "arrayAllowSwap": false,
+            "arrayAllowUpdate": false,
+            "accessMode": 1,
+            "syncMode": 0,
+            "attrTips": "即 数组中的位置 第一位为0 依次往后推算",
+            "alias": "数值",
+            "onlyConfig": false,
+            "preview": false,
+            "autoTitleWidth": true,
+            "titleWidth": 100,
+            "eyeShow": true,
+            "lockBlock": false,
+            "enumEnable_get": true,
+            "enumEnable_set": true
+          },
+          "attrConditions": [
+            {
+              "attrID": "119046226627_0.940020635155441",
+              "value": true,
+              "isExpression": false,
+              "jsCode": null,
+              "tsCode": null,
+              "codeName": null
+            },
+            {
+              "attrID": "119045851396_0.834782484276472",
+              "value": 0,
+              "isExpression": false,
+              "jsCode": null,
+              "tsCode": null,
+              "codeName": null
+            },
+            {
+              "attrID": null,
+              "value": null,
+              "isExpression": true,
+              "jsCode": "[6, 8, 9].indexOf(attrs.operation) != -1;\n",
+              "tsCode": "// 根据属性名称值编写条件表达式（目前支持选择框和复选框），如： (attrs.xxx>5 && attrs.yyy<=10) || attrs.zzz==6;\r\n[6, 8, 9].indexOf(attrs.operation) != -1;",
+              "codeName": "条件表达式脚本："
+            }
+          ],
+          "y": 73,
+          "x": 238,
+          "width": 200,
+          "height": 32
+        },
+        {
+          "attr": {
+            "id": "119047026155_0.9933904602342019",
+            "varName": "valueStr",
+            "varType": 1,
+            "compData": {
+              "compType": 9,
+              "compParam": {}
+            },
+            "defaultValue": "",
+            "hideMode": false,
+            "useCommand": false,
+            "onlyPointTo": false,
+            "moduleID": 1,
+            "dataStructureID": 1,
+            "arrayMode": false,
+            "arrayLength": 100,
+            "arrayAllowDelete": false,
+            "arrayAllowSwap": false,
+            "arrayAllowUpdate": false,
+            "accessMode": 1,
+            "syncMode": 0,
+            "attrTips": "即 数组中的位置 第一位为0 依次往后推算",
+            "alias": "字符串",
+            "onlyConfig": false,
+            "preview": false,
+            "autoTitleWidth": true,
+            "titleWidth": 100,
+            "eyeShow": true,
+            "lockBlock": false,
+            "enumEnable_get": true,
+            "enumEnable_set": true
+          },
+          "attrConditions": [
+            {
+              "attrID": "119046226627_0.940020635155441",
+              "value": false,
+              "isExpression": false,
+              "jsCode": null,
+              "tsCode": null,
+              "codeName": null
+            },
+            {
+              "attrID": "119045851396_0.834782484276472",
+              "value": 1,
+              "isExpression": false,
+              "jsCode": null,
+              "tsCode": null,
+              "codeName": null
+            },
+            {
+              "attrID": null,
+              "value": null,
+              "isExpression": true,
+              "jsCode": "[6, 8, 9].indexOf(attrs.operation) != -1;\n",
+              "tsCode": "// 根据属性名称值编写条件表达式（目前支持选择框和复选框），如： (attrs.xxx>5 && attrs.yyy<=10) || attrs.zzz==6;\r\n[6, 8, 9].indexOf(attrs.operation) != -1;",
+              "codeName": "条件表达式脚本："
+            }
+          ],
+          "y": 73,
+          "x": 238,
+          "width": 200,
+          "height": 32
+        },
+        {
+          "attr": {
+            "id": "119047040239_0.3819211347106255",
+            "varName": "valueStr1",
+            "varType": 0,
+            "compData": {
+              "compType": 8,
+              "compParam": {}
+            },
+            "defaultValue": "",
+            "hideMode": false,
+            "useCommand": false,
+            "onlyPointTo": false,
+            "moduleID": 1,
+            "dataStructureID": 1,
+            "arrayMode": false,
+            "arrayLength": 100,
+            "arrayAllowDelete": false,
+            "arrayAllowSwap": false,
+            "arrayAllowUpdate": false,
+            "accessMode": 1,
+            "syncMode": 0,
+            "attrTips": "即 数组中的位置 第一位为0 依次往后推算",
+            "alias": "字符串",
+            "onlyConfig": false,
+            "preview": false,
+            "autoTitleWidth": true,
+            "titleWidth": 100,
+            "eyeShow": true,
+            "lockBlock": false,
+            "enumEnable_get": true,
+            "enumEnable_set": true
+          },
+          "attrConditions": [
+            {
+              "attrID": "119046226627_0.940020635155441",
+              "value": true,
+              "isExpression": false,
+              "jsCode": null,
+              "tsCode": null,
+              "codeName": null
+            },
+            {
+              "attrID": "119045851396_0.834782484276472",
+              "value": 1,
+              "isExpression": false,
+              "jsCode": null,
+              "tsCode": null,
+              "codeName": null
+            },
+            {
+              "attrID": null,
+              "value": null,
+              "isExpression": true,
+              "jsCode": "[6, 8, 9].indexOf(attrs.operation) != -1;\n",
+              "tsCode": "// 根据属性名称值编写条件表达式（目前支持选择框和复选框），如： (attrs.xxx>5 && attrs.yyy<=10) || attrs.zzz==6;\r\n[6, 8, 9].indexOf(attrs.operation) != -1;",
+              "codeName": "条件表达式脚本："
+            }
+          ],
+          "y": 73,
+          "x": 238,
+          "width": 200,
+          "height": 32
         }
-    ],
-    "isCustomPhraseDesc": true,
-    "name": "数组插件",
-    "customPhraseDescTS": "// 根据属性名称值编写自定义短语描述，如：\"我的短语是\"+attrs.xxx\n// 使用下拉框组件的变量attrs.xxx有对应的attrs.xxxItems的属性以便获得标签名集合\n// 获取自定义模块的数据名称的函数：getModuleDataName(moduleID:number,dataID:number):string;\n// 获取各种列表内数据名称的函数：getTypeDataListName(typeID: number, dataID: number):string;\n// 获取自定义游戏数值描述的函数：getCustomGameNumber(customGameNumber: any[]):string;\n// 获取自定义游戏字符串描述的函数：getCustomGameString(customGameString: any[]):string;\n// 获取自定义游戏开关描述的函数：：getCustomGameSwitch(customGameSwitch: any[]):string;\n// -- typeID ：0-全局变量 1-全局开关 2-全局字符串 3-玩家变量 4-玩家开关 5-玩家字符串\n//           ：6-场景列表 7-场景对象原型列表 8-图块列表 9-行走图列表 10-行走图动作列表 11-立绘列表 12-立绘表情列表\n//           ：13-事件库列表 14-对话框列表 15-动画列表 16-动画信号列表 17-界面列表 18-数据结构列表 19-自定义模块列表\n//           ：20-自定义指令列表 21-自定义行为列表 22-自动元件列表 23-行走图部件列表 24-立绘部件列表 25-材质列表 26-场景对象模块\nvar str = \"\";\nstr += attrs.operationItems[attrs.operation]\nstr += \" (数组 = \" + getTypeDataListName(5, attrs.arrayId);\nif (5 == attrs.operation) {\n    var index;\n    index = attrs.useVar ? getTypeDataListName(3, attrs.index1) : attrs.index;\n    str += \" 索引 = \" + index + \")\";\n}\nelse if (6 == attrs.operation) {\n    var value;\n    if (attrs._type == 0) {\n        value = attrs.useVar ? getTypeDataListName(3, attrs.valueNum1) : attrs.valueNum;\n    }\n    else if (1 == attrs._type) {\n        value = attrs.useVar ? getTypeDataListName(5, attrs.valueStr1) : attrs.valueStr;\n    }\n    str += \" 值 = \" + value+\")\";\n}\n\nstr += \"\";",
-    "customPhraseDescJS": "var str = \"\";\nstr += attrs.operationItems[attrs.operation];\nstr += \" (数组 = \" + getTypeDataListName(5, attrs.arrayId);\nif (5 == attrs.operation) {\n    var index;\n    index = attrs.useVar ? getTypeDataListName(3, attrs.index1) : attrs.index;\n    str += \" 索引 = \" + index + \")\";\n}\nelse if (6 == attrs.operation) {\n    var value;\n    if (attrs._type == 0) {\n        value = attrs.useVar ? getTypeDataListName(3, attrs.valueNum1) : attrs.valueNum;\n    }\n    else if (1 == attrs._type) {\n        value = attrs.useVar ? getTypeDataListName(5, attrs.valueStr1) : attrs.valueStr;\n    }\n    str += \" 值 = \" + value + \")\";\n}\nstr += \"\";\n"
+      ],
+      "blockCondition": [],
+      "blockHeight": 120,
+      "autoOrder": true,
+      "hideBlockTitle": false
+    },
+    {
+      "name": "平面数组",
+      "blockAttrs": [
+        {
+          "attr": {
+            "id": "119303855533_0.8594794982687421",
+            "varName": "x",
+            "varType": 0,
+            "compData": {
+              "compType": 0,
+              "compParam": {}
+            },
+            "defaultValue": "",
+            "hideMode": false,
+            "useCommand": false,
+            "onlyPointTo": false,
+            "moduleID": 1,
+            "dataStructureID": 1,
+            "arrayMode": false,
+            "arrayLength": 100,
+            "arrayAllowDelete": false,
+            "arrayAllowSwap": false,
+            "arrayAllowUpdate": false,
+            "accessMode": 1,
+            "syncMode": 0,
+            "attrTips": "",
+            "alias": "X",
+            "onlyConfig": false,
+            "preview": false,
+            "autoTitleWidth": true,
+            "titleWidth": 100,
+            "eyeShow": true,
+            "lockBlock": false,
+            "enumEnable_get": true,
+            "enumEnable_set": true
+          },
+          "attrConditions": [],
+          "y": 9,
+          "x": 20,
+          "width": 200,
+          "height": 32
+        },
+        {
+          "attr": {
+            "id": "119303858350_0.2881624858250178",
+            "varName": "y",
+            "varType": 0,
+            "compData": {
+              "compType": 0,
+              "compParam": {}
+            },
+            "defaultValue": "",
+            "hideMode": false,
+            "useCommand": false,
+            "onlyPointTo": false,
+            "moduleID": 1,
+            "dataStructureID": 1,
+            "arrayMode": false,
+            "arrayLength": 100,
+            "arrayAllowDelete": false,
+            "arrayAllowSwap": false,
+            "arrayAllowUpdate": false,
+            "accessMode": 1,
+            "syncMode": 0,
+            "attrTips": "",
+            "alias": "Y",
+            "onlyConfig": false,
+            "preview": false,
+            "autoTitleWidth": true,
+            "titleWidth": 100,
+            "eyeShow": true,
+            "lockBlock": false,
+            "enumEnable_get": true,
+            "enumEnable_set": true
+          },
+          "attrConditions": [],
+          "y": 44,
+          "x": 19,
+          "width": 200,
+          "height": 32
+        },
+        {
+          "attr": {
+            "id": "119303870167_0.659391789257725",
+            "varName": "useVarX",
+            "varType": 2,
+            "compData": {
+              "compType": 15,
+              "compParam": {}
+            },
+            "defaultValue": "",
+            "hideMode": false,
+            "useCommand": false,
+            "onlyPointTo": false,
+            "moduleID": 1,
+            "dataStructureID": 1,
+            "arrayMode": false,
+            "arrayLength": 100,
+            "arrayAllowDelete": false,
+            "arrayAllowSwap": false,
+            "arrayAllowUpdate": false,
+            "accessMode": 1,
+            "syncMode": 0,
+            "attrTips": "",
+            "alias": "使用变量",
+            "onlyConfig": false,
+            "preview": false,
+            "autoTitleWidth": true,
+            "titleWidth": 100,
+            "eyeShow": true,
+            "lockBlock": false,
+            "enumEnable_get": true,
+            "enumEnable_set": true
+          },
+          "attrConditions": [],
+          "y": 9,
+          "x": 230,
+          "width": 200,
+          "height": 32
+        },
+        {
+          "attr": {
+            "id": "119303893205_0.267219739675183",
+            "varName": "useVarY",
+            "varType": 2,
+            "compData": {
+              "compType": 15,
+              "compParam": {}
+            },
+            "defaultValue": "",
+            "hideMode": false,
+            "useCommand": false,
+            "onlyPointTo": false,
+            "moduleID": 1,
+            "dataStructureID": 1,
+            "arrayMode": false,
+            "arrayLength": 100,
+            "arrayAllowDelete": false,
+            "arrayAllowSwap": false,
+            "arrayAllowUpdate": false,
+            "accessMode": 1,
+            "syncMode": 0,
+            "attrTips": "",
+            "alias": "使用变量",
+            "onlyConfig": false,
+            "preview": false,
+            "autoTitleWidth": true,
+            "titleWidth": 100,
+            "eyeShow": true,
+            "lockBlock": false,
+            "enumEnable_get": true,
+            "enumEnable_set": true
+          },
+          "attrConditions": [],
+          "y": 44,
+          "x": 230,
+          "width": 200,
+          "height": 32
+        },
+        {
+          "attr": {
+            "id": "119303909022_0.10777663774601787",
+            "varName": "x1",
+            "varType": 0,
+            "compData": {
+              "compType": 6,
+              "compParam": {}
+            },
+            "defaultValue": "",
+            "hideMode": false,
+            "useCommand": false,
+            "onlyPointTo": false,
+            "moduleID": 1,
+            "dataStructureID": 1,
+            "arrayMode": false,
+            "arrayLength": 100,
+            "arrayAllowDelete": false,
+            "arrayAllowSwap": false,
+            "arrayAllowUpdate": false,
+            "accessMode": 1,
+            "syncMode": 0,
+            "attrTips": "",
+            "alias": "X",
+            "onlyConfig": false,
+            "preview": false,
+            "autoTitleWidth": true,
+            "titleWidth": 100,
+            "eyeShow": true,
+            "lockBlock": false,
+            "enumEnable_get": true,
+            "enumEnable_set": true
+          },
+          "attrConditions": [
+            {
+              "attrID": "119303870167_0.659391789257725",
+              "value": true,
+              "isExpression": false,
+              "jsCode": null,
+              "tsCode": null,
+              "codeName": null
+            }
+          ],
+          "y": 9,
+          "x": 20,
+          "width": 200,
+          "height": 32
+        },
+        {
+          "attr": {
+            "id": "119303914254_0.1147288394300705",
+            "varName": "y1",
+            "varType": 0,
+            "compData": {
+              "compType": 6,
+              "compParam": {}
+            },
+            "defaultValue": "",
+            "hideMode": false,
+            "useCommand": false,
+            "onlyPointTo": false,
+            "moduleID": 1,
+            "dataStructureID": 1,
+            "arrayMode": false,
+            "arrayLength": 100,
+            "arrayAllowDelete": false,
+            "arrayAllowSwap": false,
+            "arrayAllowUpdate": false,
+            "accessMode": 1,
+            "syncMode": 0,
+            "attrTips": "",
+            "alias": "Y",
+            "onlyConfig": false,
+            "preview": false,
+            "autoTitleWidth": true,
+            "titleWidth": 100,
+            "eyeShow": true,
+            "lockBlock": false,
+            "enumEnable_get": true,
+            "enumEnable_set": true
+          },
+          "attrConditions": [
+            {
+              "attrID": "119303893205_0.267219739675183",
+              "value": true,
+              "isExpression": false,
+              "jsCode": null,
+              "tsCode": null,
+              "codeName": null
+            }
+          ],
+          "y": 44,
+          "x": 19,
+          "width": 200,
+          "height": 32
+        }
+      ],
+      "blockCondition": [
+        {
+          "attrID": null,
+          "value": null,
+          "isExpression": true,
+          "jsCode": "[7, 8, 9].indexOf(attrs.operation) != -1;\n",
+          "tsCode": "// 根据属性名称值编写条件表达式（目前支持选择框和复选框），如： (attrs.xxx>5 && attrs.yyy<=10) || attrs.zzz==6;\r\n[7, 8, 9].indexOf(attrs.operation) != -1;",
+          "codeName": "条件表达式脚本："
+        }
+      ],
+      "blockHeight": 120,
+      "autoOrder": true
+    }
+  ],
+  "isCustomPhraseDesc": true,
+  "name": "数组插件",
+  "customPhraseDescTS": "// 根据属性名称值编写自定义短语描述，如：\"我的短语是\"+attrs.xxx\n// 使用下拉框组件的变量attrs.xxx有对应的attrs.xxxItems的属性以便获得标签名集合\n// 获取自定义模块的数据名称的函数：getModuleDataName(moduleID:number,dataID:number):string;\n// 获取各种列表内数据名称的函数：getTypeDataListName(typeID: number, dataID: number):string;\n// 获取自定义游戏数值描述的函数：getCustomGameNumber(customGameNumber: any[]):string;\n// 获取自定义游戏字符串描述的函数：getCustomGameString(customGameString: any[]):string;\n// 获取自定义游戏开关描述的函数：：getCustomGameSwitch(customGameSwitch: any[]):string;\n// -- typeID ：0-全局变量 1-全局开关 2-全局字符串 3-玩家变量 4-玩家开关 5-玩家字符串\n//           ：6-场景列表 7-场景对象原型列表 8-图块列表 9-行走图列表 10-行走图动作列表 11-立绘列表 12-立绘表情列表\n//           ：13-事件库列表 14-对话框列表 15-动画列表 16-动画信号列表 17-界面列表 18-数据结构列表 19-自定义模块列表\n//           ：20-自定义指令列表 21-自定义行为列表 22-自动元件列表 23-行走图部件列表 24-立绘部件列表 25-材质列表 26-场景对象模块\nvar str = \"\";\nstr += attrs.operationItems[attrs.operation]\nstr += \" (数组 = \" + getTypeDataListName(5, attrs.arrayId);\nif (5 == attrs.operation) {\n    var index;\n    index = attrs.useVar ? getTypeDataListName(3, attrs.index1) : attrs.index;\n    str += \" 索引 = \" + index + \")\";\n}\nelse if (6 == attrs.operation) {\n    var value;\n    if (attrs._type == 0) {\n        value = attrs.useVar ? getTypeDataListName(3, attrs.valueNum1) : attrs.valueNum;\n    }\n    else if (1 == attrs._type) {\n        value = attrs.useVar ? getTypeDataListName(5, attrs.valueStr1) : attrs.valueStr;\n    }\n    str += \" 值 = \" + value+\")\";\n}\n\nstr += \"\";",
+  "customPhraseDescJS": "var str = \"\";\nstr += attrs.operationItems[attrs.operation];\nstr += \" (数组 = \" + getTypeDataListName(5, attrs.arrayId);\nif (5 == attrs.operation) {\n    var index;\n    index = attrs.useVar ? getTypeDataListName(3, attrs.index1) : attrs.index;\n    str += \" 索引 = \" + index + \")\";\n}\nelse if (6 == attrs.operation) {\n    var value;\n    if (attrs._type == 0) {\n        value = attrs.useVar ? getTypeDataListName(3, attrs.valueNum1) : attrs.valueNum;\n    }\n    else if (1 == attrs._type) {\n        value = attrs.useVar ? getTypeDataListName(5, attrs.valueStr1) : attrs.valueStr;\n    }\n    str += \" 值 = \" + value + \")\";\n}\nstr += \"\";\n"
 }

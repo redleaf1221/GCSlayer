@@ -4,27 +4,28 @@ using CliFx.Infrastructure;
 namespace GCSlayer.Services;
 
 public partial class IdePatcher(IConsole console) {
-    [GeneratedRegex(@"(function chefdsjfiroqwjkgfd\(ss, onFin\) {)",
-        RegexOptions.IgnoreCase | RegexOptions.Multiline)]
-    private static partial Regex ScriptPatch_verify();
-    
-    [GeneratedRegex(@"(function localInterval\(\) {)",
-        RegexOptions.IgnoreCase | RegexOptions.Multiline)]
-    private static partial Regex ScriptPatch_release();
-    
-    [GeneratedRegex(@"(static get ownSoft\(\) {)",
-        RegexOptions.IgnoreCase | RegexOptions.Multiline)]
-    private static partial Regex ScriptPatch_own();
-    
-    [GeneratedRegex(@"(static fdsjkwuirewio\(str, force\) {)",
-        RegexOptions.IgnoreCase | RegexOptions.Multiline)]
-    private static partial Regex ScriptPatch_crypt();
 
     private static readonly string[] TemplateScripts = [
         @"GameCreator\script.js",
         @"behaviorView\script.js"
     ];
-    
+
+    [GeneratedRegex(@"(function chefdsjfiroqwjkgfd\(ss, onFin\) {)",
+        RegexOptions.IgnoreCase | RegexOptions.Multiline)]
+    private static partial Regex ScriptPatch_verify();
+
+    [GeneratedRegex(@"(function localInterval\(\) {)",
+        RegexOptions.IgnoreCase | RegexOptions.Multiline)]
+    private static partial Regex ScriptPatch_release();
+
+    [GeneratedRegex(@"(static get ownSoft\(\) {)",
+        RegexOptions.IgnoreCase | RegexOptions.Multiline)]
+    private static partial Regex ScriptPatch_own();
+
+    [GeneratedRegex(@"(static fdsjkwuirewio\(str, force\) {)",
+        RegexOptions.IgnoreCase | RegexOptions.Multiline)]
+    private static partial Regex ScriptPatch_crypt();
+
 
     public async Task PatchIdeScript(string scriptPath) {
         await console.Output.WriteLineAsync("- Patch IDE script");
@@ -39,7 +40,7 @@ public partial class IdePatcher(IConsole console) {
         if (!ScriptPatch_verify().IsMatch(script)) {
             throw new Exception("Patch 'verify' failed.");
         }
-        script = ScriptPatch_verify().Replace(script, 
+        script = ScriptPatch_verify().Replace(script,
             """
             $1
             // hacked~kissy
@@ -47,41 +48,41 @@ public partial class IdePatcher(IConsole console) {
             onFin(1);
             return;
             """);
-        
+
         await console.Output.WriteLineAsync("- - Patch 'release'");
         if (!ScriptPatch_release().IsMatch(script)) {
             throw new Exception("Patch 'release' failed.");
         }
-        script = ScriptPatch_release().Replace(script, 
+        script = ScriptPatch_release().Replace(script,
             """
             $1
             // hacked~kissy
             ra();
             return;
             """);
-        
+
         await console.Output.WriteLineAsync("- - Patch 'own'");
         if (!ScriptPatch_own().IsMatch(script)) {
             throw new Exception("Patch 'own' failed.");
         }
-        script = ScriptPatch_own().Replace(script, 
+        script = ScriptPatch_own().Replace(script,
             """
             $1
             // hacked~kissy
             return true;
             """);
-        
+
         await console.Output.WriteLineAsync("- - Patch 'crypt'");
         if (!ScriptPatch_crypt().IsMatch(script)) {
             throw new Exception("Patch 'crypt' failed.");
         }
-        script = ScriptPatch_crypt().Replace(script, 
+        script = ScriptPatch_crypt().Replace(script,
             """
             $1
             // hacked~kissy
             return str;
             """);
-        
+
         await File.WriteAllTextAsync(scriptPath, script);
     }
 

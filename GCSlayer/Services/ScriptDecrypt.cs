@@ -26,7 +26,7 @@ public class ScriptDecrypt(IConsole console) {
             Arguments = $"{Path.Combine(Constants.GcJsDecryptPath, "GCJSDecrypt.js")} {inputPath}",
             RedirectStandardOutput = true,
             UseShellExecute = false,
-            CreateNoWindow = true,
+            CreateNoWindow = true
         };
         using var process = new Process();
         process.StartInfo = startInfo;
@@ -51,10 +51,10 @@ public class ScriptDecrypt(IConsole console) {
     public static async Task<bool> CheckNodeExists() {
         var startInfo = new ProcessStartInfo {
             FileName = "node",
-            Arguments = $"-v",
+            Arguments = "-v",
             RedirectStandardOutput = true,
             UseShellExecute = false,
-            CreateNoWindow = true,
+            CreateNoWindow = true
         };
         try {
             using var process = new Process();
