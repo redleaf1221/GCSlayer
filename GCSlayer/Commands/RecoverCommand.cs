@@ -23,12 +23,12 @@ public class RecoverCommand : ICommand {
                 await console.Output.WriteLineAsync("Node.Js not found!");
                 return;
             }
-            var context = new RecoverParameter {
+            var parameter = new RecoverParameter {
                 GamePath = Path.GetFullPath(GamePath),
                 OutputPath = OutputPath ?? Path.GetFileName(GamePath),
                 LocalSourcePath = LocalSourcePath != null ? Path.GetFullPath(LocalSourcePath) : null,
             };
-            await new FullRecoveryFlow(console, context).ExecuteAsync();
+            await new FullRecoveryFlow(console, parameter).ExecuteAsync();
         } catch (Exception ex) {
             await console.Error.WriteLineAsync(ex.ToString());
         }

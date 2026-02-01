@@ -11,8 +11,9 @@ public class FullRecoveryFlow(IConsole console, RecoverParameter parameter) {
         await new WorkspaceService(console).SetupWorkspace(parameter.ProjectPath, parameter.GamePath);
 
         await console.Output.WriteLineAsync("Decrypt script");
-        var gameScript = await new ScriptDecrypt(console).DecryptScriptAsync(Path.Combine(parameter.GamePath, "script.js"),
-            Path.Combine(parameter.ProjectPath, "Game", "GCMain.ts"), true);
+        var gameScript = await new ScriptDecrypt(console).DecryptScriptAsync(Path.Combine(parameter.GamePath, "script.js"));
+        await File.WriteAllTextAsync(Path.Combine(parameter.ProjectPath, "Game", "GCMain.ts"),
+            ScriptDecrypt.RemoveUnessentialCode(gameScript));
         EncryptionStatus status = EncryptionStatus.FromScriptAnalysis(gameScript);
         await console.Output.WriteLineAsync("- Encryption status: ");
         await console.Output.WriteLineAsync($"- - Image: {status.ImageEncrypted}");
@@ -27,24 +28,13 @@ public class FullRecoveryFlow(IConsole console, RecoverParameter parameter) {
         await new StartupCryptoService(console).ExtractStartupJsonAsync(parameter.ProjectPath);
         
         ConfigJson configJson = await ConfigJson.FromFileAsync(Path.Combine(parameter.AssetsPath, "json", "config.json"));
-        File.Move(Path.Combine(parameter.ProjectPath, "template_project.gamecreator"),
+        File.Move(Path.Combine(parameter.ProjectPath, "GameCreatorBin.gamecreator"),
             Path.Combine(parameter.ProjectPath, $"{configJson.GameProjectName}.gamecreator"));
-        await console.Output.WriteLineAsync("Extraction done");
-        await console.Output.WriteLineAsync();
-
-        // await AnsiConsole.Progress().StartAsync(async ctx => {
-        //     ProgressTask task = ctx.AddTask("Decrypt meaningless files", maxValue: 1D);
-        //     List<string> jsonArr = ["custom/customBehaviorType.json", "avatar/avatarActList.json",
-        //         "standAvatar/expressionList.json", "animation/animationSignalList.json"];
-        //     foreach (var asset in jsonArr) {
-        //         var rawText = await File.ReadAllTextAsync(Path.Combine(context.ProjectPath, "asset", "json", asset));
-        //         var decryptedText = TemplateJsonEncryption.Decrypt(rawText);
-        //         await File.WriteAllTextAsync(Path.Combine(context.ProjectPath, "asset", "json", asset), decryptedText);
-        //         task.Increment(1D / missingAssets.Count);  
-        //     }
-        //     task.Increment(1D);
-        // });
-        //
-        // AnsiConsole.MarkupLine("[red bold]Deeper inference is work In Progress.[/]");
+        
+        await console.Output.WriteLineAsync("Copy repo");
+        var repoPath = parameter.LocalSourcePath ?? Path.Combine(Constants.FileRepoPath, configJson.GameProjectName);
+        await FileService.CopyDirectoryAsync(repoPath, parameter.AssetsPath);
+        
+        await console.Output.WriteLineAsync("Done");
     }
 }

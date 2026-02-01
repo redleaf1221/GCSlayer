@@ -1,6 +1,7 @@
 console.log("GCJSDecrypt by print_0")
 
 const fs = require('fs');
+const path = require('path');
 
 const codePath = process.argv[2];
 console.log(codePath)
@@ -60,4 +61,4 @@ if (!gameCode.startsWith(flag)) {
     encryptFunction(gameCode);
     console.log('file is all decrypted.');
 }
-fs.writeFileSync('./GCJSDecrypt/decryptedScript.js', originCode);
+fs.writeFileSync(path.join(__dirname, 'decryptedScript.js'), originCode);

@@ -1,25 +1,25 @@
 ﻿using System.Diagnostics;
+using System.Text;
 using CliFx.Infrastructure;
 using GCSlayer.Models;
 
 namespace GCSlayer.Services;
 
 public class ScriptDecrypt(IConsole console) {
-    public async Task<string> DecryptScriptAsync(string inputPath, string outputPath, bool removeFramework = false) {
+    public async Task<string> DecryptScriptAsync(string inputPath) {
         if (!File.Exists(inputPath)) {
-            await console.Error.WriteLineAsync($"- File not found {inputPath}");
+            throw new FileNotFoundException($"File not found {inputPath}");
         }
-        
+
         await CallGcjsDecrypt(inputPath);
-        
+
         var decryptedContent = await File.ReadAllTextAsync(Path.Combine(Constants.GcJsDecryptPath, "decryptedScript.js"));
-        
-        await File.WriteAllTextAsync(outputPath, 
-            removeFramework ? RemoveUnessentialCode(decryptedContent) : decryptedContent);
-        
+
+        File.Delete(Path.Combine(Constants.GcJsDecryptPath, "decryptedScript.js"));
+
         return decryptedContent;
     }
-    
+
     private async Task CallGcjsDecrypt(string inputPath) {
         var startInfo = new ProcessStartInfo {
             FileName = "node",
@@ -32,11 +32,11 @@ public class ScriptDecrypt(IConsole console) {
         process.StartInfo = startInfo;
         process.Start();
         await process.WaitForExitAsync();
-        var output = await process.StandardOutput.ReadToEndAsync(); 
+        var output = await process.StandardOutput.ReadToEndAsync();
         await console.Output.WriteLineAsync(output);
     }
-    
-    private static string RemoveUnessentialCode(string script) {
+
+    public static string RemoveUnessentialCode(string script) {
         var idx = script.LastIndexOf("GameUI.init();", StringComparison.Ordinal);
         if (idx != -1) {
             script = script[(idx + "GameUI.init();".Length)..];
@@ -65,5 +65,14 @@ public class ScriptDecrypt(IConsole console) {
         } catch (Exception) {
             return false;
         }
+    }
+
+    public static async Task<bool> IsGcjsEncrypted(string scriptPath) {
+        await using var fs = new FileStream(scriptPath, FileMode.Open, FileAccess.Read);
+        var buffer = new byte[32];
+        var bytesRead = fs.Read(buffer, 0, buffer.Length);
+
+        return Encoding.UTF8.GetString(buffer, 0, bytesRead)
+            .StartsWith("//<<JS加密");
     }
 }
