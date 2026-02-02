@@ -6,5 +6,6 @@ await new CliApplicationBuilder()
     .AddCommand<RecoverCommand>()
     .AddCommand<DrmCryptoCommand>()
     .AddCommand<InitCommand>()
+    .AddCommand<Z1Command>()
     .Build()
     .RunAsync();

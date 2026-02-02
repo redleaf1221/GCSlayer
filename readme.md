@@ -81,7 +81,25 @@ Decrypt all the assets and script, and give you a working project.
 
 #### What it does:
 
-Decrypt or encrypt using a certain encryption by GameCreator, which is used on some project files.
+Decrypt or encrypt using a certain encryption by GameCreator.
+
+It is used on `project.gamecreator`, `asset/json/animation/animationSignalList.json` etc., hiding the project signature k1.
+
+* ### z1 – Save file password restoration
+
+#### Usage
+
+`GCSlayer.exe z1 <z1>`
+
+#### Arguments
+
+- `z1`: Z1 string from config.json in the project.
+
+#### What it does:
+
+Fetch the real password for release game save file, which is a AES encrypted zip archive.
+
+You can get the z1 from project `asset/config.json`.
 
 ## Requirements
 
