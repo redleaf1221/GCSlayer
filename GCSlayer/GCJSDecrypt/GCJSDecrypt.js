@@ -41,7 +41,7 @@ if (!gameCode.startsWith(flag)) {
         if (parts[parts.length - 1] === '') {
             parts.length--;
         }
-        for (var i = 0; i < parts.length; i++) {
+        for (let i = 0; i < parts.length; i++) {
             if (i % 2 === 0) {
                 originCode += parts[i];
                 // fs.writeFileSync(splitF+orderList.join('_')+'.js',parts[i]);

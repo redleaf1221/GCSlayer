@@ -23,11 +23,12 @@ public class ScriptDecrypt(IConsole console) {
     private async Task CallGcjsDecrypt(string inputPath) {
         var startInfo = new ProcessStartInfo {
             FileName = "node",
-            Arguments = $"{Path.Combine(Constants.GcJsDecryptPath, "GCJSDecrypt.js")} {inputPath}",
             RedirectStandardOutput = true,
             UseShellExecute = false,
             CreateNoWindow = true
         };
+        startInfo.ArgumentList.Add(Path.Combine(Constants.GcJsDecryptPath, "GCJSDecrypt.js"));
+        startInfo.ArgumentList.Add(inputPath);
         using var process = new Process();
         process.StartInfo = startInfo;
         process.Start();
