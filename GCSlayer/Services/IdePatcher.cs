@@ -10,7 +10,7 @@ public partial class IdePatcher(IConsole console) {
         @"behaviorView\script.js"
     ];
 
-    [GeneratedRegex(@"(function chefdsjfiroqwjkgfd\(ss, onFin\) {)",
+    [GeneratedRegex(@"(function chefdsjfiroqwjkgfd\(ss, onFin, forceOpen = false\) {)",
         RegexOptions.IgnoreCase | RegexOptions.Multiline)]
     private static partial Regex ScriptPatch_verify();
 
