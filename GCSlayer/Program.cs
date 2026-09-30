@@ -1,4 +1,4 @@
-﻿using CliFx;
+using CliFx;
 using GCSlayer.Commands;
 
 await new CliApplicationBuilder()
@@ -7,5 +7,7 @@ await new CliApplicationBuilder()
     .AddCommand<DrmCryptoCommand>()
     .AddCommand<InitCommand>()
     .AddCommand<Z1Command>()
+    .AddCommand<FixupCommand>()
+    .AddCommand<VerifyCommand>()
     .Build()
     .RunAsync();

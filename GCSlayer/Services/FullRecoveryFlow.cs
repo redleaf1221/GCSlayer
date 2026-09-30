@@ -1,4 +1,4 @@
-﻿using CliFx.Infrastructure;
+using CliFx.Infrastructure;
 using GCSlayer.Models;
 using GCSlayer.Models.JsonModel;
 
@@ -33,7 +33,14 @@ public class FullRecoveryFlow(IConsole console, RecoverParameter parameter) {
         await console.Output.WriteLineAsync("Copy repo");
         var repoPath = parameter.LocalSourcePath ?? Path.Combine(Constants.FileRepoPath, configJson.GameProjectName);
         if (!Directory.Exists(repoPath)) repoPath = Constants.DefaultRepoPath;
-        await FileService.CopyDirectoryAsync(repoPath, parameter.AssetsPath);
+        // Only add the list files the release deleted, never replace what the game did ship.
+        await FileService.CopyDirectoryAsync(repoPath, parameter.AssetsPath, overwriteExisting: false);
+
+        await console.Output.WriteLineAsync("Repair lists");
+        await new ProjectRepairService(console).RepairAsync(parameter.ProjectPath);
+
+        await console.Output.WriteLineAsync("Verify");
+        await new ProjectVerifier(console).VerifyAsync(parameter.ProjectPath);
 
         await console.Output.WriteLineAsync("Done");
     }

@@ -1,4 +1,4 @@
-﻿using CliFx.Infrastructure;
+using CliFx.Infrastructure;
 using GCSlayer.Models;
 using ICSharpCode.SharpZipLib.Core;
 using ICSharpCode.SharpZipLib.Zip;
@@ -105,7 +105,7 @@ public class AssetCryptoService(IConsole console) {
         }
 
         FileInfo[] files = dir.GetFiles("*.json", SearchOption.AllDirectories)
-            .Where(f => !f.Name.EndsWith("startup.json")).ToArray();
+            .Where(f => !f.Name.EndsWith("startup.json", StringComparison.Ordinal)).ToArray();
         await ZipUnpackAsync(files, progress);
         await console.Output.WriteLineAsync($"- {files.Length} files decrypted");
     }

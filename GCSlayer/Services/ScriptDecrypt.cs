@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 using System.Text;
 using CliFx.Infrastructure;
 using GCSlayer.Models;
@@ -74,6 +74,6 @@ public class ScriptDecrypt(IConsole console) {
         var bytesRead = fs.Read(buffer, 0, buffer.Length);
 
         return Encoding.UTF8.GetString(buffer, 0, bytesRead)
-            .StartsWith("//<<JS加密");
+            .StartsWith("//<<JS加密", StringComparison.Ordinal);
     }
 }

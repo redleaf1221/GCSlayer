@@ -1,9 +1,14 @@
-﻿namespace GCSlayer.Services;
+namespace GCSlayer.Services;
 
 public static class FileService {
+    /// <param name="overwriteExisting">
+    /// False keeps the files that are already present. The repository copy is only meant to add
+    /// the list files the release stripped; anything the game still shipped must win.
+    /// </param>
     public static async Task CopyDirectoryAsync(string sourcePath,
         string destPath,
-        IProgress<double>? progress = null) {
+        IProgress<double>? progress = null,
+        bool overwriteExisting = true) {
         var dir = new DirectoryInfo(sourcePath);
         if (!dir.Exists)
             throw new DirectoryNotFoundException($"Source directory not found: {sourcePath}.");
@@ -16,11 +21,16 @@ public static class FileService {
 
         await Parallel.ForEachAsync(files,
             new ParallelOptions {
-                MaxDegreeOfParallelism = Environment.ProcessorCount / 2
+                MaxDegreeOfParallelism = Math.Max(1, Environment.ProcessorCount / 2)
             },
             async (file, ct) => {
                 var relativePath = Path.GetRelativePath(sourcePath, file.FullName);
                 var destFile = Path.Combine(destPath, relativePath);
+                if (!overwriteExisting && File.Exists(destFile)) {
+                    Interlocked.Add(ref completedSize, file.Length);
+                    progress?.Report((double)completedSize / totalSize);
+                    return;
+                }
                 Directory.CreateDirectory(Path.GetDirectoryName(destFile)!);
 
                 await using FileStream sourceStream = file.OpenRead();
