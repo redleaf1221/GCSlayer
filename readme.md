@@ -1,288 +1,125 @@
 # GCSlayer
 
-A powerful CLI tool for recovering and reverse-engineering GameCreator projects from released game builds.
+把已发布的 GameCreator 游戏还原成可编辑工程,并顺手做逆向分析。
 
-## Overview
+- 实现细节(服务划分、修复步骤、三个分析算法、不变量、验证方式):[docs/impl.md](docs/impl.md)
+- GameCreator 引擎的实现笔记(发布管线、列表模型、扩展/指令/变量编码,含依据行号):[docs/re.md](docs/re.md)
 
-GCSlayer extracts and decrypts GameCreator project files from compiled games, restoring them to editable project format. It handles multiple encryption schemes used by the GameCreator engine and reconstructs missing project assets.
+## 概览
 
-## Features
+GCSlayer 从编译后的游戏里解出并解密 GameCreator 工程文件,还原成 IDE 能打开的工程;它处理引擎用到的多种加密方式,并重建 release 打包时删掉的那部分编辑器数据。
 
-- Full Project Recovery: Converts encrypted game builds back to editable projects.
-- Asset Decryption: Handles images, JSON, audio, and video encryption, extracts merged json.
-- Script Extraction: Handles obfuscated scripts.js, stripping framework codes.
-- Patch IDE: Enables access to encrypted files beyond what the original author can see.
+## 能做什么
 
-## When to Use GCSlayer
+- 完整工程还原:加密的游戏发布包 → 可编辑工程
+- 资源解密:图片/JSON/音频/视频,以及合并进 `startup.json` 的 json
+- 脚本还原:处理混淆过的 `script.js`,剥掉与游戏无关的框架代码
+- IDE 补丁:让 IDE 接受没有原始签名的工程
+- 缺失数据推导:从幸存的游戏数据反推条目、变量、扩展参数与文档
 
-- You want to mod a GameCreator game but lack source access
-- You need to recover lost project files from a compiled build
-- You need to bypass IDE limitations for legitimate development work
+## 什么时候用
 
-## Quick Start
+- 想给某个 GameCreator 游戏做二次开发,但拿不到工程
+- 工程文件丢了,只剩编译产物
+- 需要突破 IDE 的限制做正当的开发工作
 
-**Important**: You must run `init` once before recovering any projects.
+## 快速开始
 
-1. **Download** from [releases](https://github.com/redleaf1221/GCSlayer/releases/latest) or build it on your own.
-2. **Initialize tool**(required once): `GCSlayer.exe init "/path/to/gamecreator/ide"`.
-3. **Recover project**: `GCSlayer.exe recover "/path/to/game/install"`.
-4. **Wait** for finish.
-5. **Open** the generated project in your IDE.
+**先跑一次 `init`**,之后才能 recover。
 
-## Commands
+1. 从 [releases](https://github.com/redleaf1221/GCSlayer/releases/latest) 下载,或自行构建。
+2. 初始化(只需一次):`GCSlayer.exe init "<gamecreator ide 目录>"`
+3. 还原工程:`GCSlayer.exe recover "<游戏安装目录>"`
+4. 等它跑完。
+5. 用 IDE 打开生成的工程。
 
-* ### init - Prepare IDE and template
+## 命令
 
-#### Usage
+### init — 准备 IDE 与模板
 
 `GCSlayer.exe init <ide_path>`
 
-#### Arguments
+- `ide_path`:GameCreator IDE 安装目录。
 
-- `ide_path`: Path to the IDE installation directory.
+给 IDE 打补丁以接受还原出的工程(跳过工程签名校验),并解掉核心模板的脚本混淆、把准备好的模板复制到工具工作目录。
 
-#### What it does:
+### recover — 还原工程
 
-Patches the GameCreator IDE to accept recovered projects and extracts the core template.
+`GCSlayer.exe recover <game_path> [--local_source <dir>] [-o <dir>]`
 
-More precisely:
+- `game_path`:游戏安装目录。
+- `--local_source`:缺失文件的本地仓库(默认 `./file_repo`)。
+- `--output`/`-o`:输出目录(默认取游戏目录名,落在当前工作目录)。
 
-1. Patches IDE validation to bypass project signature checks.
-2. Removes script obfuscation from core templates.
-3. Copies prepared templates to the tool's working directory.
+解密脚本与资源、抽取合并的 json,再依次跑 **Repair**(同 `fixup`)与 **Verify**,产出一个可直接打开的工程。
 
-* ### recover - Reconstruct projects
-
-#### Usage
-
-`GCSlayer.exe recover <game_path> [options]`
-
-#### Arguments and options
-
-- `game_path`: Path to the game installation directory.
-- `--local_source`: Local repository for missing assets (optional, default to `./file_repo`).
-- `--output`/`-o`: Output directory (defaults to tool folder).
-
-#### What it does:
-
-Decrypt all the assets and script, and give you a working project.
-
-* ### drm_crypto – Direct decryption/encryption
-
-#### Usage
-
-`GCSlayer.exe drm_crypto <file_path> [options]`
-
-#### Arguments and options
-
-- `file_path`: Path to the file you want to decrypt or encrypt.
-- `--output`/`-o`: Output file path.
-- `--encrypt` Specific this to do encryption instead of decryption.
-
-#### What it does:
-
-Decrypt or encrypt using a certain encryption by GameCreator.
-
-It is used on `project.gamecreator`, `asset/json/animation/animationSignalList.json` etc., hiding the project signature k1.
-
-* ### z1 – Save file password restoration
-
-#### Usage
-
-`GCSlayer.exe z1 <z1>`
-
-#### Arguments
-
-- `z1`: Z1 string from config.json in the project.
-
-#### What it does:
-
-Fetch the real password for release game save file, which is a AES encrypted zip archive.
-
-You can get the z1 from project `asset/config.json`.
-
-* ### fixup – Repair a recovered project
-
-#### Usage
+### fixup — 修复已还原的工程
 
 `GCSlayer.exe fixup <project_path>`
 
-#### Arguments
+- `project_path`:`recover` 产出的工程目录。
 
-- `project_path`: Path to a project produced by `recover`.
+release 打包时会删掉编辑器专用的列表与文档,所以刚还原的工程里这些文件只是模板 stub。`fixup` 把"发布数据还能推导出来"的部分补回去(条目列表、`customGameAttribute.json`、变量表、扩展列表与文档、其余名字列表),并清掉 `Game/GCMain.ts` 里 IDE 会重新生成的参数 API 编译产物。`recover` 会自动跑这一步;用旧版本还原过的话可以单独重跑。
 
-#### What it does:
+三条保证:重复运行内容不变(幂等);带作者痕迹的扩展文档不覆盖;改动后脚本仍必须能被解析。
 
-The release pipeline (see `IDEProjectRelease.onReleaseGameComplete` in the core template) deletes
-every editor list before shipping, so a recovered project only carries the template stub for them.
-`recover` runs this step automatically; run it by hand after recovering with an older build.
-
-More precisely, it refills what the released data still allows to derive:
-
-1. Rebuilds the item lists (animations, avatars, standing avatars) from their data files.
-2. Reassembles `custom/customGameAttribute.json` from the four attribute files the release splits
-   it into, bringing the author's attribute names back.
-3. Extends the variable lists with a slot for every id the shipped data references: the `set variable`
-   commands, the save file, and every other command parameter the editor script types as a variable
-   reference (see *Command parameters* below). Existing names and entries are kept, never replaced.
-4. Rebuilds the custom condition/number/string/behaviour lists from the compiled game script and
-   recovers the **parameters of every entry** by parsing that script (see below).
-5. Pads the remaining name lists and fills every entry that lost its name with a stub, so the IDE
-   shows an entry instead of an empty one.
-6. Drops the compiled copies of `Game/system/*Params.ts` from `Game/GCMain.ts`. The IDE generates
-   that file from the extension documents and compiles it into the game script, so a bundle built
-   from documents the release lost only carries stale classes. A class is removed only when its name
-   occurs exactly three times in the script — the definition itself (`var`, `function`, `return`) —
-   and the result must still parse, so anything the game really uses is kept.
-
-Names that never made it into the release cannot be recovered; everything else is derived from the
-game itself.
-
-#### Extension parameters
-
-The editor compiles a custom condition/number/string into the game script as
-`CustomCondition.f7 = f7` with the signature `function f7(trigger, p)`, where `p` is the block the
-user fills in: every `p.<name>` the function reads is one editor control. `Game/GCMain.ts` is parsed
-into an ESTree AST (Acornima), so comments, strings, template literals and regular expressions can
-never be mistaken for code — the game still carries a commented out earlier revision of some
-functions, which must not contribute.
-
-Each parameter is classified by the expression it sits in:
-
-| in the script | control |
-| --- | --- |
-| `if (p.opt == 0) … else if (p.opt == 1)` | dropdown of the compared values |
-| `p.useVar ? getString(p.name1) : p.name` | checkbox, string variable picker, text |
-| `variable.getVariable(p.id)` / `getSwitch` / `getString` | number / switch / string variable picker |
-| `p.modelData.dataID` | structure picker |
-| `p.trophy[i]` | list |
-| `CustomGameNumber["f" + p.x[0]](trigger, p.x[1])` | custom number reference picker |
-
-Values the function itself does not constrain (a flag it only forwards, an id) take the kind the
-shipped data holds for that parameter — the object of the call record described below — when it has
-one; otherwise they fall back to the engine default of the kind, which is a plain number. An author
-chosen name decides nothing: a parameter called `isThing` that no expression constrains and no
-instance shows gets a number control. Dropdown labels are always the numbers the function compares
-against, and no alias is written, so the panel shows the parameter name as the label.
-
-An existing document that carries attribute ids other than the ones `fixup` derives or recovers is
-treated as author data and never rewritten.
-
-The release deleted the extension documents, but the shipped command pages still store the calls of
-those entries as `[functionID, { parameter: value, … }, [ { attributeID: value, … } ]]`: the editor
-writes every value twice, once keyed by the parameter name and once keyed by the attribute id of the
-document, and reads the second one. `fixup` recovers those ids and writes them into the rebuilt
-document, so a value the author had set keeps its place instead of falling back to the control's
-default. Both records line up positionally, and an id is only taken when every call of that entry
-agrees. Which document a call belongs to is decided by the command parameter table (*Command
-parameters* below) when the script describes the slot the call sits in — the "if" command stores a
-custom condition in one slot and a custom number in another, so two documents of different modules
-that declare the very same parameter names are still told apart. A call the table cannot classify is
-matched by its parameter names alone, and an ambiguous vote is dropped.
-
-#### Command parameters
-
-`fixup` also reads what every command does with `cmd.params[N]`. The editor compiles each command into
-`CommandExecute.command_<id>(commandPage, cmd, trigger, triggerPlayer)`, and the commands that have to
-prepare something into `precompile_<id>`; those functions are the only surviving description of the
-parameter layout: which slot the engine passes to `Command.gameWorld.getWorldVariable`,
-`triggerPlayer.variable.getString` or `variable.variables[id]`, and which slot it expands into
-`CustomCondition["f" + id](trigger, block)`.
-
-The project's own `GameCreator/script.js` (falling back to `GameCreatorLib/gamecreator.js`) is parsed
-into an ESTree AST (Acornima), so comments, strings and regular expressions can never be mistaken for
-code. A value is followed from `cmd.params[N]` through local variables, through the helper functions
-the command declares (the `getValue` of the "if" command reads its `param[1]` as the world number
-variable of `cmd.params[2]`) and through the shared helpers of the script
-(`CustomCompData.getSuperNumber`), so a slot inside a union is typed as precisely as the engine reads
-it. Accessors the engine only builds as text for `eval` — the whole body of `precompile_13` — are
-recovered from the string concatenation that assembles them. Nothing is cached on disk: the table is
-rebuilt for every run, and when the script is missing or does not parse, `fixup` says so and keeps
-working with the `set variable` command and the save file.
-
-A parameter at JSON index `i` of a command instance is `cmd.params[i - 1]`: the engine parses an
-instance as `[cmdID, parameters…]` and drops the trailing per instance record, and the "set variable"
-instance `[13, resultType, varID, …]` is read as `cmd.params[0]` = result type, `cmd.params[1]` =
-variable id, `cmd.params[2]` = symbol, `cmd.params[3]` = value type. A custom command (id ≥ 10000) is
-`[10002, { attributeID: value, … }, ___cmdID]`, whose `cmd.params[0]` is that object.
-
-The editor also stores a constant and a variable id in the same slot and separates them with a flag or
-a mode: `command_17` waits `cmd.params[0]` milliseconds and reads the same slot as a variable id only
-while `cmd.params[3]` is set. The table records the condition a slot needs, and `fixup` only takes an
-id out of an instance that satisfies it.
-
-Note that the game script registers two game numbers under a misspelled module
-(`CumtomGameNumber.f6`/`f11`), i.e. exactly the two numbers missing from `CustomGameNumber`; they are
-recovered into the real list so those entries are editable too. The engine cannot call them, which is
-the author's original bug.
-
-The IDE regenerates `Game/system/CustomConditionParams.ts` (and its siblings) when the corresponding
-extension list is saved, so those generated files refresh once the project is edited in the IDE.
-
-#### What the recovery cannot see
-
-Not everything under `asset/json/custom/` was lost, and not everything that is missing can be
-derived, so `verify` reports rather than hides the difference:
-
-* The author never named seven of his custom commands, three data structures and the one custom
-  object event type. The documents still say so (`"name": ""`, `"varName": ""`), and the
-  auto-generated `Game/system/CustomCommandParams.ts` shipped with an empty name for exactly those
-  commands, so the blanks are his, not the release's.
-* Three data entries per module list and the extension list names were blanked by the release; a
-  name that is not mentioned anywhere in the release cannot be recovered and stays blank.
-* Event data still references parameters of extension entries the author later rewrote (e.g. a
-  `w26str*` variant of custom string 10, or an `opt`/`saveID` pair for value 16). Those documents are
-  gone, the compiled function no longer reads those names, and the engine ignores unknown keys, so
-  the recovered controls follow the function.
-* A parameter the compiled function does not constrain and whose entry has no shipped instance is a
-  number: a forwarded flag, for example, has no evidence of anything else, and the tool never reads a
-  kind out of the parameter's name. Aliases are not recovered either, so a panel labels every control
-  with the parameter name.
-* `moduleID` 9 and 10 are referenced by `dataStructure/ds15002.json` but no such custom module
-  exists — a stale reference in the author's own structure definition.
-
-* ### verify – Check a project for references the IDE cannot resolve
-
-#### Usage
+### verify — 检查工程里 IDE 解不开的引用
 
 `GCSlayer.exe verify <project_path>`
 
-#### What it does:
+用**独立于修复逻辑**的实现重新推导期望,发现未解引用就以非零码退出:条目没有文档、文档没有条目、数据用到的 id 没被列表覆盖、指令参数在指令定义里不存在、扩展函数读的参数在文档里没有对应控件(即"打开是空块"的原因)等。`recover` 结束时自动执行。
 
-Re-derives the expectations from the project data itself (item documents, command references, the
-save file, the recovered game script) and fails with a non-zero exit code when something is left
-unresolved: a list entry without a document, a document without an entry, an id the data uses but
-the lists do not cover, a command parameter the shipped command definition does not declare, or an
-extension parameter the compiled function reads while its document offers no control (the reason a
-recovered entry opens with an empty block).
-`recover` runs it automatically at the end.
+### drm_crypto — 直接加解密
 
-## Requirements
+`GCSlayer.exe drm_crypto <file_path> [--output <path>] [--encrypt]`
+
+对单个文件做 GameCreator 的加解密,用于 `project.gamecreator`、`asset/json/animation/animationSignalList.json` 这类藏了工程签名 `k1` 的文件。
+
+### z1 — 存档口令
+
+`GCSlayer.exe z1 <z1>`
+
+由工程 `asset/json/config.json` 里的 `z1` 推导发布版存档(AES zip)的真实口令。
+
+## 流程分析
+
+`recover` 的八个阶段:
+
+1. 建工作区(需要 `init` 过的模板)
+2. 解密 `script.js` → `Game/GCMain.ts`;顺带从脚本判断图片/JSON/音频/视频的加密状态
+3. 按该状态批量解密资源
+4. 解开 `asset/json/startup.json`(zip),把其中全部条目写回工程
+5. 按 `config.json` 的工程名重命名 `.gamecreator`
+6. **只补缺失文件**:从 `file_repo/<工程名>`(或默认仓库)复制 release 删掉的文件,不覆盖游戏自己发布的内容
+7. Repair(同 `fixup`)
+8. Verify
+
+**Repair 补什么**:条目列表(动画/立绘/行走图,从数据文件与引用反推)、`customGameAttribute.json`(由 release 拆出的四个属性文件重装)、变量表(`set variable` 指令 + 存档 + 编辑器脚本参数表指认的其它指令参数,**只补齐不删除**)、扩展列表与文档(从编译脚本 AST 读函数参数,从事件数据反推文档原始 `attr.id`)、其余名字列表长度、以及 `GCMain.ts` 里生成类的清理。
+
+**为什么很多名字恢复不出来**:release 会删掉整个 `asset/json/custom`、两侧变量表、以及一批列表文件,名字只存在于被删的列表数组里,发布包里再无来源;能恢复的只有"别的幸存数据能推导出来"的部分。
+
+## 环境要求
 
 - .NET 9.0
-- Node.js (for script decryption)
+- Node.js(脚本解密用)
 
-## Tests
+## 测试
 
 ```bash
 dotnet test GCSlayer.sln
 ```
 
-The suite covers the DRM codec, the `z1` password derivation, the script analysis helpers, the
-command parameter table extracted from synthetic editor scripts, the file helpers and the whole list
-repair against a miniature recovered project. No IDE component is needed; the only download is NuGet
-restoring xunit into the local package cache.
+覆盖 DRM 编解码、`z1` 口令推导、脚本分析、指令参数表、文件工具,以及针对一个迷你还原工程的整套列表修复与校验。不需要 IDE 组件,唯一的外部下载是 NuGet 还原 xunit 到本地缓存。
 
 ## Credits
 
 - Me, of course.
-- **print_0**: For GCJSDecrypt, the deobfuscation tool for KDSEncode.
-- **Karson.DS**: For GameCreator, the **slightly** flawed game engine.
-
+- **print_0**:GCJSDecrypt,KDSEncode 的反混淆工具。
+- **Karson.DS**:GameCreator,那个**稍微**有点问题的游戏引擎。
 
 ## Disclaimer
 
-This tool is for educational and recovery purposes only. Use only on games you own or have explicit permission to modify. The authors are not responsible for any misuse.
+本工具仅用于学习与数据恢复。请只对自己拥有或获得授权的游戏使用,作者不对任何误用负责。
 
 ## License
 
