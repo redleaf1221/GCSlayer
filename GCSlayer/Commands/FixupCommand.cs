@@ -12,7 +12,12 @@ public class FixupCommand : ICommand {
 
     public async ValueTask ExecuteAsync(IConsole console) {
         try {
-            await new ProjectRepairService(console).RepairAsync(Path.GetFullPath(ProjectPath));
+            var projectPath = Path.GetFullPath(ProjectPath);
+            await new ProjectRepairService(console).RepairAsync(projectPath);
+            // Infer first, then overlay the repository per entry: the repair replaces whole lists,
+            // so the repository's names only survive when they are applied afterwards.
+            await new RepoOverlayService().ApplyAsync(projectPath, null,
+                message => console.Output.WriteLineAsync(message));
             await console.Output.WriteLineAsync("Done");
         } catch (Exception ex) {
             await console.Error.WriteLineAsync(ex.ToString());

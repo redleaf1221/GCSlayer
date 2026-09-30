@@ -18,6 +18,7 @@
 | `Services/SaveFileCryptoService.cs` | 存档口令(`z1`) |
 | `Services/FileService.cs` | 目录复制(可只补缺失) |
 | `Services/ProjectRepairService.cs` | `fixup`:六步修复(见 §3) |
+| `Services/RepoOverlayService.cs` | 修复之后把**该游戏专属**仓库的内容按条目覆盖进工程(见 §2.1) |
 | `Services/ProjectVerifier.cs` | `verify`:独立重推期望并报未解引用处 |
 | `Services/JavaScriptFunctionScanner.cs` | 从 `GCMain.ts` 的 AST 里读扩展函数的参数(见 §4.1) |
 | `Services/ExtensionControlCatalog.cs` | 参数种类 → 控件(见 §4.2) |
@@ -33,9 +34,35 @@
 3. `AssetCryptoService` 按该状态解密资源。
 4. `StartupCryptoService` 解开 `asset/json/startup.json` 并把其中**全部**条目写回工程(没有过滤),然后删掉 zip 本体。
 5. 读 `asset/json/config.json` 拿工程名,把 `GameCreatorBin.gamecreator` 重命名为 `<工程名>.gamecreator`。
-6. `FileService.CopyDirectoryAsync(repo, asset/json, overwriteExisting: false)`:**只补 release 删掉的缺失文件**,不覆盖游戏自己发布的内容。仓库优先用 `file_repo/<工程名>`,否则 `Constants.DefaultRepoPath`。
+6. `FileService.CopyDirectoryAsync(repo, asset/json, overwriteExisting: false)`:**补齐**:只补 release 删掉的缺失文件,不覆盖游戏自己发布的内容。仓库优先用 `file_repo/<工程名>`,否则 `Constants.DefaultRepoPath`——这里用模板仓库是**有意**的:它只提供容器文件与模板自带的部件(模板 JS 库、空列表骨架),让工程"不缺文件"。这一步必须留在修复之前:修复要读其中几个文件(以及它们带的 `k1` 签名)。
 7. `ProjectRepairService.RepairAsync`(=`fixup`)。
-8. `ProjectVerifier.VerifyAsync` —— 与第 7 步同一批期望,但用独立实现重推。
+8. `RepoOverlayService.ApplyAsync`(见 §2.1):**覆盖**——只把**该游戏专属**仓库的内容按条目合进刚修复好的工程。
+9. `ProjectVerifier.VerifyAsync` —— 与第 7 步同一批期望,但用独立实现重推。
+
+### 2.1 仓库覆盖(RepoOverlayService)
+
+`file_repo` 放的是**从其它途径拿到的数据**(某个游戏的完整工程数据、或人工整理过的成果),不是发布包的一部分;而 release 删掉的名字只存在于这些列表数组里。修复只能推导出"幸存数据还能指认"的部分,并且**整体重写**列表,所以仓库必须**在修复之后**再按条目合进去:先推导、后覆盖。`fixup` 用同样的顺序,`recover` 的第 8 步也是这一次调用。
+
+**补齐与覆盖是两件事,不能混为一谈**:
+
+| | 补齐(fill,第 6 步) | 覆盖(overlay,第 8 步) |
+| --- | --- | --- |
+| 动作 | `CopyDirectoryAsync(overwriteExisting: false)`,只新增缺失文件 | 逐条目合并列表、整份替换文档 |
+| 允许的仓库 | 游戏专属仓库,**缺失时退回 `file_repo/Default`**(模板容器/模板库) | **只允许该游戏专属仓库**:显式 `--local_source`,或 `file_repo/<gameProjectName>` |
+| 目的 | 工程不缺文件、能跑起来 | 把 release 删掉的名字/文档按条目补回游戏自己的数据 |
+
+`Default` 是**与这个游戏无关的模板**,所以绝不允许参与覆盖:合并它的名字、`type` 组或文档只会把工程推离这个游戏(它甚至可能把模板 stub 写进已还原的内容)。因此 overlay 的解析顺序是:显式 `--local_source`(存在则用)> `<工具目录>/file_repo/<gameProjectName>`(工程名读 `asset/json/config.json`) > **什么都不用**——没有 fallback。解析不到仓库时覆盖层**不做任何事**,只打印一行事实说明(例如 `- repo overlay: file_repo/<name> not found; ...; skipped`)。
+
+合并规则:
+
+- **名字列表**(内容是名字列表的 json:扁平 `{"list":[null,name…]}`,或带类型的 `{"list":{"<type>":[null,name…]},"type":{…}}`;数组元素只允许是字符串或 null,否则按文档处理)**逐条目、逐类型**并入工程文件,工程缺这个文件时整份复制:
+  - 同一个条目,仓库是非空字符串则用仓库的;仓库没有该条目、或名字为空串,则保留工程已有的条目(包括推导出的 stub 名);
+  - 数组绝不比工程原有的短;仓库的数组更长时只按它**有名字**的条目延长,尾部那些没有名字的槽位不带信息,不为了让两边等长而补空条目;延长出来而又没有名字的槽位按修复的约定用下标字符串当 stub 名,列表里不留空名字(否则 `verify` 的扁平列表检查会报这个条目"没有名字",脚本派生的扩展列表也不允许长度超出脚本的编号);
+  - `type` 组:已存在的键保留工程的值,仓库多出来的键补进去;整份文件里工程原有的其它键(`k1`、`data` 等)原样保留。
+- **文档与其它文件**:仓库是这个游戏自己的数据,所以**整份覆盖**修复结果,每一个覆盖都单独报告;工程缺的文件新增进去。`Default` 的文档不走这条路(它根本不参与覆盖),所以 §2.1 开头那个例子——`Default` 里 708 字节的 `custom/customGameAttribute.json` 会盖掉由四个发布属性文件重装出来的 116 KB 版本——不可能发生。
+- 不删除任何文件;合并后语义与原来相同的文件不重写(保留原字节),只有仓库真正提供了新信息时才落盘;幂等:跑两遍字节完全一致。
+
+`verify` 不读仓库,它只用工程数据与脚本重推期望,所以覆盖是否越权仍会被它发现。
 
 ## 3. fixup 的六步
 
