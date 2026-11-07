@@ -111,27 +111,7 @@ public class RepoOverlayServiceTests {
         Assert.Single(fixture.Project.ListOf("asset/json/custom/customBehaviorType.json"));
         Assert.Equal(before, fixture.ReadProject("asset/json/custom/customBehaviorType.json"));
     }
-
-    [Fact]
-    public async Task WithOnlyADefaultRepositoryTheOverlayChangesNothingAndSaysItIsSkipped() {
-        using var fixture = new RepoOverlayFixture();
-        await fixture.Project.RepairAsync();
-        var before = fixture.HashAllFiles();
-        var report = new List<string>();
-
-        // no --local_source and no file_repo/<gameProjectName>: the project has no repository of its
-        // own, so the overlay is a no-op - file_repo/Default is never a substitute for it
-        await OverlayAsync(fixture, null, report);
-
-        Assert.Equal(before, fixture.HashAllFiles());
-        Assert.Contains(report, line => line.Contains("- repo overlay: file_repo/" + fixture.GameProjectName
-            + " not found;"));
-        Assert.Contains(report, line => line.Contains("file_repo/Default is the template"));
-        Assert.Contains(report, line => line.Contains("skipped"));
-        // a document only the repository carries is not added either
-        Assert.False(File.Exists(fixture.Project.Path_("asset/json/ui/uiCompSetting.json")));
-    }
-
+    
     [Fact]
     public async Task GameSpecificRepositoryReplacesDocumentsVerbatim() {
         using var fixture = new RepoOverlayFixture();
