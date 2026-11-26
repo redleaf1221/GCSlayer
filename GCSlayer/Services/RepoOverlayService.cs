@@ -88,8 +88,7 @@ public class RepoOverlayService {
         var gameProjectName = await ReadGameProjectNameAsync(fullPath);
         var resolution = Resolve(gameProjectName, explicitRepoPath);
         if (resolution.Path is null) {
-            await report($"- repo overlay: {resolution.Source}; skipped, the project is left as "
-                + "repaired and no entry is taken from file_repo/Default");
+            await report($"- repo overlay: {resolution.Source}; skipped.");
             return;
         }
 
